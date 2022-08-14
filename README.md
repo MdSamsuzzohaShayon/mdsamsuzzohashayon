@@ -7,10 +7,12 @@
     npm install eslint-config-prettier eslint-plugin-prettier @next/eslint-plugin-next sass
     npm install -D tailwindcss postcss autoprefixer
     npx tailwindcss init -p
+    npm install react-icons --save
     npm run dev
 
-
-git commit -m "Boiler plate next js project with next js, eslint, taiwind css, scss"
+### Inspirations
+ - __https://marketifythemes.net/wp/cavani/04/latest-news/__ , __https://frenify.net/envato/frenify/wp/resumo/2/__
+ 
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

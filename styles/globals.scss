@@ -1,16 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+// @import './base.css'; 
+@import 'tailwindcss/utilities';  
 
 html,
 body {
   padding: 0;
   margin: 0;
+}
+
+
+
+
+.home-body {
+  // height: 90vh;
+  /* // @apply bg-red-500 w-16; */
+  .home-img{
+    height: calc(100vh - 80px - 80px);
   }
-
-a {
 }
 
-.alert {
+/* .alert {
   @apply bg-red-500 w-16 #{!important};
-}
+} */
