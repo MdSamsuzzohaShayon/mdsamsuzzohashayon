@@ -9,6 +9,7 @@ function services() {
       <li>WebAPI (WebRTC, Websocket, Web Workers, etc)</li>
       <li>API Development (RestAPI, GraphQL, Monolothinc, Microservices)</li>
       <li>API Integration (Discord, google api, etc)</li>
+      <li>Database Management(MongoDB, MySQL, PostgresSQL, DynomoDB, Firebase, etc)</li>
       <li>Website scrapping (Python or Node.js)</li>
       <li>Chrome Extension development</li>
       <li>Website Hosting, server administration (Linux, Windows)</li>
