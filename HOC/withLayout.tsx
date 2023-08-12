@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Footer from '../layouts/Footer';
-import Navbar from '../layouts/Navbar';
+import Footer from '../components/layout/Footer';
+import Navbar from '../components/layout/Navbar';
 
 function withLayout(WrappedComponent) {
   const newElement = () => (

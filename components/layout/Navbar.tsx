@@ -1,6 +1,6 @@
+'use client'
 import Link from 'next/link';
 import { useState } from 'react';
-import SelectIcons from '../components/SelectIcons';
 
 const initialAllPages = [
   {
@@ -52,7 +52,7 @@ function Navbar() {
               key={page.id}
             >
               <Link href={page.url}>{page.text}</Link>
-              {page.icon && <SelectIcons selectedItem={page.icon} />}
+              {/* {page.icon && <SelectIcons selectedItem={page.icon} />} */}
             </li>
           ))}
         </ul>

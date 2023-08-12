@@ -1,3 +1,5 @@
+'use client'
+
 function Footer() {
   return (
     <footer className="footer sm:fixed lg:static lg:h-20 bg-slate-500 text-slate-100 w-full">
