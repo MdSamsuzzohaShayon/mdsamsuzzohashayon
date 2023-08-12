@@ -1,44 +1,52 @@
-[
-    {
-        "id": 1,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=1",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-    {
-        "id": 2,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=2",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-    {
-        "id": 3,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=3",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-    {
-        "id": 4,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=4",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-    {
-        "id": 5,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=5",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-    {
-        "id": 6,
-        "title": "Transportation Mobile App",
-        "img": "https://picsum.photos/500/300?random=6",
-        "category": "Mobile App",
-        "keywords": ["Mobile", "App", "Mobile UI-UX"]
-    },
-]
+{
+    "logo": "/img/my-pic-logo.png",
+    "navMenus": [
+        {
+            "id": 1,
+            "text": "Home",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "text": "Features",
+            "link": "#"
+        },
+        {
+            "id": 3,
+            "text": "My Works",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "text": "Resume",
+            "link": "#"
+        },
+        {
+            "id": 5,
+            "text": "Testimonial",
+            "link": "#"
+        },
+        {
+            "id": 6,
+            "text": "Contact",
+            "link": "#"
+        }
+    ],
+    "social": [
+        {
+            "id": 1,
+            "link": "https://twitter.com/shayon_md",
+            "icon": "twitter.svg"
+        },
+        {
+            "id": 2,
+            "link": "https://www.linkedin.com/in/md-samsuzzoha-a1032a11b/",
+            "icon": "in.svg"
+        },
+        {
+            "id": 3,
+            "link": "https://github.com/MdSamsuzzohaShayon",
+            "icon": "github.svg"
+        }
+    ]
+}

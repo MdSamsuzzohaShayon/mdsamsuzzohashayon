@@ -1,5 +1,4 @@
 import React from 'react';
-import withLayout from '@/HOC/withLayout';
 
 const HomePage = () => {
   return (
