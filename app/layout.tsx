@@ -1,7 +1,7 @@
-import '../globals.scss'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import BodyWrapper from '@/components/layout/BodyWrapper'
+import '../globals.scss';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import BodyWrapper from '@/components/layout/BodyWrapper';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +18,8 @@ export default function RootLayout({
 
   
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" >
+      <body className={inter.className} suppressHydrationWarning >
         <BodyWrapper children={children} />
       </body>
     </html>

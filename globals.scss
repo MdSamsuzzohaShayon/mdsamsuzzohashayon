@@ -5,7 +5,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 // @import './base.css'; 
-@import 'tailwindcss/utilities';  
+@import 'tailwindcss/utilities';
 
 html,
 body {
@@ -13,13 +13,15 @@ body {
   margin: 0;
 }
 
+$br-md: 768px;
 
 
 
 .home-body {
+
   // height: 90vh;
   /* // @apply bg-red-500 w-16; */
-  .home-img{
+  .home-img {
     height: calc(100vh - 80px - 80px);
   }
 }
@@ -27,3 +29,28 @@ body {
 /* .alert {
   @apply bg-red-500 w-16 #{!important};
 } */
+
+
+.body-wrapper {
+
+  // container-type: inline-size;
+  // container-name: body;
+  .right-img-bg {
+    // background: linear-gradient(to top, blue 70%, transparent 30%);
+    height: 40rem;
+    width: 34rem;
+  }
+  @media(max-width: $br-md) {
+    .right-img-bg {
+      height: 34rem;
+    }
+  }
+}
+
+// @container body(max-width: $br-md) {
+//   .right-img-bg{
+//     height: 20rem;
+//   }
+// }
+/* If the container is larger than 700px */
+

@@ -1,5 +1,6 @@
 {
     "logo": "/img/my-pic-logo.png",
+    "heroImg": "/img/shayon-hero-image.png",
     "navMenus": [
         {
             "id": 1,
@@ -46,6 +47,23 @@
         {
             "id": 3,
             "link": "https://github.com/MdSamsuzzohaShayon",
+            "icon": "github.svg"
+        }
+    ],
+    "bestSkills": [
+        {
+            "id": 1,
+            "name": "Node.JS",
+            "icon": "nodejs.svg"
+        },
+        {
+            "id": 2,
+            "name": "Python",
+            "icon": "python.svg"
+        },
+        {
+            "id": 3,
+            "name": "Server",
             "icon": "github.svg"
         }
     ]

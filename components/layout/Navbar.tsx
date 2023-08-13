@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import SocialMedia from './SocialMedia';
 
 
 
@@ -37,7 +38,7 @@ function Navbar() {
 
       {/* Mobile menu  */}
       {toggleMenu && (
-        <div className="absolute md:static top-0 left-0 w-5/6 md:w-fit block md:hidden items-center h-screen md:h-full flex-col md:flex-row bg-slate-950 md:bg-transparent z-10">
+        <div className="absolute md:static top-0 left-0 w-5/6 md:w-fit block md:hidden items-center h-screen md:h-full flex-col md:flex-row bg-slate-950 md:bg-transparent z-20">
           <div className="icon-menus px-4 flex justify-between items-center mt-8 pb-8 border-b border-slate-900">
             <img src={portfolio.logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800' />
             <XMarkIcon className="block md:hidden h-6 w-6 text-slate-500" onClick={() => setToggleMenu(false)} />
@@ -54,14 +55,7 @@ function Navbar() {
             ))}
           </ul>
           <div className="social mt-8 border-t border-slate-900 pt-8 px-4">
-            <h2 className='mb-4'>Find me with</h2>
-            <ul className='flex w-full gap-2'>
-              {
-                portfolio.social.map((s) => (
-                  <li className='h-12 w-12 flex justify-center items-center bg-slate-900' key={s.id} ><a href={s.link} target='_blink'><img src={`/icons/${s.icon}`} className='h-6' /></a></li>
-                ))
-              }
-            </ul>
+            <SocialMedia social={portfolio.social} />
           </div>
         </div>
       )}

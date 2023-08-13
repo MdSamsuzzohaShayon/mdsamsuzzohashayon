@@ -14,7 +14,7 @@ function BodyWrapper(props: { children: React.ReactNode }) {
     }
 
     return (
-        <div className='body-wrapper bg-black text-slate-500'>
+        <div className='body-wrapper bg-gray-950 text-gray-300'>
             {/* {showBackdrop && (
                 <div className="absolute top-0 left-0 wrapper-overflow h-screen w-screen bg-slate-500 opacity-5" onClick={overflowBackdropHandler}></div>
             )} */}
