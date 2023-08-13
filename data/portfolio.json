@@ -66,5 +66,43 @@
             "name": "Server",
             "icon": "github.svg"
         }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "icon": "web-design.svg",
+            "title": "Web Design",
+            "desc": "First and foremost, I create prototype of the project the provide my client the desire end result they are expecting."
+        },
+        {
+            "id": 2,
+            "icon": "frontend.svg",
+            "title": "Front-end development",
+            "desc": "Using Vanilla JavaScript, Vue.js or React.js I create intractive user interface for best experience of the user"
+        },
+        {
+            "id": 3,
+            "icon": "backend.svg",
+            "title": "Back-end Development",
+            "desc": "I create REST API or GraphQL API using modern popular frameworks Express.js, Django, Nest.js, and FastAPI. A part from that, integrate any possible third party API integration."
+        },
+        {
+            "id": 4,
+            "icon": "server.svg",
+            "title": "Server Administration",
+            "desc": "Deplying Web Application or Static website on Linux or Windows servers. Moreover, API hosting on diffrent cloud services such as AWS Lambda, Azure functions, or Elastic Beanstack"
+        },
+        {
+            "id": 5,
+            "icon": "devops.svg",
+            "title": "DevOps",
+            "desc": "For enterprise websites, CI/CD pipeline to hosting, containerization with docker, versioning code with git, kubernetes."
+        },
+        {
+            "id": 6,
+            "icon": "mobile.svg",
+            "title": "Mobile Application",
+            "desc": "Create IOS and Android application with React-native."
+        }
     ]
 }

@@ -19,7 +19,7 @@ const Hero = () => {
                         <h2 className='mb-4 uppercase'>Best Skill on</h2>
                         <ul className='flex w-full gap-2'>
                             {portfolio.bestSkills.map((skill) => (
-                                <li key={skill.id} className='h-12 w-12 flex justify-center items-center bg-slate-900 drop-shadow-xl grayscale'><img src={`/icons/${skill.icon}`} className='h-6' alt="" /></li>
+                                <li key={skill.id} className='h-12 w-12 flex justify-center items-center bg-slate-900'><img src={`/icons/${skill.icon}`} className='h-6' alt="" /></li>
                             ))}
                         </ul>
                     </div>
