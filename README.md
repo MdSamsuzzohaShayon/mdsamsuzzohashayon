@@ -5,6 +5,7 @@
  - Add project preview video link
  - Drop Shadow poperly
  - Smooth scroll
+ - Use more gradient colors
 
 ### Reference
  - https://rainbowit.net/html/inbio/

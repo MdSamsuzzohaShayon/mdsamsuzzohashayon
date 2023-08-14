@@ -205,5 +205,166 @@
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
             "liveUrl": null
         }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "title": "Bachelor of business administration",
+            "institution": "Daffodil International University",
+            "year": "2016-2020",
+            "score": "3.05/4",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 2,
+            "title": "Bachelor of business administration",
+            "institution": "Daffodil International University",
+            "year": "2016-2020",
+            "score": "3.05/4",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 3,
+            "title": "Bachelor of business administration",
+            "institution": "Daffodil International University",
+            "year": "2016-2020",
+            "score": "3.05/4",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 4,
+            "title": "Bachelor of business administration",
+            "institution": "Daffodil International University",
+            "year": "2016-2020",
+            "score": "3.05/4",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        }
+
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "title": "UI/UX Design- Figma",
+            "percent": 85
+        },
+        {
+            "id": 2,
+            "title": "Vanilla JavaScript",
+            "percent": 95
+        },
+        {
+            "id": 3,
+            "title": "React.js - Frontend Framework",
+            "percent": 90
+        },
+        {
+            "id": 4,
+            "title": "Vue.js - Frontend Framework",
+            "percent": 70
+        },
+        {
+            "id": 5,
+            "title": "Next.js - JavaScript",
+            "percent": 80
+        },
+        {
+            "id": 6,
+            "title": "Nuxt.js - JavaScript",
+            "percent": 70
+        },
+        {
+            "id": 7,
+            "title": "Node.js - Backend Framework",
+            "percent": 95
+        },
+        {
+            "id": 8,
+            "title": "Django - Backend Framework",
+            "percent": 85
+        },
+        {
+            "id": 9,
+            "title": "FastAPI - Backend Framework",
+            "percent": 90
+        },
+        {
+            "id": 10,
+            "title": "GraphQL",
+            "percent": 80
+        },
+        {
+            "id": 11,
+            "title": "Docker Container",
+            "percent": 85
+        },
+        {
+            "id": 12,
+            "title": "Linux Server",
+            "percent": 80
+        },
+        {
+            "id": 13,
+            "title": "Serverless",
+            "percent": 70
+        },
+        {
+            "id": 14,
+            "title": "CI/CD Pipeline",
+            "percent": 65
+        },
+        {
+            "id": 15,
+            "title": "SQL Database",
+            "percent": 90
+        },
+        {
+            "id": 16,
+            "title": "MongoDB Database",
+            "percent": 95
+        },
+        {
+            "id": 17,
+            "title": "Git - Version Control",
+            "percent": 95
+        },
+        {
+            "id": 18,
+            "title": "WebAPI - Socket.io, WebRTC, etc",
+            "percent": 90
+        },
+        {
+            "id": 19,
+            "title": "Wordpress - Theme Development",
+            "percent": 80
+        },
+        {
+            "id": 20,
+            "title": "Deployment",
+            "percent": 90
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "title": "Inter",
+            "institution": "Grameen Bank Limited",
+            "year": "3 months",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 2,
+            "title": "Marketing Executive",
+            "institution": "Grameenphone Limited",
+            "year": "2020-2021",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 3,
+            "title": "Freelancer Web Developer",
+            "institution": "Upwork and Fiverr",
+            "year": "2020-Present",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        }
+
     ]
 }
