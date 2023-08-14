@@ -40,15 +40,22 @@ $br-md: 768px;
     height: 40rem;
     width: 34rem;
   }
-  .feature-card{
+
+  .feature-card {
     min-height: 16rem;
   }
+
+  dialog::backdrop {
+    background: rgba(209, 213, 219, 0.678);
+  }
+
   @media(max-width: $br-md) {
     .right-img-bg {
       height: 34rem;
     }
   }
-  .feature-card{
+
+  .feature-card {
     min-height: 20rem;
   }
 }
@@ -59,4 +66,3 @@ $br-md: 768px;
 //   }
 // }
 /* If the container is larger than 700px */
-

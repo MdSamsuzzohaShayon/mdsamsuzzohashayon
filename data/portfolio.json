@@ -64,7 +64,7 @@
         {
             "id": 3,
             "name": "Server",
-            "icon": "github.svg"
+            "icon": "devops.svg"
         }
     ],
     "features": [
@@ -103,6 +103,107 @@
             "icon": "mobile.svg",
             "title": "Mobile Application",
             "desc": "Create IOS and Android application with React-native."
+        }
+    ],
+    "works": [
+        {
+            "id": 1,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "MERN Stack",
+            "title": "Freelance Marketplace",
+            "desc": "Included features are wishlist, contact, admin panel, user dashboard, email notification, file uploads to AWS S3, and many more. First and foremost, I create prototype of the project the provide my client the desire end result they are expecting. afterward I developed this from scratch and deployed on AWS EC2",
+            "techStack": ["Node.js", "React.js", "Sequlize", "AWS EC2", "AWS S3", "Linux", "VPS Hosting"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-marketplace-kinoverse",
+            "liveUrl": "http://kinoverse.net/"
+        },
+        {
+            "id": 2,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Full Stack Development",
+            "title": "Asset consulting Website",
+            "desc": "In this website, anyone before purchasing any kinds of fixed asset customers will task advice from professional website. Included features are form submission, stripe payment, user authentication and more. Only core HTML is been used for this website fronte-end development since client wanted to keep it SEO friendly. In additon to that, Express.js rest API used to build API from scratch alogn with MongoDB Database",
+            "techStack": ["Node.js", "HTML", "Vanilla JavaScript", "MongoDB", "RestAPI"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/daba-nodejs-html",
+            "liveUrl": null
+        },
+        {
+            "id": 3,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "LAMP Stack",
+            "title": "Financial website for saving",
+            "desc": "Included features are user authentication, admin panel, user dashboard, multi-lingual, membership of a pack, create pack, join pack, select leader of the pack, manage pack by leager. ",
+            "techStack": ["PHP", "MySQL", "CPanel"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/php-stockvell",
+            "liveUrl": "http://stockvell.allinone-office.com"
+        },
+        {
+            "id": 4,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Full Stack Development",
+            "title": "Cost Calculation",
+            "desc": "This website for an agency, customer comes to this website and calculate their estimated cost of specific services they required.",
+            "techStack": ["Python", "FastAPI", "Vanilla JavaScript"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/fastapi-reactjs-sql-nosql-projects/tree/01_fastapi_cost_calc_mongodb_vanillajs",
+            "liveUrl": "https://costcalc.netlify.app"
+        },
+        {
+            "id": 5,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Front-end Development",
+            "title": "Peer To Peer File sharing",
+            "desc": "This website is used for two diffrent purpose, first and foremost, user can share file without uploading it to a server, it is peer to peer file sharing using WebRTC Technology. In addition to that, Socket.io is been used to transfer signal of WebRTC. Secondly, this website can be used to make URL of a website short.",
+            "techStack": ["Node.js", "React.js", "WebRTC", "Socket.io", "Linux", "VPS Hosting"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/mdsamsuzzohashayon/",
+            "liveUrl": "https://pastebetween.com/"
+        },
+        {
+            "id": 6,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "CMS Development",
+            "title": "Web Design------",
+            "desc": "I developed a custom theme from scratch and using that theme I made my wordpress blogging site.",
+            "techStack": ["Wordpress", "CPanel"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "liveUrl": "https://itssportstime.org/"
+        },
+        {
+            "id": 7,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Full Stack Development",
+            "title": "Ponditi Learning Platform",
+            "desc": "Features of this website to be mentioned, Role Base JWT User Authentication, Students search teacher, Send tuotian request, create conversation, get tutorian on hourly or monthly basis, User Dashboard, admin panel, and more.",
+            "techStack": ["Node.js", "Next.js", "Redux", "AWS EC2", "Socket.io", "Linux", "TypeScript", "ESLint", "Docker"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-nextjs-ponditi-lms",
+            "liveUrl": "https://ponditi.com/"
+        },
+        {
+            "id": 8,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Backend Development",
+            "title": "Email Template Building",
+            "desc": "Features of this website to be mentioned, Create email template, customize template, save template, edit template, preview template, export template, upload template images to AWS S3, and more",
+            "techStack": ["Node.js", "Vanilla JavaScript", "Digital Ocean", "AWS S3", "CentOS", "VPS Hosting"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-email-template",
+            "liveUrl": null
+        },
+        {
+            "id": 9,
+            "imgSrc": "mobile-app-design.jpg",
+            "type": "Full Stack Development",
+            "title": "Tournament Website",
+            "desc": "Features of this website to be mentioned, join in a tournament, 5 rounds in the tournament, random team up in first round, points calculations, adding extra points, rank players after round 1, random team up or team up based on rankings, leave the team and join team in the middle of the tournament, show score, user authentication, admin panel, and more.",
+            "techStack": ["Wordpress", "CPanel"],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "liveUrl": null
         }
     ]
 }

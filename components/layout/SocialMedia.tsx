@@ -13,7 +13,7 @@ const SocialMedia = ({ social }: { social: SocialInt[] }) => {
             <ul className='flex w-full gap-2'>
                 {
                     social.map((s: SocialInt) => (
-                        <li className='h-12 w-12 flex justify-center items-center bg-slate-900 drop-shadow-xl grayscale' key={s.id} ><a href={s.link} target='_blink'><img src={`/icons/${s.icon}`} className='h-6' /></a></li>
+                        <li className='h-12 w-12 flex justify-center items-center bg-slate-900 drop-shadow-xl' key={s.id} ><a href={s.link} target='_blink'><img src={`/icons/${s.icon}`} className='h-6' /></a></li>
                     ))
                 }
             </ul>
