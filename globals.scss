@@ -17,21 +17,24 @@ $br-md: 768px;
 
 
 
-.home-body {
-
-  // height: 90vh;
-  /* // @apply bg-red-500 w-16; */
-  .home-img {
-    height: calc(100vh - 80px - 80px);
-  }
-}
-
 /* .alert {
   @apply bg-red-500 w-16 #{!important};
 } */
 
 
 .body-wrapper {
+
+    /* Chrome, Safari, Edge, Opera */
+    .remove-arrow::-webkit-outer-spin-button,
+    .remove-arrow::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  
+    /* Firefox */
+    .remove-arrow {
+      -moz-appearance: textfield;
+    }
 
   // container-type: inline-size;
   // container-name: body;
