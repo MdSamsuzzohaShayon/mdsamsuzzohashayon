@@ -1,0 +1,10 @@
+POST http://localhost:8000/api/sendemail
+Content-Type: application/json
+
+{
+  "name": "n-string",
+  "email": "e-string",
+  "subject": "s-string",
+  "phone": "p-string",
+  "message": "m-string"
+}
