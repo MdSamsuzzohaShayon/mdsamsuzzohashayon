@@ -42,3 +42,5 @@ next-env.d.ts
 pyserver/__pycache__
 pyserver/.env 
 pyserver/virtual-env
+pyserver/dep
+pyserver/lambda_artifact.zip
