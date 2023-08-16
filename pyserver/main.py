@@ -1,20 +1,30 @@
 # Do not include this in AWS Lambda
 # ====================================START======================================= #
-import os
 from dotenv import load_dotenv
 
 load_dotenv()  # take environment variables from .env.
 # =====================================END====================================== #
 
 
+import os
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
-from fastapi import FastAPI, status
+from fastapi import FastAPI, status, HTTPException
 from mangum import Mangum
 from pydantic import BaseModel
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import firestore
+
+# # Use a service account.
+# cred = credentials.Certificate('path/to/serviceAccount.json')
+
+# app = firebase_admin.initialize_app(cred)
+
+# db = firestore.client()
 
 
 def send_contact_email(name: str, email: str, subject: str, phone: str, message: str):
@@ -35,7 +45,7 @@ def send_contact_email(name: str, email: str, subject: str, phone: str, message:
     html = (
         f"<html>"
         + f"<body>"
-        + f"<h4>name: {name}</h4>"
+        + f"<h4>Name: {name}</h4>"
         + f"<h4>Subject: {subject}</h4>"
         + f"<h4>Phone: {phone}</h4>"
         + f"<h4>Email: {email}</h4>"
@@ -78,6 +88,16 @@ app = FastAPI(
 )
 handler = Mangum(app)
 
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 class SendEmailModal(BaseModel):
     name: str
@@ -89,15 +109,23 @@ class SendEmailModal(BaseModel):
 
 @app.post("/api/sendemail")
 def make_contact(send_email: SendEmailModal):
-    name = send_email.name
-    email = send_email.email
-    subject = send_email.subject
-    phone = send_email.phone
-    message = send_email.message
-    send_contact_email(
-        name=name, email=email, subject=subject, phone=phone, message=message
-    )
-    json_compatible_data = jsonable_encoder(send_email)
-    return JSONResponse(
-        content=json_compatible_data, status_code=status.HTTP_201_CREATED
-    )
+    try:
+        name = send_email.name
+        email = send_email.email
+        subject = send_email.subject
+        phone = send_email.phone
+        message = send_email.message
+
+        # data = {"name": name, "email": email, "subject": subject, "phone": phone, "message": message}
+        # # Add a new doc in collection 'cities' with ID 'LA'
+        # db.collection("cities").document("LA").set(data)
+
+        send_contact_email(
+            name=name, email=email, subject=subject, phone=phone, message=message
+        )
+        json_compatible_data = jsonable_encoder(send_email)
+        return JSONResponse(
+            content=json_compatible_data, status_code=status.HTTP_201_CREATED
+        )
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Item not found")

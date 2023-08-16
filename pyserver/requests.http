@@ -1,4 +1,4 @@
-POST http://localhost:8000/api/sendemail
+POST https://j3bvyw3qdpnj4u5yu2kwxo36le0jeifz.lambda-url.ap-southeast-1.on.aws/api/sendemail
 Content-Type: application/json
 
 {

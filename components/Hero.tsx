@@ -1,9 +1,10 @@
 import React from 'react';
 import portfolio from '../data/portfolio.json';
 import SocialMedia from './layout/SocialMedia';
+import { styles } from '@/styles';
 const Hero = () => {
     return (
-        <section className="section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row min-h-fit md:min-h-screen items-center px-4 md:px-0">
+        <section className={`section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row items-center px-4 md:px-0 ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
                     <p className='mt-8'>WELCOME TO MY WORLD</p>

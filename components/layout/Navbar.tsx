@@ -11,14 +11,25 @@ import portfolio from '../../data/portfolio.json';
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
-  const overflowBackdropHandler = (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    console.log(e);
 
+
+  // const handleClickScroll = () => {
+  //   const element = document.getElementById('section-1');
+  //   if (element) {
+  //     // 👇 Will scroll smoothly to the top of the next section
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
+
+  const scrollViewHandler = (e: React.SyntheticEvent, sectionId: number) => {
+    e.preventDefault();
+    const targetElement: HTMLElement | null = document.querySelector(`.section-${sectionId}`);
+    if (!targetElement) return;
+    targetElement.scrollIntoView({behavior: 'smooth'});
   }
 
   return (
-    <nav className="navbar container mx-auto w-full flex h-20 items-center justify-between ">
+    <nav className="navbar container mx-auto w-full flex h-20 items-center justify-between " >
       <img src={portfolio.logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800 ml-2 md:ml-0 ' />
 
       {/* Desktop menu  */}
@@ -27,6 +38,7 @@ function Navbar() {
           <li
             className="list-none ml-8 hover:text-slate-200 hover:text-slate-100 transition duration-300 ease-in flex items-center justify-center"
             key={page.id}
+            onClick={(e) => scrollViewHandler(e, page.id)}
           >
             <Link href={page.link}>{page.text}</Link>
             {/* {page.icon && <SelectIcons selectedItem={page.icon} />} */}

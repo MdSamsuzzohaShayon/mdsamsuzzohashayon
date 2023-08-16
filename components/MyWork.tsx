@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import portfolio from '../data/portfolio.json';
+import { styles } from '@/styles';
 
 const MyWork = () => {
     const dialogEl = useRef<null | HTMLDialogElement>(null);
@@ -70,14 +71,14 @@ const MyWork = () => {
     }
 
     return (
-        <section className="section-3 my-works container mx-auto px-4 md:px-0">
+        <section className={`section-3 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
             <dialog ref={dialogEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
                 <div className="close-btn rounded-full w-12 h-12 float-right bg-slate-800 flex justify-center items-center" onClick={closeModalHandler} >
                     <XMarkIcon className="h-6 w-6 text-slate-500" />
                 </div>
                 {renderSingleWork()}
             </dialog>
-            <h4 className="uppercase text-rose-600 mt-20">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
+            <h4 className="uppercase text-rose-600 mt-16">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
             <h2 className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Works</h2>
             <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 ">
                 {works.map((w) => (

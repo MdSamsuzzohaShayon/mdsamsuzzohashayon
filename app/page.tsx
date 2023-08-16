@@ -13,7 +13,6 @@ const HomePage = () => {
       <MyWork />
       <MyResume />
       <Contact />
-      <br /><br /><br /><br /><br />
     </>
   )
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import portfolio from '../data/portfolio.json';
+import { styles } from '@/styles';
 
 const Features = () => {
     return (
-        <section className="section-2 features container mx-auto px-4 md:px-0">
-            <h4 className="uppercase text-rose-600 mt-8">Features</h4>
+        <section className={`section-2 features container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
+            <h4 className="uppercase text-rose-600 mt-16">Features</h4>
             <h2 className='capitalize text-4xl md:text-6xl font-bold mt-4'>What do I do?</h2>
             <div className="feature-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 ">
                 {portfolio.features.map((f) => (
