@@ -6,6 +6,12 @@ export const styles = {
     h4:  'capitalize text-sm',
 
     // Shadows
-    shadowPrimary: 'shadow-lg shadow-slate-900/50'
+    shadow: 'shadow-lg shadow-slate-950/50',
+    shadowInvert: 'shadow-lg shadow-slate-400/50',
+
+    sectionHeading: 'capitalize text-rose-600',
+
+    bg_1: 'bg-slate-900',
+    bg_2: 'bg-slate-800',
     
 }
