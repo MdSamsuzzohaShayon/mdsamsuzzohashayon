@@ -6,6 +6,7 @@
     "email": "mdsamsuzzoha5222@gmail.com",
     "phone": "+8801889171929",
     "contactImg": "/img/shayon-contact-image.png",
+    
     "navMenus": [
         {
             "id": 1,
@@ -420,6 +421,68 @@
             "institution": "Upwork and Fiverr",
             "year": "2020-Present",
             "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        }
+    ],
+    "testimonial":[
+        {
+            "id": 1,
+            "client": "Simon Pitt",
+            "project": "WebRTC & Socket.io Peer-to-Peer File Sharing",
+            "platform": "Upwork",
+            "duration": "Jan-2021 - Mar-2021",
+            "comments": "This was the best experience I have had with any freelancer. Incredibly skilled and hardworking. Extremely responsive and passionate about your project. Through this experience with him I consider him a friend and a partner more than a freelancer. 10/10 work, effort, everything. So thankful for being able to have worked with him and I plan on working with him again in the future.",
+            "stars": 5,
+            "clientImg": "/img/Simmon-pitt.webp"
+        },
+        {
+            "id": 2,
+            "client": "Ethan Reynolds",
+            "project": "Discord Bot Development",
+            "platform": "Upwork",
+            "duration": "Oct-2022 - Nov-2022",
+            "comments": "Great programmer, excellent at what he does and very respectful!",
+            "stars": 5,
+            "clientImg": "/img/Ethan Reynolds.webp"
+        },
+        {
+            "id": 3,
+            "client": "Shashi PF",
+            "project": "Front-end Development With Adobe AE Animation",
+            "platform": "Upwork",
+            "duration": "Jul-2021 - Jan-2022",
+            "comments": "Shayon is one of the most friendly freelancers I have ever met. He was very forgiving as remained out of touch for a very long time due to personal reasons. In terms of work - he turned it around very quickly and very professionally. I highly recommend Shayon to anybody looking for a web developer and designer. Thank you Shayon !",
+            "stars": 5,
+            "clientImg": null
+        },
+        {
+            "id": 4,
+            "client": "Shan Kara",
+            "project": "FastAPI Statistical Web App",
+            "platform": "Fiverr",
+            "duration": "Jan-2022 - May-2022",
+            "comments": "Great work on the recent project. The developer has shown a strong understanding of the programming language and technologies used, and was able to implement the required features effectively. The code is well-organized and easy to understand, making it easy for others to maintain. The developer also effectively communicated with the team and was able to meet deadlines. Overall, a valuable asset to the team and I look forward to working with him on future projects.",
+            "stars": 5,
+            "clientImg": "/img/Shan-kara.webp"
+        },
+        {
+            "id": 5,
+            "client": "Ross Fledderjohn",
+            "project": "Agency Web APP & CI/CD Hosting setup",
+            "platform": "Fiverr",
+            "duration": "Jan-2022 - Sep-2022",
+            "comments": "The best developer I have worked with. He is always on top of things and was able to resolve any and every issue that may have arose, very quickly. Excellent communication and he writes extremely good code and makes beautiful work. My favorite freelancer I have worked with.",
+            "stars": 5,
+            "clientImg": "/img/Jaden Rodabaugh.webp"
+        },
+        {
+            "id": 6,
+            "client": "Von Mwen ",
+            "project": "Discord Bot Development",
+            "platform": "Upwork",
+            "duration": "Dec-2022 - Mar-2023",
+            "comments": "Very talented web designer, will use again, thanks for dedication.",
+            "stars": 5,
+            "clientImg": null
         }
     ]
 }

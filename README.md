@@ -6,6 +6,7 @@
  - Add animation
  - Add project preview video link
  - Drop Shadow poperly
+ - All icons color change and make all icons svg
  - Smooth scroll
  - Use more gradient colors
 

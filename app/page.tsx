@@ -4,6 +4,7 @@ import Feature from '@/components/Features';
 import MyWork from '@/components/MyWork';
 import MyResume from '@/components/MyResume';
 import Contact from '@/components/Contact';
+import Testimonial from '@/components/Testimonial';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <MyWork />
       <MyResume />
       <Contact />
+      <Testimonial />
     </>
   )
 }

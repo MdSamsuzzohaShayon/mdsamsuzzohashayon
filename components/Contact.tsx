@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Loader from './Loader';
 import SocialMedia from './layout/SocialMedia';
 import portfolio from '../data/portfolio.json';
+import { styles } from '@/styles';
 
 interface MessageDataInt {
     name: string;
@@ -86,7 +87,7 @@ const Contact = () => {
 
 
     return (
-        <section className="section-5 my-works container mx-auto px-4 md:px-0">
+        <section className={`section-5 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
             <h4 className="uppercase text-rose-600 mt-16">Contact</h4>
             <h2 className='capitalize text-4xl md:text-6xl font-bold mt-4'>Contact With me</h2>
             <dialog ref={dialogModalEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
