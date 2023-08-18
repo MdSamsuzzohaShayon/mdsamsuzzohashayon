@@ -3,6 +3,7 @@
 ### Requirements
  - AWS CloudFront - for destributing data fast
  - AWS Lambda for email
+ - Must need to add three.js
  - Add animation
  - Add project preview video link
  - Drop Shadow poperly

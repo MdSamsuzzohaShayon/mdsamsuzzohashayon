@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import portfolio from '../data/portfolio.json';
 import { styles } from '@/styles';
+import { motion } from 'framer-motion';
 
 const MyWork = () => {
     const dialogEl = useRef<null | HTMLDialogElement>(null);
@@ -26,7 +27,6 @@ const MyWork = () => {
                 e.clientY < position.top ||
                 e.clientY > position.bottom
             ) {
-                // console.log("Clicked outside", position);
                 dialogEl.current.close();
             }
 
@@ -62,7 +62,7 @@ const MyWork = () => {
                 <div className="actions mt-8 flex gap-2">
                     <a href={findWork.vidUrl} target='_blink' className='bg-rose-600 text-gray-300 capitalize px-4 py-2'>Preview</a>
                     <a href={findWork.srcCode} target='_blink' className='bg-rose-600 text-gray-300 capitalize px-4 py-2'>Source Code</a>
-                    { findWork.liveUrl && <a href={findWork.liveUrl} target='_blink' className='bg-rose-600 text-gray-300 capitalize px-4 py-2'>Test</a> }
+                    {findWork.liveUrl && <a href={findWork.liveUrl} target='_blink' className='bg-rose-600 text-gray-300 capitalize px-4 py-2'>Test</a>}
                 </div>
             </div>
         </div>);
@@ -71,23 +71,23 @@ const MyWork = () => {
     }
 
     return (
-        <section className={`section-3 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
+        <section className={`section-3 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`} >
             <dialog ref={dialogEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
                 <div className="close-btn rounded-full w-12 h-12 float-right bg-slate-800 flex justify-center items-center" onClick={closeModalHandler} >
                     <XMarkIcon className="h-6 w-6 text-slate-500" />
                 </div>
                 {renderSingleWork()}
             </dialog>
-            <h4 className="uppercase text-rose-600 mt-16">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
-            <h2 className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Works</h2>
-            <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 ">
-                {works.map((w) => (
-                    <div className="work-card w-full bg-slate-900 p-6 bg-slate-900 shadow-lg shadow-slate-900/50" key={w.id} onClick={(e) => openDialogHandler(e, w.id)}>
+            <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-16">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</motion.h4>
+            <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Works</motion.h2>
+            <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 " >
+                {works.map((w, i) => (
+                    <motion.div initial={{ y: 150, opacity: 0 }} whileInView={{ y:  0 , opacity: 1 }} transition={{ delay: 0.3 * i }} className="work-card w-full bg-slate-900 p-6 bg-slate-900 shadow-lg shadow-slate-900/50" key={w.id} onClick={(e) => openDialogHandler(e, w.id)}>
                         <img src={`/img/${w.imgSrc}`} alt={w.title} className='w-full h-60' />
                         <p className="text-rose-600 mt-2 uppercase text-xs">{w.type}</p>
                         <h3 className='mt-2 text-2xl font-bold'>{w.title}</h3>
                         {/* <p className='mt-2'>{w.desc}</p> */}
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>

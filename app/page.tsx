@@ -14,7 +14,7 @@ const HomePage = () => {
       <MyWork />
       <MyResume />
       <Contact />
-      <Testimonial />
+      <Testimonial /> 
     </>
   )
 }

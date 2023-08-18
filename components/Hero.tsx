@@ -1,26 +1,32 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect, useState } from 'react';
 import portfolio from '../data/portfolio.json';
-import SocialMedia from './layout/SocialMedia';
+import SocialMedia from './SocialMedia';
 import { styles } from '@/styles';
+import { motion } from 'framer-motion';
+
 const Hero = () => {
     return (
         <section className={`section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row items-center px-4 md:px-0 ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
-                    <p className={`${styles.sectionHeading} mt-8 `}>WELCOME TO MY WORLD</p>
-                    <h1 className='capitalize text-4xl md:text-6xl font-bold mt-4'>I&apos;m <span className='text-slate-300'>Md Samsuzzoha Shayon</span></h1>
-                    <h1 className='capitalize text-4xl md:text-6xl font-bold mt-4 text-rose-600'>A fullstack web developer</h1>
-                    <p className='mt-4'>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I&apos;m not adding motion just to spruce things up, but doing it in ways that.</p>
+                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className={`${styles.sectionHeading} mt-8 relative`}>{portfolio.sec1t1}</motion.p>
+                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4">{portfolio.sec1t2}</motion.h1>
+                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.4}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 text-rose-600">{portfolio.sec1t3}</motion.h1>
+                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5}} className='mt-4 relative'>{portfolio.sec1t4}</motion.p>
                 </div>
                 <div className="social-skills flex flex-col md:flex-row gap-4 justify-between w-ful w-full">
                     <div className="social">
                         <SocialMedia social={portfolio.social} />
                     </div>
                     <div className="skills">
-                        <h2 className='mb-4 uppercase font-bold'>Best Skill on</h2>
+                        <motion.h2 className='mb-4 uppercase font-bold relative' initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} >Best Skill on</motion.h2>
                         <ul className='flex w-full gap-2'>
                             {portfolio.bestSkills.map((skill) => (
-                                <li key={skill.id} className={`${styles.shadow} ${styles.bg_1} h-12 w-12 flex justify-center items-center`}><img src={`/icons/${skill.icon}`} className='h-6' alt="" /></li>
+                                <motion.li key={skill.id} initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} className={`${styles.shadow} ${styles.bg_1} h-12 w-12 flex justify-center items-center`}><img src={`/icons/${skill.icon}`} className='h-6' alt="" /></motion.li>
                             ))}
                         </ul>
                     </div>
@@ -28,7 +34,9 @@ const Hero = () => {
             </div>
             <div className="w-full md:w-5/12 flex justify-end">
                 <div className="img-bg right-img-bg flex justify-center relative">
-                    <img src={portfolio.heroImg} alt="shayon hero image" className='absolute h-full w-full md:w-5/6 object-top md:object-fit object-cover top-0 left-0 md:left-7 z-10' />
+                    <motion.img initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{opacity: 0}} src={portfolio.heroImg} alt="shayon hero image" className='absolute h-full w-full md:w-5/6 object-top md:object-fit object-cover top-0 left-0 md:left-7 z-10' />
                     <div className="img-ground w-full h-5/6 absolute bottom-0 z-0 bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 shadow-lg shadow-slate-900/50"></div>
                 </div>
             </div>

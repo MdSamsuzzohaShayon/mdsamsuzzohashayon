@@ -1,15 +1,16 @@
 'use client'
 
-import React, { useState, useRef } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import Loader from './Loader';
-import SocialMedia from './layout/SocialMedia';
+import React, { useState, useRef, useEffect } from 'react';
 import portfolio from '../data/portfolio.json';
 import { styles } from '@/styles';
+import { motion } from 'framer-motion';
+
 
 const Testimonial = () => {
+
     const [testimonialList, setTestimonialList] = useState(portfolio.testimonial);
     const [selectedTestimonialId, setSelectedTestimonialId] = useState<number>(1);
+    const [isLeft, setIsLeft] = useState<boolean>(false);
 
     // Handlers
     const testItemChangeHandler = (e: React.SyntheticEvent, targetId: number) => {
@@ -18,13 +19,12 @@ const Testimonial = () => {
     }
     const leftArrowItemHandler = (e: React.SyntheticEvent) => {
         e.preventDefault();
-        console.log("Left");
-        
+        setIsLeft(true);
         setSelectedTestimonialId((prevState) => prevState === 1 ? testimonialList.length : prevState - 1);
     }
     const rightArrowItemHandler = (e: React.SyntheticEvent) => {
         e.preventDefault();
-        console.log("Right");
+        setIsLeft(false);
         setSelectedTestimonialId((prevState) => prevState === testimonialList.length ? 1 : prevState + 1);
     }
 
@@ -50,45 +50,45 @@ const Testimonial = () => {
         return <div className="content-controller w-full flex gap-2 mt-4 justify-center items-center">{btnList}</div>;
     }
 
-    const testimonialRender = () => {
-        const findTest = testimonialList.find((t) => t.id === selectedTestimonialId);
-        if (!findTest) return null;
-
-        return (<div className='test-preview w-full mt-4 flex flex-col md:flex-row gap-4 justify-between items-center' >
-            <div className="test-preview-img w-full md:w-2/6 h-full flex flex-col justify-center items-start bg-slate-900">
-                <div className="p-4">
-                    {findTest.clientImg ? <img src={findTest.clientImg} alt={findTest.client} className="w-3/6 h-32 object-fit object-cover" /> : <div className='flex h-32 items-center'><p className="w-3/6" >No Image Available</p></div>}
-                    <h2 className={`${styles.h2} mt-4`}>{findTest.client}</h2>
-                    <h3 className={`${styles.h4}`} >{findTest.project}</h3>
-                </div>
-            </div>
-            <div className="w-full md:w-4/6 h-full bg-slate-900">
-                <div className="p-4">
-                    <div className="main-control w-full flex justify-between items-center">
-                        <img src="/icons/quotes.svg" className='w-20' alt="" />
-                        <div className={`left-right-arrow flex ${styles.shadowPrimary}`}>
-                            <img src="/icons/left-arrow.svg" alt="" className="w-20" onClick={leftArrowItemHandler} />
-                            <img src="/icons/right-arrow.svg" alt="" className="w-20" onClick={rightArrowItemHandler} />
-                        </div>
-                    </div>
-                    <div className="w-full">
-                        <h3 className={`${styles.h3} mt-4`}>{findTest.project}</h3>
-                        <p className="time-period">{findTest.duration}</p>
-                        {makeStars(5, findTest.stars)}
-                    </div>
-                    <div className="w-full mt-4">
-                        <p>{findTest.comments}</p>
-                    </div>
-                </div>
-            </div>
-        </div>);
-    }
     return (
-        <section className={`section-6 testimonial container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
-            <h4 className="uppercase text-rose-600 mt-16">WHAT CLIENTS SAY</h4>
-            <h2 className='capitalize text-4xl md:text-6xl font-bold mt-4'>Testimonial</h2>
-            <div className="content flex">
-                {testimonialRender()}
+        <section className={`section-6 testimonial container mx-auto px-4 md:px-0 ${styles.borderLine}`}  >
+            <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}}  className="uppercase text-rose-600 mt-16 relative">WHAT CLIENTS SAY</motion.h4>
+            <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}}  className='capitalize text-4xl md:text-6xl font-bold mt-4 relative'>Testimonial</motion.h2>
+            <div className="content flex" >
+                {testimonialList.map((testimonial, i) => {
+                    if (selectedTestimonialId === testimonial.id) {
+                        return (
+                            <motion.div key={testimonial.id} initial={{ opacity: 0, x: isLeft ? 300 : -300 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 1, x: isLeft ? -300 : 300 }} transition={{ duration: 1 }} className='test-preview w-full mt-4 flex flex-col md:flex-row gap-4 justify-between items-center' >
+                                <div className="test-preview-img w-full md:w-2/6 h-full flex flex-col justify-center items-start bg-slate-900">
+                                    <div className="p-4">
+                                        {testimonial.clientImg ? <img src={testimonial.clientImg} alt={testimonial.client} className="w-3/6 h-32 object-fit object-cover" /> : <div className='flex h-32 items-center'><p className="w-3/6" >No Image Available</p></div>}
+                                        <h2 className={`${styles.h2} mt-4`}>{testimonial.client}</h2>
+                                        <h3 className={`${styles.h4}`} >{testimonial.project}</h3>
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-4/6 h-full bg-slate-900">
+                                    <div className="p-4">
+                                        <div className="main-control w-full flex justify-between items-center">
+                                            <img src="/icons/quotes.svg" className='w-20' alt="" />
+                                            <div className={`left-right-arrow flex`}>
+                                                <img src="/icons/left-arrow.svg" alt="" className="w-20" onClick={leftArrowItemHandler} />
+                                                <img src="/icons/right-arrow.svg" alt="" className="w-20" onClick={rightArrowItemHandler} />
+                                            </div>
+                                        </div>
+                                        <div className="w-full">
+                                            <h3 className={`${styles.h3} mt-4`}>{testimonial.project}</h3>
+                                            <p className="time-period">{testimonial.duration}</p>
+                                            {makeStars(5, testimonial.stars)}
+                                        </div>
+                                        <div className="w-full mt-4">
+                                            <p>{testimonial.comments}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        );
+                    }
+                })}
             </div>
             {makeButtons()}
         </section>
