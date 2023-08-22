@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env.
 # =====================================END====================================== #
 
-
+import boto3
+import json
+import urllib3
 import os
 import smtplib, ssl
 from email.mime.text import MIMEText
@@ -15,22 +17,12 @@ from fastapi.responses import JSONResponse
 from fastapi import FastAPI, status, HTTPException
 from mangum import Mangum
 from pydantic import BaseModel
-# import firebase_admin
-# from firebase_admin import credentials
-# from firebase_admin import firestore
 
-# # Use a service account.
-# cred = credentials.Certificate('path/to/serviceAccount.json')
-
-# app = firebase_admin.initialize_app(cred)
-
-# db = firestore.client()
 
 
 def send_contact_email(name: str, email: str, subject: str, phone: str, message: str):
     smtp_server: str = os.getenv("ADMIN_EMAIL_HOST")
     port: int = int(os.getenv("ADMIN_EMAIL_PORT"))  # For starttls
-    # port = 465  # For SSL
     password: str = os.getenv("ADMIN_EMAIL_HOST_PASSWORD")
     sender_email = os.getenv("ADMIN_EMAIL_USER")
     receiver_email = "mdshayon0@gmail.com"
@@ -129,3 +121,49 @@ def make_contact(send_email: SendEmailModal):
         )
     except Exception as e:
         raise HTTPException(status_code=404, detail="Item not found")
+    
+
+@app.get('/api/updatepolicy')
+def update_s3_policy_for_cloudflare():
+    try:
+        """
+        CloudFlare connection -> to get all ip addresses -> Cloudflare/JD Cloud IP Details
+        Docs -> https://api.cloudflare.com/client/v4/ips
+        curl -X GET https://api.cloudflare.com/client/v4/ips -H 'Content-Type: application/json'
+        """
+        http = urllib3.PoolManager()
+        r = http.request('GET', 'https://api.cloudflare.com/client/v4/ips')
+        json_content = json.loads(r.data)
+        ipv4 = json_content["result"]["ipv4_cidrs"]
+        ipv6 = json_content["result"]["ipv6_cidrs"]
+        ip_list = ipv4 + ipv6
+        
+        """
+        Change policy for AWS S3 Bucket -> A bucket’s policy can be set by calling the put_bucket_policy method.
+        Docs -> https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-bucket-policies.html
+        API Reference -> https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html
+        """
+        s3 = boto3.client('s3')
+        bucket_name = os.environ['AWS_S3_BUCKET_NAME']
+        bucket_policy = {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "PublicReadForGetBucketObjects",
+                    "Effect": "Allow",
+                    "Principal": "*",
+                    "Action": "s3:GetObject",
+                    "Resource": f"arn:aws:s3:::{bucket_name}/*",
+                    "Condition": {
+                        "IpAddress": {
+                            "aws:SourceIp": ip_list
+                        }
+                    }
+                }
+            ]
+        }
+        bucket_policy = json.dumps(bucket_policy)
+        s3.put_bucket_policy(Bucket=bucket_name, Policy=bucket_policy) 
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Item not found")
+
