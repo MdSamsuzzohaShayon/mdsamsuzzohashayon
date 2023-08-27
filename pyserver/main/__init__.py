@@ -11,8 +11,8 @@ from pydantic import BaseModel
 import azure.functions as func
 
 app = FastAPI(
-    docs_url=None,  # Disable docs (Swagger UI)
-    redoc_url=None,  # Disable redoc
+    # docs_url=None,  # Disable docs (Swagger UI)
+    # redoc_url=None,  # Disable redoc
 )
 
 origins = ["*"]
@@ -24,14 +24,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Code for Azure functions
-def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
-    
-    # To get the invocation context of a function when it's running, include the context argument in its signature.
-    # https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?source=recommendations&tabs=asgi%2Capplication-level&pivots=python-mode-configuration#context
-    return func.AsgiMiddleware(app).handle(req, context)
 
 
 def send_contact_email(name: str, email: str, subject: str, phone: str, message: str):
@@ -124,3 +116,12 @@ def make_contact(send_email: SendEmailModal):
         )
     except Exception as e:
         raise HTTPException(status_code=404, detail="Item not found")
+    
+
+# Code for Azure functions
+def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+    
+    # To get the invocation context of a function when it's running, include the context argument in its signature.
+    # https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?source=recommendations&tabs=asgi%2Capplication-level&pivots=python-mode-configuration#context
+    return func.AsgiMiddleware(app).handle(req, context)
