@@ -33,3 +33,4 @@
 # Amazon EventBridge for running lambda everyday
  - Search **EventBridge** -> create rule -> name it anything `portfolio-lambda-policy-change` -> rule type *Schedule*
  - Schedule pattern -> Recurring schedule -> Schedule type *Rate-based schedule* -> Rate expression rate 1 and unit days (it will run once a day)
+ - Target API *Templated Targets* -> AWS Lambda -> select lambda function
