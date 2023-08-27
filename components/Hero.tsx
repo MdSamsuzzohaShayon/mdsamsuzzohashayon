@@ -11,7 +11,7 @@ const Hero = () => {
         <section className={`section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row items-center px-4 md:px-0 ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
-                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className={`${styles.sectionHeading} mt-8 relative`}>{portfolio.sec1t1}</motion.p>
+                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className={`${styles.sectionHeading} mt-8 relative`}>{portfolio.sec1t1} !!!!!!!!</motion.p>
                     <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4">{portfolio.sec1t2}</motion.h1>
                     <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.4}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 text-rose-600">{portfolio.sec1t3}</motion.h1>
                     <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5}} className='mt-4 relative'>{portfolio.sec1t4}</motion.p>
