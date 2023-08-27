@@ -95,6 +95,13 @@ class SendEmailModal(BaseModel):
     message: str
 
 
+@app.get("/api/test")
+def test_api():
+    try:
+        return {"message": "Send email with Azure Functions!"}
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Item not found")
+
 @app.post("/api/sendemail")
 def make_contact(send_email: SendEmailModal):
     try:

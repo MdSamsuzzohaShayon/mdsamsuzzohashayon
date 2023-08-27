@@ -12,7 +12,8 @@ env:
 
 jobs:
     deploy-client:
-        name: Deploy
+        name: Deploy Frontend
+        needs: [deploy-server]
         runs-on: ubuntu-latest
         steps:
             - name: Get latest code
@@ -36,6 +37,7 @@ jobs:
                 local-dir: './out/'
 
     deploy-server:
+        name: Deploy Backend
         runs-on: ubuntu-latest
         defaults:
             run:
