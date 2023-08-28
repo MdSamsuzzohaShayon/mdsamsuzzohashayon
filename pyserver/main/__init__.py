@@ -10,6 +10,14 @@ from fastapi import FastAPI, status, HTTPException
 from pydantic import BaseModel
 import azure.functions as func
 
+"""
+export PYENV=development
+printenv PYENV
+"""
+if os.environ.get('PYENV') and os.environ.get('PYENV') == 'development':
+    from dotenv import load_dotenv
+    load_dotenv()
+
 app = FastAPI(
     # docs_url=None,  # Disable docs (Swagger UI)
     # redoc_url=None,  # Disable redoc
@@ -104,6 +112,7 @@ def make_contact(send_email: SendEmailModal):
         message = send_email.message
 
         # data = {"name": name, "email": email, "subject": subject, "phone": phone, "message": message}
+        # print(data)
         # # Add a new doc in collection 'cities' with ID 'LA'
         # db.collection("cities").document("LA").set(data)
 
@@ -115,7 +124,8 @@ def make_contact(send_email: SendEmailModal):
             content=json_compatible_data, status_code=status.HTTP_201_CREATED
         )
     except Exception as e:
-        raise HTTPException(status_code=404, detail="Item not found")
+        print("Error: ",e)
+        raise HTTPException(status_code=406, detail="Invalid request")
     
 
 # Code for Azure functions

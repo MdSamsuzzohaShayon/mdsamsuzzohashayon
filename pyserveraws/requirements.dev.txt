@@ -1,0 +1,8 @@
+# For Development environment
+boto3==1.28.31
+python-dotenv==1.0.0
+
+# For deployment to AWS Lambda
+fastapi==0.101.1
+mangum==0.17.0
+uvicorn==0.23.2

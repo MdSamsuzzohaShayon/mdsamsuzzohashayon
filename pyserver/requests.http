@@ -1,4 +1,8 @@
-POST https://j3bvyw3qdpnj4u5yu2kwxo36le0jeifz.lambda-url.ap-southeast-1.on.aws/api/sendemail
+### Test API Locally
+GET http://localhost:7071/api/test
+
+### Send Email from localhost
+POST http://localhost:7071/api/sendemail
 Content-Type: application/json
 
 {

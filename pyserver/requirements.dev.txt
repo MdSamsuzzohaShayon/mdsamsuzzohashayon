@@ -1,8 +1,6 @@
-# For Development environment
-boto3==1.28.31
+# For Development only
 python-dotenv==1.0.0
 
-# For deployment to AWS Lambda
+# For producttion and development
 fastapi==0.101.1
-mangum==0.17.0
-uvicorn==0.23.2
+azure-functions==1.17.0
