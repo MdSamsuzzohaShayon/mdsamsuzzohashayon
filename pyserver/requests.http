@@ -15,3 +15,15 @@ Content-Type: application/json
 
 ### Run deployed azure function
 GET https://shayon-flask-demo-app.azurewebsites.net/api/test
+
+### Send Email from azure function
+POST https://shayon-flask-demo-app.azurewebsites.net/api/sendemail
+Content-Type: application/json
+
+{
+  "name": "n-string",
+  "email": "e-string",
+  "subject": "s-string",
+  "phone": "p-string",
+  "message": "m-string"
+}
