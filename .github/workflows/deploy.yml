@@ -39,9 +39,6 @@ jobs:
     deploy-server:
         name: Deploy Backend
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: ./pyserver/
         steps:
             - name: 'Checkout GitHub Action'
               uses: actions/checkout@v3
