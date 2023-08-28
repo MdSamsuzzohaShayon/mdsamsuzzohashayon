@@ -12,3 +12,6 @@ Content-Type: application/json
   "phone": "p-string",
   "message": "m-string"
 }
+
+### Run deployed azure function
+GET https://shayon-flask-demo-app.azurewebsites.net/api/test
