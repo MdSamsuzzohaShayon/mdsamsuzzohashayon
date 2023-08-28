@@ -1,68 +1,63 @@
 on:
-    # Make this on merge to master
-    push:
-        branches:
-            - 3_nextjs_tailwind_portfolio
+  # Make this on merge to master
+  push:
+    branches:
+      - 3_nextjs_tailwind_portfolio
 name: Deploy website on push
 
 env:
-    AZURE_FUNCTIONAPP_NAME: shayon-flask-demo-app   # set this to your function app name on Azure
-    AZURE_FUNCTIONAPP_PACKAGE_PATH: ./pyserver/       # set this to the path to your function app project, defaults to the repository root
-    PYTHON_VERSION: '3.10'  
+  AZURE_FUNCTIONAPP_NAME: shayon-flask-demo-app   # set this to your function app name on Azure
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: ./pyserver/       # set this to the path to your function app project, defaults to the repository root
+  PYTHON_VERSION: '3.10'  
 
 jobs:
-    deploy-client:
-        name: Deploy Frontend
-        needs: [deploy-server]
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get latest code
-              uses: actions/checkout@v3
-            - name: Use Node.js 18
-              uses: actions/setup-node@v3
-              with:
-                node-version: '18'
-            - name: Build Project
-              run: |
-                npm install
-                npm run build
-                ls -la
-            - name: Sync files
-              uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-              with:
-                server: ${{secrets.FTP_CPANEL_SERVER}}
-                username: ${{secrets.FTP_CPANEL_USERNAME}}
-                password: ${{secrets.FTP_CPANEL_PASSWORD}}
-                protocol: 'ftp'
-                local-dir: './out/'
+  deploy-client:
+    name: Deploy Frontend
+    needs: [deploy-server]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Build Project
+        run: |
+          cd ./pyserver  # Change directory to pyserver
+          npm install
+          npm run build
+          ls -la
+          cd ..  # Change back to the root directory
 
-    deploy-server:
-        name: Deploy Backend
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: ./pyserver/
-        steps:
-            - name: 'Checkout GitHub Action'
-              uses: actions/checkout@v3
-            - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
-              uses: actions/setup-python@v4
-              with:
-                python-version: ${{ env.PYTHON_VERSION }}
-            - name: 'Resolve Project Dependencies Using Pip'
-              shell: bash
-              run: |
-                pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-                python -m pip install --upgrade pip
-                pip install -r requirements.txt --target=".python_packages/lib/site-packages"
-                popd
-            - name: 'Run Azure Functions Action'
-              uses: Azure/functions-action@v1
-              id: fa
-              with:
-                app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-                package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-                publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
-                scm-do-build-during-deployment: true
-                enable-oryx-build: true
+      # ... (rest of your steps for deploying the frontend)
 
+  deploy-server:
+    name: Deploy Backend
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@v3
+        with:
+          path: 'pyserver'  # Checkout code into the pyserver folder
+      - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          path: 'pyserver'  # Set the working directory to pyserver
+      - name: 'Resolve Project Dependencies Using Pip'
+        shell: bash
+        run: |
+          pushd 'pyserver'  # Change directory to pyserver
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt --target=".python_packages/lib/site-packages"
+          popd  # Change back to the root directory
+      - name: 'Run Azure Functions Action'
+        uses: Azure/functions-action@v1
+        id: fa
+        with:
+          app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          scm-do-build-during-deployment: true
+          enable-oryx-build: true
