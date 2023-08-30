@@ -32,7 +32,7 @@ const Contact = () => {
         e.preventDefault();
         try {
             setIsLoading(true);
-            const response = await fetch('https://j3bvyw3qdpnj4u5yu2kwxo36le0jeifz.lambda-url.ap-southeast-1.on.aws/api/sendemail', {
+            const response = await fetch('https://shayon-flask-demo-app.azurewebsites.net/api/sendemail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -116,7 +116,7 @@ const Contact = () => {
                 <form className="form w-full md:w-7/12" onSubmit={sendMessageHandler}>
                     <div className="p-4">
                         <div className="input-group w-full flex justify-between gap-2">
-                            <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.1 }} className="input-sub-group w-3/6 flex flex-col">
+                            <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.2 }} className="input-sub-group w-3/6 flex flex-col">
                                 <label htmlFor="name" className='capitalize mb-2 '>Name</label>
                                 <input required onChange={inputChangeHandler} type="text" name='name' id='name' className='text-lg bg-slate-900 h-10 px-2 outline-none border-0' />
                             </motion.div>
@@ -125,19 +125,19 @@ const Contact = () => {
                                 <input required onChange={inputChangeHandler} type="number" name='phone' id='phone' className='text-lg bg-slate-900 h-10 px-2 outline-none border-0 remove-arrow' />
                             </motion.div>
                         </div>
-                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.3 }} className="input-group w-full mt-4">
+                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.2 }} className="input-group w-full mt-4">
                             <label htmlFor="email" className='capitalize'>Email</label>
                             <input required onChange={inputChangeHandler} type="text" name='email' id='email' className='text-lg bg-slate-900 h-10 px-2 outline-none border-0 w-full mt-2' />
                         </motion.div>
-                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.4 }} className="input-group w-full mt-4">
+                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.2 }} className="input-group w-full mt-4">
                             <label htmlFor="subject" className='capitalize'>Subject</label>
                             <input required onChange={inputChangeHandler} type="text" name='subject' id='subject' className='text-lg bg-slate-900 h-10 px-2 outline-none border-0 w-full mt-2' />
                         </motion.div>
-                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.5 }} className="input-group w-full mt-4">
+                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.2 }} className="input-group w-full mt-4">
                             <label htmlFor="message" className='capitalize'>Message</label>
                             <textarea required onChange={inputChangeHandler} name="message" id="message" rows={4} className='text-lg bg-slate-900 p-2 outline-none border-0 w-full mt-2' ></textarea>
                         </motion.div>
-                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.6 }} className="input-group w-full mt-4">
+                        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0 , opacity : 1 }} transition={{ delay: 0.2 }} className="input-group w-full mt-4">
                             <button type='submit' className="w-full bg-rose-600 text-slate-50 capitalize h-10">Send</button>
                         </motion.div>
                     </div>
