@@ -23,7 +23,12 @@ app = FastAPI(
     # redoc_url=None,  # Disable redoc
 )
 
-origins = ["*"]
+origins = [
+    "http://mdshayon.com",
+    "https://mdshayon.com",
+    "http://localhost",
+    "http://localhost:7071",
+    ]
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,11 +1,12 @@
 # Portfolio
 
 ### Requirements
- - AWS CloudFront - for destributing data fast
- - AWS Lambda for email
+ - Add google analytics
+ - CloudFlare - for destributing data fast
+ - Azure Functions for email
+ - Add project preview video link
  - Must need to add three.js
  - Add animation
- - Add project preview video link
  - Drop Shadow poperly
  - All icons color change and make all icons svg
  - Smooth scroll
