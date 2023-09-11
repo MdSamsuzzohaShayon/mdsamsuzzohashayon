@@ -104,7 +104,7 @@ const Contact = () => {
                     <div className="p-4">
                         <motion.img initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={portfolio.contactImg} className='p-4 w-full h-60 object-fit object-cover bg-slate-900' alt="Md Shayon Contact Image" />
+                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={portfolio.contactImg} className='p-4 w-full h-60 object-fit object-top bg-slate-900' alt="Md Shayon Contact Image" />
                         <h2 className='text-xl font-medium mt-4 capitalize'>Feel Free To Message Me</h2>
                         <p >{portfolio.profession}</p>
                         <p className='my-4'>{portfolio.contactMessage}</p>

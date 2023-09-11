@@ -1,8 +1,13 @@
 on:
     # Make this on merge to master
-    push:
-        branches:
-            - 3_nextjs_tailwind_portfolio
+    pull_request:
+        types:
+            - closed
+
+    # push:
+    #     branches:
+    #         - 3_nextjs_tailwind_portfolio
+    
 name: Deploy website on push
 
 env:
@@ -12,6 +17,7 @@ env:
 
 jobs:
     deploy-client:
+        if: github.event.pull_request.merged == true
         name: Deploy Frontend
         needs: [deploy-server]
         runs-on: ubuntu-latest
@@ -37,6 +43,7 @@ jobs:
                 local-dir: './out/'
 
     deploy-server:
+        if: github.event.pull_request.merged == true
         name: Deploy Backend
         runs-on: ubuntu-latest
         steps:
