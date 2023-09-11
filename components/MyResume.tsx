@@ -9,14 +9,14 @@ const MyResume = () => {
     const [selectedItem, setSelectedItem] = useState<number>(1);
 
     return (
-        <section className={`section-4 my-resume container mx-auto px-4 md:px-0 ${styles.borderLine}`}>
+        <section className={`section-4 my-resume container mx-auto px-4 ${styles.borderLine}`}>
             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-16">4+ YEARS OF EXPERIENCE</motion.h4>
             <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Resume</motion.h2>
             <div className="resume-box mt-8" >
                 <div className="edu-pro-exp-bar w-full flex flex-col md:flex-row">
-                    <div className="professional-skills w-full md:w-2/6 flex justify-center items-center bg-slate-900 py-4 shadow-lg shadow-slate-500/40 cursor-pointer" onClick={(e) => setSelectedItem(1)} ><h2 className='text-xl font-medium'>Education</h2></div>
-                    <div className="education w-full md:w-2/6 flex justify-center items-center bg-slate-900 py-4 shadow-lg shadow-slate-500/40 cursor-pointer" onClick={(e) => setSelectedItem(2)} ><h2 className='text-xl font-medium'>Professional Skills</h2></div>
-                    <div className="experience w-full md:w-2/6 flex justify-center items-center bg-slate-900 py-4 shadow-lg shadow-slate-500/40 cursor-pointer" onClick={(e) => setSelectedItem(3)} ><h2 className='text-xl font-medium'>Experience</h2></div>
+                    <div className={`professional-skills w-full md:w-2/6 flex justify-center items-center ${selectedItem === 1 ? 'bg-slate-950' : 'bg-slate-900'} py-4 cursor-pointer`} onClick={(e) => setSelectedItem(1)} ><h2 className='text-xl font-medium'>Education</h2></div>
+                    <div className={`education w-full md:w-2/6 flex justify-center items-center ${selectedItem === 2 ? 'bg-slate-950' : 'bg-slate-900'} py-4 cursor-pointer`} onClick={(e) => setSelectedItem(2)} ><h2 className='text-xl font-medium'>Professional Skills</h2></div>
+                    <div className={`experience w-full md:w-2/6 flex justify-center items-center ${selectedItem === 3 ? 'bg-slate-950' : 'bg-slate-900'} py-4 cursor-pointer`} onClick={(e) => setSelectedItem(3)} ><h2 className='text-xl font-medium'>Experience</h2></div>
                 </div>
                 <div className="edu-pro-exp-content">
                     {selectedItem === 1 && (

@@ -38,6 +38,37 @@ $slate-color: blue;
 .shadow-primary{
   // box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
 }
+.grediant-1{
+  background: (circle, rgba(34,32,74,1) 0%, rgba(27,26,55,1) 50%, rgba(26,25,48,1) 100%);
+}
+
+
+.img-wrap::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: pulse 0.45s infinite;
+}
+.img-wrap{
+  // bg-no-repeat bg-center bg-cover
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+
+  img{
+    opacity: 0;
+  }
+}
+.img-loaded::before{
+  content: none;
+  animation: none;
+}
+.img-loaded > img{
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
 
 .body-wrapper {
 
@@ -52,8 +83,20 @@ $slate-color: blue;
     width: 34rem;
   }
 
+
   .feature-card {
     min-height: 16rem;
+  }
+
+  .my-works{
+  //   .img-wrap::before{
+  //     content: "";
+  //     position: absolute;
+  //     inset: 0;
+  //     animation: pulse 2.5s infinite;
+  //     background-color: rgba(255, 255, 255, 0.3);
+  // }
+  
   }
 
   dialog::backdrop {
@@ -82,6 +125,18 @@ $slate-color: blue;
     min-height: 20rem;
   }
 
+}
+
+@keyframes pulse{
+  0%{
+    background: rgba(255, 255, 255, 0);
+  }
+  50%{
+    background: rgba(255, 255, 255, 0.4);
+  }
+  100%{
+    background: rgba(255, 255, 255, 0);
+  }
 }
 
 // @container body(max-width: $br-md) {

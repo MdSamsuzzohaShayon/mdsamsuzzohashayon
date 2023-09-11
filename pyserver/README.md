@@ -30,6 +30,7 @@
    export PYENV=development
    printenv PYENV
    ```
+ - Azure portal -> API -> cors -> Add allowed origins -> Check on *Enable Access-Control-Allow-Credentials*
 
 
 ### FastAPI AWS Lambda

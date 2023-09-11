@@ -88,7 +88,7 @@ const Contact = () => {
 
 
     return (
-        <section className={`section-5 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`} >
+        <section className={`section-5 my-works container mx-auto px-4 ${styles.borderLine}`} >
             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-16">Contact</motion.h4>
             <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='capitalize text-4xl md:text-6xl font-bold mt-4'>Contact With me</motion.h2>
             <dialog ref={dialogModalEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
@@ -104,7 +104,7 @@ const Contact = () => {
                     <div className="p-4">
                         <motion.img initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={portfolio.contactImg} className='p-4 w-full h-60 object-fit object-cover bg-slate-900' alt="" />
+                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={portfolio.contactImg} className='p-4 w-full h-60 object-fit object-cover bg-slate-900' alt="Md Shayon Contact Image" />
                         <h2 className='text-xl font-medium mt-4 capitalize'>Feel Free To Message Me</h2>
                         <p >{portfolio.profession}</p>
                         <p className='my-4'>{portfolio.contactMessage}</p>

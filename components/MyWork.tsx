@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import portfolio from '../data/portfolio.json';
 import { styles } from '@/styles';
 import { motion } from 'framer-motion';
 
 const MyWork = () => {
+    const workListImgs = useRef<null | HTMLDivElement>(null);
     const dialogEl = useRef<null | HTMLDialogElement>(null);
     const [works, setWorks] = useState(portfolio.works);
     const [selectedWorkId, setSelectedWorkId] = useState<number>(1);
@@ -52,7 +53,7 @@ const MyWork = () => {
 
         const renderEl = (<div className="flex w-full gap-4 pt-4">
             <div className="w-5/12">
-                <img src={`/img/${findWork.imgSrc}`} alt={findWork.title} className='w-full h-full object-fit object-cover' />
+                <img src={`/img/projects/${findWork.imgSrc}`} alt={findWork.title} className='w-full h-full object-fit object-cover' loading='lazy' />
             </div>
             <div className="w-7/12">
                 <h3 className='capitalize text-4xl md:text-6xl font-bold'>{findWork.title}</h3>
@@ -70,8 +71,28 @@ const MyWork = () => {
         return renderEl;
     }
 
+    useEffect(()=>{
+        console.log("Use effect -------");
+        
+        const imgWrapEls = document.querySelectorAll('.img-wrap');
+        
+        if(imgWrapEls && imgWrapEls.length > 0){
+            imgWrapEls.forEach((imgWEl)=>{
+                const imgEl = imgWEl.querySelector('img');
+                
+                if(imgEl?.complete){
+                    imgWEl.classList.add('img-loaded');
+                }else{
+                    imgEl?.addEventListener('load', ()=>{
+                        imgWEl.classList.add('img-loaded');
+                    });
+                }
+            });
+        }
+    }, [workListImgs]);
+
     return (
-        <section className={`section-3 my-works container mx-auto px-4 md:px-0 ${styles.borderLine}`} >
+        <section className={`section-3 my-works container mx-auto px-4 ${styles.borderLine}`} >
             <dialog ref={dialogEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
                 <div className="close-btn rounded-full w-12 h-12 float-right bg-slate-800 flex justify-center items-center" onClick={closeModalHandler} >
                     <XMarkIcon className="h-6 w-6 text-slate-500" />
@@ -80,10 +101,13 @@ const MyWork = () => {
             </dialog>
             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-16">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</motion.h4>
             <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Works</motion.h2>
-            <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 " >
+            <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 " ref={workListImgs} >
                 {works.map((w, i) => (
                     <motion.div initial={{ y: 150, opacity: 0 }} whileInView={{ y:  0 , opacity: 1 }} transition={{ delay: 0.2 }} className="work-card w-full bg-slate-900 p-6 bg-slate-900 shadow-lg shadow-slate-900/50" key={w.id} onClick={(e) => openDialogHandler(e, w.id)}>
-                        <img src={`/img/${w.imgSrc}`} alt={w.title} className='w-full h-60' />
+                        <div className="img-wrap w-full h-48 lg:h-52 xl:h-60" style={{background: `url(/img/projects/${w.imgTiny})`}} >
+                            {/* <img src={`https://images.pexels.com/photos/15508375/pexels-photo-15508375/free-photo-of-silhouette-of-forest-at-sunset.jpeg`} alt={w.title} className='w-full h-full object-fit object-cover' loading='lazy' /> */}
+                            <img src={`/img/projects/${w.imgSrc}`} alt={w.title} className='w-full h-full object-fit object-cover' loading='lazy' />
+                        </div>
                         <p className="text-rose-600 mt-2 uppercase text-xs">{w.type}</p>
                         <h3 className='mt-2 text-2xl font-bold'>{w.title}</h3>
                         {/* <p className='mt-2'>{w.desc}</p> */}

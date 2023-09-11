@@ -1,0 +1,21 @@
+{
+    "myworks": [
+        {
+            "id": 10,
+            "imgSrc": "spikeball-mockup.jpg",
+            "imgTiny": "spikeball-mockup-tiny.jpg",
+            "type": "API Integration",
+            "title": "Discord Bot",
+            "desc": "I developed a custom Ecommerce website for a furniture shop using Django Rest Framework at the backend and Nuxt.js vue.js framework at the frontend.",
+            "techStack": [
+                "Discord.py",
+                "Python",
+                "FastAPI",
+                "WebHook"
+            ],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://gitlab.com/md-shayon/claimbotv2",
+            "liveUrl": null
+        }
+    ]
+}

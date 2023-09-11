@@ -1,16 +1,11 @@
 {
-    "sec1t1": "WELCOME TO MY WORLD",
-    "sec1t2": "I'm Md Samsuzzoha Shayon",
-    "sec1t3": "A fullstack web developer",
-    "sec1t4": "I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I'm not adding motion just to spruce things up, but doing it in ways that.",
-
     "logo": "/img/my-pic-logo.png",
     "heroImg": "/img/shayon-hero-image.png",
     "profession": "Web Developer",
     "contactMessage": "I am available to work any kind of web development projects on hourly or project based. Contact me though WhatsApp or Email.",
     "email": "mdsamsuzzoha5222@gmail.com",
     "phone": "+8801889171929",
-    "contactImg": "/img/shayon-contact-image.png",
+    "contactImg": "/img/shayon-contact-image.jpg",
     
     "navMenus": [
         {
@@ -81,45 +76,46 @@
     "features": [
         {
             "id": 1,
-            "icon": "web-design.svg",
+            "icon": "web-design-rose.svg",
             "title": "Web Design",
-            "desc": "First and foremost, I create prototype of the project the provide my client the desire end result they are expecting."
+            "desc": "My skills in design website, layout, and user interface principles allow me to transform ideas into captivating web visuals, making a lasting impact on users and brands alike."
         },
         {
             "id": 2,
-            "icon": "frontend.svg",
+            "icon": "frontend-rose.svg",
             "title": "Front-end development",
-            "desc": "Using Vanilla JavaScript, Vue.js or React.js I create intractive user interface for best experience of the user"
+            "desc": "With expertise in HTML, CSS, React.js Next and Vanilla JavaScript, I focus on creating visually appealing and responsive web designs that deliver an exceptional user experience."
         },
         {
             "id": 3,
-            "icon": "backend.svg",
+            "icon": "backend-rose.svg",
             "title": "Back-end Development",
-            "desc": "I create REST API or GraphQL API using modern popular frameworks Express.js, Django, Nest.js, and FastAPI. A part from that, integrate any possible third party API integration."
+            "desc": "I excel in backend development, where I build the server-side components of websites and web applications. My expertise revolves around database management, server logic, and API integration."
         },
         {
             "id": 4,
-            "icon": "server.svg",
+            "icon": "server-rose.svg",
             "title": "Server Administration",
-            "desc": "Deplying Web Application or Static website on Linux or Windows servers. Moreover, API hosting on diffrent cloud services such as AWS Lambda, Azure functions, or Elastic Beanstack"
+            "desc": "My expertise includes setting up, configuring, and maintaining server infrastructure, as well as implementing security measures and troubleshooting issues. Moreover, deploying on serverless."
         },
         {
             "id": 5,
-            "icon": "devops.svg",
+            "icon": "devops-rose.svg",
             "title": "DevOps",
-            "desc": "For enterprise websites, CI/CD pipeline to hosting, containerization with docker, versioning code with git, kubernetes."
+            "desc": "I bridge the gap between development and operations teams, using automation and collaboration to enhance efficiency. My expertise includes continuous integration, continuous delivery (CI/CD), infrastructure as code (IaC), and containerization."
         },
         {
             "id": 6,
-            "icon": "mobile.svg",
+            "icon": "mobile-rose.svg",
             "title": "Mobile Application",
-            "desc": "Create IOS and Android application with React-native."
+            "desc": "I create cross-platform apps that run seamlessly on both iOS and Android devices. My expertise lies in building responsive, native-like experiences while maximizing code reuse, delivering high-performance, and visually engaging."
         }
     ],
     "works": [
         {
             "id": 1,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "kinoverse-mockup.jpg",
+            "imgTiny": "kinoverse-mockup-tiny.jpg",
             "type": "MERN Stack",
             "title": "Freelance Marketplace",
             "desc": "Included features are wishlist, contact, admin panel, user dashboard, email notification, file uploads to AWS S3, and many more. First and foremost, I create prototype of the project the provide my client the desire end result they are expecting. afterward I developed this from scratch and deployed on AWS EC2",
@@ -138,24 +134,26 @@
         },
         {
             "id": 2,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "spikeball-mockup.jpg",
+            "imgTiny": "spikeball-mockup-tiny.jpg",
             "type": "Full Stack Development",
-            "title": "Asset consulting Website",
-            "desc": "In this website, anyone before purchasing any kinds of fixed asset customers will task advice from professional website. Included features are form submission, stripe payment, user authentication and more. Only core HTML is been used for this website fronte-end development since client wanted to keep it SEO friendly. In additon to that, Express.js rest API used to build API from scratch alogn with MongoDB Database",
+            "title": "Furniture Ecommerce",
+            "desc": "I developed a custom Ecommerce website for a furniture shop using Django Rest Framework at the backend and Nuxt.js vue.js framework at the frontend.",
             "techStack": [
-                "Node.js",
-                "HTML",
-                "Vanilla JavaScript",
-                "MongoDB",
-                "RestAPI"
+                "Django",
+                "Django-rest-framework",
+                "Nuxt.js",
+                "Vue.js",
+                "Pinia"
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
-            "srcCode": "https://github.com/MdSamsuzzohaShayon/daba-nodejs-html",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/django-drf-nuxt-ecommerce",
             "liveUrl": null
         },
         {
             "id": 3,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "stockvel-mockup.jpg",
+            "imgTiny": "stockvel-mockup-tiny.jpg",
             "type": "LAMP Stack",
             "title": "Financial website for saving",
             "desc": "Included features are user authentication, admin panel, user dashboard, multi-lingual, membership of a pack, create pack, join pack, select leader of the pack, manage pack by leager. ",
@@ -170,7 +168,8 @@
         },
         {
             "id": 4,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Cost Calculation",
             "desc": "This website for an agency, customer comes to this website and calculate their estimated cost of specific services they required.",
@@ -185,7 +184,8 @@
         },
         {
             "id": 5,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Front-end Development",
             "title": "Peer To Peer File sharing",
             "desc": "This website is used for two diffrent purpose, first and foremost, user can share file without uploading it to a server, it is peer to peer file sharing using WebRTC Technology. In addition to that, Socket.io is been used to transfer signal of WebRTC. Secondly, this website can be used to make URL of a website short.",
@@ -203,12 +203,15 @@
         },
         {
             "id": 6,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "CMS Development",
-            "title": "Web Design------",
+            "title": "Sports Blog",
             "desc": "I developed a custom theme from scratch and using that theme I made my wordpress blogging site.",
             "techStack": [
                 "Wordpress",
+                "PHP",
+                "Theme",
                 "CPanel"
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
@@ -217,7 +220,8 @@
         },
         {
             "id": 7,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Ponditi Learning Platform",
             "desc": "Features of this website to be mentioned, Role Base JWT User Authentication, Students search teacher, Send tuotian request, create conversation, get tutorian on hourly or monthly basis, User Dashboard, admin panel, and more.",
@@ -238,7 +242,8 @@
         },
         {
             "id": 8,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Backend Development",
             "title": "Email Template Building",
             "desc": "Features of this website to be mentioned, Create email template, customize template, save template, edit template, preview template, export template, upload template images to AWS S3, and more",
@@ -256,7 +261,8 @@
         },
         {
             "id": 9,
-            "imgSrc": "mobile-app-design.jpg",
+            "imgSrc": "spikeball-mockup.jpg",
+            "imgTiny": "spikeball-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Tournament Website",
             "desc": "Features of this website to be mentioned, join in a tournament, 5 rounds in the tournament, random team up in first round, points calculations, adding extra points, rank players after round 1, random team up or team up based on rankings, leave the team and join team in the middle of the tournament, show score, user authentication, admin panel, and more.",
@@ -408,7 +414,7 @@
     "experience": [
         {
             "id": 1,
-            "title": "Inter",
+            "title": "Intern",
             "institution": "Grameen Bank Limited",
             "year": "3 months",
             "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."

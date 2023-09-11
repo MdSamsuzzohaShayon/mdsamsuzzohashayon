@@ -8,13 +8,14 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className={`section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row items-center px-4 md:px-0 ${styles.borderLine}`}>
+        <section className={`section-1 hero container mx-auto flex justify-between flex-col-reverse md:flex-row items-center px-4 ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
-                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className={`${styles.sectionHeading} mt-8 relative`}>{portfolio.sec1t1}</motion.p>
-                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4">{portfolio.sec1t2}</motion.h1>
-                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.4}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 text-rose-600">{portfolio.sec1t3}</motion.h1>
-                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5}} className='mt-4 relative'>{portfolio.sec1t4}</motion.p>
+                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className={`${styles.sectionHeading} mt-8 relative`}>WELCOME TO MY WORLD</motion.p>
+                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4">I&apos;m Md Samsuzzoha Shayon</motion.h1>
+                    <motion.h1 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.4}} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 text-rose-600">
+                    A fullstack web developer</motion.h1>
+                    <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5}} className='mt-4 relative'>I have a passion for creating responsive and user-friendly web applications, and I enjoy solving complex problems to deliver efficient and effective digital solutions. My skills include proficiency in various programming languages, frameworks, and tools to build robust and dynamic websites. With a strong commitment to staying up-to-date with the latest industry trends and technologies, I am always eager to take on new challenges in the ever-evolving world of web development.</motion.p>
                 </div>
                 <div className="social-skills flex flex-col md:flex-row gap-4 justify-between w-ful w-full">
                     <div className="social">

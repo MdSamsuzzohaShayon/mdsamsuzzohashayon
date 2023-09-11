@@ -51,7 +51,7 @@ const Testimonial = () => {
     }
 
     return (
-        <section className={`section-6 testimonial container mx-auto px-4 md:px-0 ${styles.borderLine}`}  >
+        <section className={`section-6 testimonial container mx-auto px-4 ${styles.borderLine}`}  >
             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}}  className="uppercase text-rose-600 mt-16 relative">WHAT CLIENTS SAY</motion.h4>
             <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}}  className='capitalize text-4xl md:text-6xl font-bold mt-4 relative'>Testimonial</motion.h2>
             <div className="content flex" >
