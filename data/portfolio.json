@@ -242,8 +242,8 @@
         },
         {
             "id": 8,
-            "imgSrc": "cost-calc-mockup.jpg",
-            "imgTiny": "cost-calc-mockup-tiny.jpg",
+            "imgSrc": "email-template-mockup.jpg",
+            "imgTiny": "email-template-mockup-tiny.jpg",
             "type": "Backend Development",
             "title": "Email Template Building",
             "desc": "Features of this website to be mentioned, Create email template, customize template, save template, edit template, preview template, export template, upload template images to AWS S3, and more",
@@ -257,7 +257,7 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-email-template",
-            "liveUrl": null
+            "liveUrl": "https://emailtemplate.onrender.com/"
         },
         {
             "id": 9,
