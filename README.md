@@ -11,6 +11,7 @@
  - All icons color change and make all icons svg
  - Smooth scroll
  - Use more gradient colors
+ - Add youtube channel subscribe button
 
 ### CPanel Github Action Deployment
  - [tutorial](https://www.youtube.com/watch?v=x_GZpOGyJpg)
