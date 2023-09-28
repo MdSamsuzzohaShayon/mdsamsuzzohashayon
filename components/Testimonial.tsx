@@ -50,15 +50,33 @@ const Testimonial = () => {
         return <div className="content-controller w-full flex gap-2 mt-4 justify-center items-center">{btnList}</div>;
     }
 
+    const testimonialTouchStartHandler = (e: React.SyntheticEvent) => {
+        console.log("Start - ", e);
+    }
+    const testimonialTouchMoveHandler = (e: React.SyntheticEvent) => {
+        console.log("Move - ", e);
+    }
+    const testimonialTouchEndHandler = (e: React.SyntheticEvent) => {
+        console.log("End - ", e);
+    }
+    const testimonialTouchCancelHandler = (e: React.SyntheticEvent) => {
+        console.log("Cancel - ", e);
+    }
+
     return (
-        <section className={`section-6 testimonial container mx-auto px-4 ${styles.borderLine}`}  >
-            <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}}  className="uppercase text-rose-600 mt-16 relative">WHAT CLIENTS SAY</motion.h4>
-            <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}}  className='capitalize text-4xl md:text-6xl font-bold mt-4 relative'>Testimonial</motion.h2>
+        <section className={`section-6 testimonial container mx-auto px-12 ${styles.borderLine}`}  >
+            <motion.h4 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="uppercase text-rose-600 mt-16 relative">WHAT CLIENTS SAY</motion.h4>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className='capitalize text-4xl md:text-6xl font-bold mt-4 relative'>Testimonial</motion.h2>
             <div className="content flex" >
                 {testimonialList.map((testimonial, i) => {
                     if (selectedTestimonialId === testimonial.id) {
                         return (
-                            <motion.div key={testimonial.id} initial={{ opacity: 0, x: isLeft ? 300 : -300 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 1, x: isLeft ? -300 : 300 }} transition={{ duration: 1 }} className='test-preview w-full mt-4 flex flex-col md:flex-row gap-4 justify-between items-center' >
+                            <motion.div
+                                onTouchStart={testimonialTouchStartHandler}
+                                onTouchMove={testimonialTouchMoveHandler}
+                                onTouchEnd={testimonialTouchEndHandler}
+                                onTouchCancel={testimonialTouchCancelHandler}
+                                key={testimonial.id} initial={{ opacity: 0, x: isLeft ? 300 : -300 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 1, x: isLeft ? -300 : 300 }} transition={{ duration: 1 }} className='test-preview w-full mt-4 flex flex-col md:flex-row gap-4 justify-between items-center' >
                                 <div className="test-preview-img w-full md:w-2/6 h-full flex flex-col justify-center items-start bg-slate-900">
                                     <div className="p-4">
                                         {testimonial.clientImg ? <img src={testimonial.clientImg} alt={testimonial.client} className="w-3/6 h-32 object-fit object-cover" /> : <div className='flex h-32 items-center'><p className="w-3/6" >No Image Available</p></div>}

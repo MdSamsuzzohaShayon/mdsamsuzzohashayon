@@ -184,22 +184,21 @@
         },
         {
             "id": 5,
-            "imgSrc": "cost-calc-mockup.jpg",
-            "imgTiny": "cost-calc-mockup-tiny.jpg",
-            "type": "Front-end Development",
-            "title": "Peer To Peer File sharing",
-            "desc": "This website is used for two diffrent purpose, first and foremost, user can share file without uploading it to a server, it is peer to peer file sharing using WebRTC Technology. In addition to that, Socket.io is been used to transfer signal of WebRTC. Secondly, this website can be used to make URL of a website short.",
+            "imgSrc": "discord-bot.jpg",
+            "imgTiny": "discord-bot-tiny.jpg",
+            "type": "Bot Development",
+            "title": "Discord Bot",
+            "desc": "With this Discord Bot Members can intract with Guesty. Start to complete process tasks of Guesty will be done via user's specific channel of Discord",
             "techStack": [
-                "Node.js",
-                "React.js",
-                "WebRTC",
-                "Socket.io",
+                "Discord.py",
+                "Python",
+                "FastAPI",
                 "Linux",
                 "VPS Hosting"
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
-            "srcCode": "https://github.com/mdsamsuzzohashayon/",
-            "liveUrl": "https://pastebetween.com/"
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/claimbot-discord-bot",
+            "liveUrl": null
         },
         {
             "id": 6,
@@ -220,8 +219,8 @@
         },
         {
             "id": 7,
-            "imgSrc": "cost-calc-mockup.jpg",
-            "imgTiny": "cost-calc-mockup-tiny.jpg",
+            "imgSrc": "ponditi.jpg",
+            "imgTiny": "ponditi-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Ponditi Learning Platform",
             "desc": "Features of this website to be mentioned, Role Base JWT User Authentication, Students search teacher, Send tuotian request, create conversation, get tutorian on hourly or monthly basis, User Dashboard, admin panel, and more.",

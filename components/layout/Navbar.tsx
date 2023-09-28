@@ -56,7 +56,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar container mx-auto w-full flex h-20 items-center justify-between " >
+    <nav className="navbar container mx-auto px-12 w-full flex h-20 items-center justify-between " >
 
       <motion.img initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ function Navbar() {
               </motion.li>
             ))}
           </ul>
-          <motion.div initial={{ opacity: 0, x: -120 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: DELAY }} className="social mt-8 border-t border-slate-900 pt-8 px-4">
+          <motion.div initial={{ opacity: 0, x: -120 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: DELAY }} className="social mt-8 border-t border-slate-900 pt-8 px-12">
             <SocialMedia social={portfolio.social} />
           </motion.div>
         </motion.div>
