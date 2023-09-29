@@ -3,6 +3,8 @@
 ### Requirements
  - Add google analytics
  - CloudFlare - for destributing data fast
+ - Add icon to all buttons
+ - Add google map
  - Azure Functions for email
  - Add project preview video link
  - Must need to add three.js
@@ -21,6 +23,7 @@
 
 ### Reference
  - https://rainbowit.net/html/inbio/
+ - Make backgroup like this https://themihub.com/html/morex-demo/morex/index-dark.html
  - Find icons -> https://unpkg.com/browse/@heroicons/react@2.0.18/24/outline/
 
 

@@ -87,7 +87,9 @@ const Testimonial = () => {
                         if (selectedTestimonialId === testimonial.id) {
                             return (
                                 <motion.div
+                                    // @ts-ignore 
                                     onTouchStart={testimonialTouchStartHandler}
+                                    // @ts-ignore 
                                     onTouchEnd={testimonialTouchEndHandler}
                                     key={testimonial.id}
                                     initial={{ opacity: 0, x: isLeft ? 300 : -300 }} whileInView={{ opacity: 1, x: 0 }}
