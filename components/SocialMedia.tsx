@@ -17,7 +17,8 @@ const SocialMedia = ({ social }: { social: SocialInt[] }) => {
                     social.map((s: SocialInt) => (
                         <motion.li initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} className={`h-12 w-12 flex justify-center items-center bg-slate-900 ${styles.shadow}`} key={s.id} ><a href={s.link} target='_blink'><img src={`/icons/${s.icon}`} className='h-6' /></a></motion.li>
+                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} 
+                            className={`h-12 w-12 flex justify-center items-center bg-slate-900 ${styles.shadow}`} key={s.id} ><a href={s.link} target='_blink'><img src={`/icons/${s.icon}`} className='h-6' /></a></motion.li>
                     ))
                 }
             </ul>
