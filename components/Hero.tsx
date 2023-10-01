@@ -3,21 +3,26 @@
 import React, { useEffect, useState } from 'react';
 import portfolio from '../data/portfolio.json';
 import SocialMedia from './SocialMedia';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { CommonPropsInt } from '@/utils/ComponentTypes';
 
-const Hero = () => {
+const Hero = (props: CommonPropsInt) => {
     return (
         <section className={`section-1 hero container mx-auto px-4 xl:px-12 2xl:px-4 flex justify-between flex-col-reverse md:flex-row items-center ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
                     <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className={`${styles.sectionHeading} mt-8 relative`}>WELCOME TO MY WORLD</motion.p>
-                    <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="relative capitalize text-4xl md:text-6xl font-bold mt-4">I&apos;m Md Samsuzzoha Shayon</motion.h1>
-                    <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className={`relative capitalize text-rose-600 ${styles.h2}`}>
-                        A fullstack web developer</motion.h1>
+                    <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 italic">I&apos;m <br />Md Samsuzzoha Shayon</motion.h1>
+                    <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className={`relative capitalize mt-4 ${styles.h2} font-light`}>
+                        A fullstack web developer</motion.h2>
                     <div className="button flex gap-2 mt-8">
-                        <button type='button' className="w-32 bg-rose-600 text-slate-50 capitalize h-10">Video Resume</button>
-                        <button type='button' className="w-32 bg-rose-600 text-slate-50 capitalize h-10">Get In Touch</button>
+                        <a type='button' href={portfolio.videoResume} target='_blink' className="w-40 flex justify-around items-center bg-rose-600 text-slate-50 capitalize h-10">
+                            <img src="/icons/play.svg" className='w-8' alt="video resume" />
+                            <span>Video Resume</span>
+                        </a>
+                        {/* <button type='button' className="w-32 bg-rose-600 text-slate-50 capitalize h-10">Get In Touch</button> */}
+                        {/* <button type='button' className="w-32 bg-rose-600 text-slate-50 capitalize h-10">Download CV</button> */}
                     </div>
                     {/* <motion.p initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5}} className='mt-4 relative'>I have a passion for creating responsive and user-friendly web applications, and I enjoy solving complex problems to deliver efficient and effective digital solutions. My skills include proficiency in various programming languages, frameworks, and tools to build robust and dynamic websites. With a strong commitment to staying up-to-date with the latest industry trends and technologies, I am always eager to take on new challenges in the ever-evolving world of web development.</motion.p> */}
                 </div>

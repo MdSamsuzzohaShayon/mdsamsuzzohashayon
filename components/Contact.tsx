@@ -5,17 +5,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Loader from './Loader';
 import SocialMedia from './SocialMedia';
 import portfolio from '../data/portfolio.json';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { MessageDataInt, CommonPropsInt } from '@/utils/ComponentTypes';
 
-interface MessageDataInt {
-    name: string;
-    phone: string;
-    email: string;
-    subject: string;
-    message: string;
-}
-const Contact = () => {
+const Contact = (props: CommonPropsInt) => {
     const initialMsgData = {
         name: '',
         phone: '',
@@ -25,13 +19,12 @@ const Contact = () => {
     }
     const [msgData, setMsgData] = useState<MessageDataInt>(initialMsgData);
     const [successMessage, setSuccessMessage] = useState<string>('');
-    const [isLoading, setIsLoading] = useState<boolean>(false);
     const dialogModalEl = useRef<null | HTMLDialogElement>(null);
 
     const sendMessageHandler = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            setIsLoading(true);
+            props.setIsLoading(true);
             const response = await fetch('https://shayon-flask-demo-app.azurewebsites.net/api/sendemail', {
                 method: 'POST',
                 headers: {
@@ -47,7 +40,7 @@ const Contact = () => {
         } catch (error) {
             console.log(error);
         } finally {
-            setIsLoading(false);
+            props.setIsLoading(false);
         }
 
         // At the end
@@ -97,9 +90,7 @@ const Contact = () => {
                 </div>
                 <h4>{successMessage}</h4>
             </dialog>
-            {isLoading ? (
-                <Loader text='Sending...' />
-            ) : (<div className="contact-form mt-8 flex flex-col md:flex-row justify-between items-start gap-4">
+            <div className="contact-form mt-8 flex flex-col md:flex-row justify-between items-start gap-4">
                 <div className="context w-full md:w-5/12">
                     <div className="p-4">
                         <motion.img initial={{ opacity: 0, y: 30 }}
@@ -143,7 +134,7 @@ const Contact = () => {
                         </motion.div>
                     </div>
                 </form>
-            </div>)}
+            </div>
 
 
         </section>

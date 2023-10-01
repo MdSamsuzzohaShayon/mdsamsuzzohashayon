@@ -2,11 +2,12 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import portfolio from '../data/portfolio.json';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion, AnimatePresence } from 'framer-motion';
+import { CommonPropsInt } from '@/utils/ComponentTypes';
 
 
-const Testimonial = () => {
+const Testimonial = (props: CommonPropsInt) => {
 
     const [testimonialList, setTestimonialList] = useState(portfolio.testimonial);
     const [selectedTestimonialId, setSelectedTestimonialId] = useState<number>(1);
