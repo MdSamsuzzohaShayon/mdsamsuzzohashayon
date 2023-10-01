@@ -25,6 +25,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href='/img/favicon.ico' />
       </head>
       <body className={inter.className} suppressHydrationWarning >
+        {/* eslint-disable-next-line react/no-children-prop */}
         <BodyWrapper children={children} />
       </body>
     </html>

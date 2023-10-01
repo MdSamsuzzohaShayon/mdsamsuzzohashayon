@@ -4,6 +4,7 @@
     "profession": "Web Developer",
     "contactMessage": "I am available to work any kind of web development projects on hourly or project based. Contact me though WhatsApp or Email.",
     "email": "mdsamsuzzoha5222@gmail.com",
+    "videoResume": "https://www.youtube.com/@mdsamsuzzoha1857/videos",
     "phone": "+8801889171929",
     "contactImg": "/img/shayon-contact-image.jpg",
     
@@ -143,6 +144,12 @@
                 "Django",
                 "Django-rest-framework",
                 "Nuxt.js",
+                "PostgresSQL",
+                "Digital Ocean",
+                "CloudFlare CDN",
+                "Tailwind CSS",
+                "Docker",
+                "CI/CD Pipeline",
                 "Vue.js",
                 "Pinia"
             ],
@@ -176,7 +183,9 @@
             "techStack": [
                 "Python",
                 "FastAPI",
-                "Vanilla JavaScript"
+                "Vanilla JavaScript",
+                "MongoDB",
+                "Render"
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/fastapi-reactjs-sql-nosql-projects/tree/01_fastapi_cost_calc_mongodb_vanillajs",
@@ -202,8 +211,8 @@
         },
         {
             "id": 6,
-            "imgSrc": "cost-calc-mockup.jpg",
-            "imgTiny": "cost-calc-mockup-tiny.jpg",
+            "imgSrc": "ist-mockup.jpg",
+            "imgTiny": "ist-mockup-tiny.jpg",
             "type": "CMS Development",
             "title": "Sports Blog",
             "desc": "I developed a custom theme from scratch and using that theme I made my wordpress blogging site.",
@@ -266,8 +275,14 @@
             "title": "Tournament Website",
             "desc": "Features of this website to be mentioned, join in a tournament, 5 rounds in the tournament, random team up in first round, points calculations, adding extra points, rank players after round 1, random team up or team up based on rankings, leave the team and join team in the middle of the tournament, show score, user authentication, admin panel, and more.",
             "techStack": [
-                "Wordpress",
-                "CPanel"
+                "Node.js",
+                "React.js",
+                "Express.js",
+                "MongoDB",
+                "AWS EC2",
+                "AWS Route 53",
+                "AWS S3",
+                "Docker"
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",

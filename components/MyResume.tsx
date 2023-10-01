@@ -2,10 +2,11 @@
 
 import React, { useState, useRef } from 'react';
 import portfolio from '../data/portfolio.json';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { CommonPropsInt } from '@/utils/ComponentTypes';
 
-const MyResume = () => {
+const MyResume = (props: CommonPropsInt) => {
     const [selectedItem, setSelectedItem] = useState<number>(1);
 
     return (

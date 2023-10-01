@@ -3,10 +3,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import portfolio from '../data/portfolio.json';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { CommonPropsInt } from '@/utils/ComponentTypes';
 
-const MyWork = () => {
+const MyWork = (props: CommonPropsInt) => {
     const workListImgs = useRef<null | HTMLDivElement>(null);
     const dialogEl = useRef<null | HTMLDialogElement>(null);
     const [works, setWorks] = useState(portfolio.works);

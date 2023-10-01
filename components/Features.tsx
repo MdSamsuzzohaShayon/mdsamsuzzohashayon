@@ -2,10 +2,11 @@
 
 import React, { useEffect, useRef } from 'react';
 import portfolio from '../data/portfolio.json';
-import { styles } from '@/styles';
+import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { CommonPropsInt } from '@/utils/ComponentTypes';
 
-const Features = () => {
+const Features = (props: CommonPropsInt) => {
 
     return (
         <section className={`section-2 features container mx-auto px-4 xl:px-12 2xl:px-4 ${styles.borderLine}`} >
