@@ -9,7 +9,7 @@ import { CommonPropsInt } from '@/utils/ComponentTypes';
 
 const Hero = (props: CommonPropsInt) => {
     return (
-        <section className={`section-1 hero container mx-auto px-4 xl:px-12 2xl:px-4 flex justify-between flex-col-reverse md:flex-row items-center ${styles.borderLine}`}>
+        <section className={`section-1 hero wrapper-con flex justify-between flex-col-reverse md:flex-row items-center ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
                     <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className={`${styles.sectionHeading} mt-8 relative`}>WELCOME TO MY WORLD</motion.p>

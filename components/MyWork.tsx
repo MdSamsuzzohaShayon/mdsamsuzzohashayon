@@ -91,7 +91,7 @@ const MyWork = (props: CommonPropsInt) => {
     }, [workListImgs]);
 
     return (
-        <section className={`section-3 my-works container mx-auto px-4 xl:px-12 2xl:px-4 ${styles.borderLine}`} >
+        <section className={`section-3 my-works wrapper-con ${styles.borderLine}`} >
             <dialog ref={dialogEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
                 <div className="close-btn rounded-full w-12 h-12 float-right bg-slate-800 flex justify-center items-center" onClick={closeModalHandler} >
                     <XMarkIcon className="h-6 w-6 text-slate-500" />

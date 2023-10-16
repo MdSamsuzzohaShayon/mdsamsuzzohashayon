@@ -9,7 +9,7 @@ import { CommonPropsInt } from '@/utils/ComponentTypes';
 const Features = (props: CommonPropsInt) => {
 
     return (
-        <section className={`section-2 features container mx-auto px-4 xl:px-12 2xl:px-4 ${styles.borderLine}`} >
+        <section className={`section-2 features wrapper-con ${styles.borderLine}`} >
             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-16 relative">Features</motion.h4>
             <motion.h2 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='capitalize text-4xl md:text-6xl font-bold mt-4 relative'>What do I do?</motion.h2>
             <div className="feature-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 " >
