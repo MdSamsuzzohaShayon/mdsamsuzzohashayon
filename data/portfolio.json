@@ -135,8 +135,8 @@
         },
         {
             "id": 2,
-            "imgSrc": "spikeball-mockup.jpg",
-            "imgTiny": "spikeball-mockup-tiny.jpg",
+            "imgSrc": "django-nuxt-ecommerce-mockup.jpg",
+            "imgTiny": "django-nuxt-ecommerce-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Furniture Ecommerce",
             "desc": "I developed a custom Ecommerce website for a furniture shop using Django Rest Framework at the backend and Nuxt.js vue.js framework at the frontend.",
@@ -153,7 +153,7 @@
                 "Vue.js",
                 "Pinia"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": "https://youtu.be/IY_CffKEuOU",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/django-drf-nuxt-ecommerce",
             "liveUrl": null
         },
@@ -169,7 +169,7 @@
                 "MySQL",
                 "CPanel"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": "https://youtu.be/PFPlZueA-OQ",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/php-stockvell",
             "liveUrl": "http://stockvell.allinone-office.com"
         },
@@ -187,7 +187,7 @@
                 "MongoDB",
                 "Render"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": "https://youtu.be/k1ao7Prf5Kg",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/fastapi-reactjs-sql-nosql-projects/tree/01_fastapi_cost_calc_mongodb_vanillajs",
             "liveUrl": "https://costcalc.netlify.app"
         },
@@ -284,9 +284,9 @@
                 "AWS S3",
                 "Docker"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": "https://youtu.be/Xn1H9ftIdRY?si=FN5fw5OjSysC3VIZ",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
-            "liveUrl": null
+            "liveUrl": "https://spikeball.mdshayon.com/"
         }
     ],
     "education": [
@@ -296,31 +296,23 @@
             "institution": "Daffodil International University",
             "year": "2016-2020",
             "score": "3.05/4",
-            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+            "desc": "I pursued my Bachelor of Business Administration at Daffodil International University from 2016 to 2020. During this time, I maintained a commendable academic performance, achieving a score of 3.05 out of 4."
         },
         {
             "id": 2,
-            "title": "Bachelor of business administration",
-            "institution": "Daffodil International University",
-            "year": "2016-2020",
-            "score": "3.05/4",
-            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+            "title": "Higher Secondary School Certificate",
+            "institution": "Singra Damdama Pilot School & College",
+            "year": "2013-2015",
+            "score": "3.33/5",
+            "desc": "I completed my Higher Secondary School Certificate at Singra Damdama Pilot School & College from 2013 to 2015, achieving a score of 3.33 out of 5. This period of my education was instrumental in shaping my academic foundation and facilitating my transition to higher studies."
         },
         {
             "id": 3,
-            "title": "Bachelor of business administration",
-            "institution": "Daffodil International University",
-            "year": "2016-2020",
-            "score": "3.05/4",
-            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
-        },
-        {
-            "id": 4,
-            "title": "Bachelor of business administration",
-            "institution": "Daffodil International University",
-            "year": "2016-2020",
-            "score": "3.05/4",
-            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+            "title": "Secondary School Certificate",
+            "institution": "Singra Damdama Pilot School & College",
+            "year": "2008-2013",
+            "score": "3.63/5",
+            "desc": "I successfully completed my Secondary School Certificate at Singra Damdama Pilot School & College from 2008 to 2013, securing a commendable score of 3.63 out of 5. It was during these years that I began to develop a deeper understanding of various subjects and started to chart my path towards higher education and future endeavors."
         }
     ],
     "skills": [

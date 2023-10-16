@@ -56,7 +56,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar container mx-auto px-4 xl:px-12 2xl:px-4 w-full flex h-20 items-center justify-between " >
+    <nav className="navbar wrapper-con w-full flex h-20 items-center justify-between " >
 
       <motion.img initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

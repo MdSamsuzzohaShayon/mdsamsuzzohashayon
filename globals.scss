@@ -30,6 +30,19 @@ $slate-color: blue;
   margin: 0;
 }
 
+// Use wrapper instead of container
+.wrapper-con{
+  width: 80%;
+  margin-left: 10%;
+}
+@media(max-width: $br-md) {
+  .wrapper-con{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
 /* Firefox */
 .remove-arrow {
   -moz-appearance: textfield;
