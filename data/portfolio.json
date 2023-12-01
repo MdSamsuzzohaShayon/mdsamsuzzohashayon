@@ -129,7 +129,7 @@
                 "Linux",
                 "VPS Hosting"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": null,
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-marketplace-kinoverse",
             "liveUrl": "http://kinoverse.net/"
         },
@@ -205,7 +205,7 @@
                 "Linux",
                 "VPS Hosting"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": null,
             "srcCode": "https://github.com/MdSamsuzzohaShayon/claimbot-discord-bot",
             "liveUrl": null
         },
@@ -222,7 +222,7 @@
                 "Theme",
                 "CPanel"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": null,
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
             "liveUrl": "https://itssportstime.org/"
         },
@@ -263,7 +263,7 @@
                 "CentOS",
                 "VPS Hosting"
             ],
-            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "vidUrl": "https://youtu.be/0bWAxfXdrHg?si=vVcb9Y7bhGdkNovb",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-email-template",
             "liveUrl": "https://emailtemplate.onrender.com/"
         },
