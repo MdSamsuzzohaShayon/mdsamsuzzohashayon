@@ -7,7 +7,6 @@
     "videoResume": "https://www.youtube.com/@mdsamsuzzoha1857/videos",
     "phone": "+8801889171929",
     "contactImg": "/img/shayon-contact-image.jpg",
-    
     "navMenus": [
         {
             "id": 1,
@@ -115,6 +114,35 @@
     "works": [
         {
             "id": 1,
+            "imgSrc": "ASL-Squads-mockup.jpg",
+            "imgTiny": "ASL-Squads-mockup-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "ASL Squads - Tournament",
+            "desc": "Youthspike tournament, tournament design, prototype design, landscape prototype, backend admin panel, action box design, player management, event settings, squad list navigation, ranking updates, match creation, captain login, player images, GraphQL tutorial, Next.js, MERN stack, NestJS, Apache server, real-time data updates, drag and drop functionality, player ranking, team management, event creation, match settings, captain team management, player database, team logo, match scoring, match notifications, dashboard design, event filters, sponsor management, single match public view, random player assignment, anchor player pairing, hierarchy player pairing, LDO management.",
+            "techStack": [
+                "Nest.js",
+                "Next.js",
+                "GraphQL",
+                "Web Socket",
+                "AWS EC2",
+                "AWS S3",
+                "Linux",
+                "VPS Hosting"
+            ],
+            "vidUrl": "https://youtu.be/MjBt5yCFV3U",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/youthspike-event-management",
+            "screenshots": [
+                "asl-squads-1-screenshot.png",
+                "asl-squads-2-screenshot.png",
+                "asl-squads-3-screenshot.png",
+                "asl-squads-4-screenshot.png",
+                "asl-squads-5-screenshot.png",
+                "asl-squads-6-screenshot.png"
+            ],
+            "liveUrl": "https://aslsquads.com"
+        },
+        {
+            "id": 1,
             "imgSrc": "kinoverse-mockup.jpg",
             "imgTiny": "kinoverse-mockup-tiny.jpg",
             "type": "MERN Stack",
@@ -131,6 +159,12 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-marketplace-kinoverse",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "http://kinoverse.net/"
         },
         {
@@ -155,6 +189,12 @@
             ],
             "vidUrl": "https://youtu.be/IY_CffKEuOU",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/django-drf-nuxt-ecommerce",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": null
         },
         {
@@ -171,6 +211,12 @@
             ],
             "vidUrl": "https://youtu.be/PFPlZueA-OQ",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/php-stockvell",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "http://stockvell.allinone-office.com"
         },
         {
@@ -189,6 +235,12 @@
             ],
             "vidUrl": "https://youtu.be/k1ao7Prf5Kg",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/fastapi-reactjs-sql-nosql-projects/tree/01_fastapi_cost_calc_mongodb_vanillajs",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "https://costcalc.netlify.app"
         },
         {
@@ -207,6 +259,12 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/claimbot-discord-bot",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": null
         },
         {
@@ -224,6 +282,12 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "https://itssportstime.org/"
         },
         {
@@ -246,6 +310,12 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-nextjs-ponditi-lms",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "https://ponditi.com/"
         },
         {
@@ -265,6 +335,12 @@
             ],
             "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-email-template",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "https://emailtemplate.onrender.com/"
         },
         {
@@ -286,6 +362,12 @@
             ],
             "vidUrl": "https://youtu.be/Xn1H9ftIdRY?si=FN5fw5OjSysC3VIZ",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
             "liveUrl": "https://spikeball.mdshayon.com/"
         }
     ],
@@ -440,7 +522,7 @@
             "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
         }
     ],
-    "testimonial":[
+    "testimonial": [
         {
             "id": 1,
             "client": "Simon Pitt",
