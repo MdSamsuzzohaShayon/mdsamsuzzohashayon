@@ -132,9 +132,9 @@
             "vidUrl": "https://youtu.be/MjBt5yCFV3U",
             "srcCode": "https://github.com/MdSamsuzzohaShayon/youthspike-event-management",
             "screenshots": [
-                "asl-squads-1-screenshot.png",
-                "asl-squads-2-screenshot.png",
-                "asl-squads-3-screenshot.png",
+                "asl-squads-1-screenshot.jpg",
+                "asl-squads-2-screenshot.jpg",
+                "asl-squads-3-screenshot.jpg",
                 "asl-squads-4-screenshot.png",
                 "asl-squads-5-screenshot.png",
                 "asl-squads-6-screenshot.png"
@@ -142,7 +142,7 @@
             "liveUrl": "https://aslsquads.com"
         },
         {
-            "id": 1,
+            "id": 2,
             "imgSrc": "kinoverse-mockup.jpg",
             "imgTiny": "kinoverse-mockup-tiny.jpg",
             "type": "MERN Stack",
@@ -168,7 +168,7 @@
             "liveUrl": "http://kinoverse.net/"
         },
         {
-            "id": 2,
+            "id": 3,
             "imgSrc": "django-nuxt-ecommerce-mockup.jpg",
             "imgTiny": "django-nuxt-ecommerce-mockup-tiny.jpg",
             "type": "Full Stack Development",
@@ -198,7 +198,7 @@
             "liveUrl": null
         },
         {
-            "id": 3,
+            "id": 4,
             "imgSrc": "stockvel-mockup.jpg",
             "imgTiny": "stockvel-mockup-tiny.jpg",
             "type": "LAMP Stack",
@@ -220,7 +220,7 @@
             "liveUrl": "http://stockvell.allinone-office.com"
         },
         {
-            "id": 4,
+            "id": 5,
             "imgSrc": "cost-calc-mockup.jpg",
             "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Full Stack Development",
@@ -244,7 +244,7 @@
             "liveUrl": "https://costcalc.netlify.app"
         },
         {
-            "id": 5,
+            "id": 6,
             "imgSrc": "discord-bot.jpg",
             "imgTiny": "discord-bot-tiny.jpg",
             "type": "Bot Development",
@@ -268,7 +268,7 @@
             "liveUrl": null
         },
         {
-            "id": 6,
+            "id": 7,
             "imgSrc": "ist-mockup.jpg",
             "imgTiny": "ist-mockup-tiny.jpg",
             "type": "CMS Development",
@@ -291,7 +291,7 @@
             "liveUrl": "https://itssportstime.org/"
         },
         {
-            "id": 7,
+            "id": 8,
             "imgSrc": "ponditi.jpg",
             "imgTiny": "ponditi-tiny.jpg",
             "type": "Full Stack Development",
@@ -319,7 +319,7 @@
             "liveUrl": "https://ponditi.com/"
         },
         {
-            "id": 8,
+            "id": 9,
             "imgSrc": "email-template-mockup.jpg",
             "imgTiny": "email-template-mockup-tiny.jpg",
             "type": "Backend Development",
@@ -344,7 +344,7 @@
             "liveUrl": "https://emailtemplate.onrender.com/"
         },
         {
-            "id": 9,
+            "id": 10,
             "imgSrc": "spikeball-mockup.jpg",
             "imgTiny": "spikeball-mockup-tiny.jpg",
             "type": "Full Stack Development",

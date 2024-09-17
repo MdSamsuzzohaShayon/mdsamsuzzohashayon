@@ -120,6 +120,13 @@ $slate-color: blue;
   
   }
 
+  .Project{
+    height: 70vh;
+    .preview-img{
+      height: 32rem;
+    }
+  }
+
   dialog::backdrop {
     background: rgba(209, 213, 219, 0.678);
   }

@@ -37,18 +37,18 @@ function Project({ works, selectedWorkId }: IProjectProps) {
     };
 
     return (
-        <div className="flex flex-col md:flex-row w-full gap-6 pt-4 md:h-screen">
+        <div className="Project flex flex-col md:flex-row w-full gap-6 pt-4">
             <div className="w-full md:w-5/12 flex flex-col">
                 <motion.img
                     src={selectedImg || `/img/projects/${findWork.imgSrc}`}
                     alt={findWork.title}
-                    className="h-60 md:h-full w-full object-cover rounded-lg shadow-lg"
+                    className="preview-img w-full object-cover rounded-lg shadow-lg"
                     loading="lazy"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 />
-                <div className="screenshots w-full overflow-x-scroll flex gap-2 mt-2">
+                <div className="screenshots w-full overflow-x-scroll flex gap-2 mt-4">
                     {findWork.screenshots.map((imgSrc, index) => (
                         <motion.img
                             key={index}
@@ -64,12 +64,12 @@ function Project({ works, selectedWorkId }: IProjectProps) {
                     ))}
                 </div>
             </div>
-            <div className="w-full md:w-7/12 flex flex-col justify-between">
+            <div className="w-full md:w-7/12 flex flex-col">
                 <div>
-                    <h3 className="capitalize text-4xl md:text-5xl font-bold text-gray-900">
+                    <h3 className="capitalize text-4xl md:text-5xl font-bold text-white">
                         {findWork.title}
                     </h3>
-                    <p className="mt-4 text-gray-700">{findWork.desc}</p>
+                    <p className="mt-4 text-white">{findWork.desc}</p>
                     <h4 className="uppercase text-rose-600 mt-8">Tech Stack</h4>
                     <div className="tech-stack-items flex gap-2 mt-4 flex-wrap">
                         {techStackEl}

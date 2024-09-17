@@ -51,4 +51,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For any questions or feedback, please contact me at [contact@mdshayon.com](mailto:contact@mdshayon.com).
+For any questions or feedback, please contact me at [mdsamsuzzoha5222@gmail.com](mailto:mdsamsuzzoha5222@gmail.com).
