@@ -45,3 +45,5 @@ pyserver/.env
 pyserver/.venv
 pyserver/dep
 pyserver/lambda_artifact.zip
+
+/res
