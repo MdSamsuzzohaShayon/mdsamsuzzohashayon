@@ -2,6 +2,20 @@ import { IProject } from "@/types";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+import LightGallery from 'lightgallery/react';
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+// If you want you can use SCSS instead of css
+import 'lightgallery/scss/lightgallery.scss';
+import 'lightgallery/scss/lg-zoom.scss';
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 interface IProjectProps {
     works: IProject[];
     selectedWorkId: number;
@@ -12,6 +26,10 @@ function Project({ works, selectedWorkId }: IProjectProps) {
     const [techStackEl, setTechStackEl] = useState<JSX.Element[]>([]);
 
     const findWork = works.find((w) => w.id === selectedWorkId);
+
+    const onInit = () => {
+        console.log('lightGallery has been initialized');
+    };
 
     // Update tech stack elements whenever the selected project changes
     useEffect(() => {
@@ -39,30 +57,18 @@ function Project({ works, selectedWorkId }: IProjectProps) {
     return (
         <div className="Project flex flex-col md:flex-row w-full gap-6 pt-4">
             <div className="w-full md:w-5/12 flex flex-col">
-                <motion.img
-                    src={selectedImg || `/img/projects/${findWork.imgSrc}`}
-                    alt={findWork.title}
-                    className="preview-img w-full object-cover rounded-lg shadow-lg"
-                    loading="lazy"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                />
-                <div className="screenshots w-full overflow-x-scroll flex gap-2 mt-4">
+                <LightGallery
+                    onInit={onInit}
+                    speed={500}
+                    plugins={[lgThumbnail, lgZoom]}
+                >
                     {findWork.screenshots.map((imgSrc, index) => (
-                        <motion.img
-                            key={index}
-                            src={`/img/projects/${imgSrc}`}
-                            alt={`${findWork.title} screenshot ${index + 1}`}
-                            className="h-16 w-16 rounded-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                            onClick={() => handleImageSelect(imgSrc)}
-                            loading="lazy"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: index * 0.1 }}
-                        />
+                        <a key={index} href={`/img/projects/${imgSrc}`}>
+                            <img src={`/img/projects/${imgSrc}`} alt={imgSrc} />
+                        </a>
                     ))}
-                </div>
+
+                </LightGallery>
             </div>
             <div className="w-full md:w-7/12 flex flex-col">
                 <div>

@@ -62,12 +62,6 @@ const MyWork = (props: CommonPropsInt) => {
 
     return (
         <section className={`section-3 my-works wrapper-con ${styles.borderLine}`} >
-            <dialog ref={dialogEl} className='bg-slate-900 w-5/6 md:w-4/6 p-4 md:p-12 text-gray-300' onClick={dialogElementHandler} >
-                <div className="close-btn rounded-full w-12 h-12 float-right bg-rose-600 flex justify-center items-center" onClick={closeModalHandler} >
-                    <XMarkIcon className="h-6 w-6 text-gray-300" />
-                </div>
-                <Project selectedWorkId={selectedWorkId} works={works} />
-            </dialog>
             <motion.h4 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="uppercase text-rose-600 mt-16">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</motion.h4>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className='capitalize text-4xl md:text-6xl font-bold mt-4'>My Works</motion.h2>
             <div className="work-list grid grid-cols-1 md:grid-cols-3 gap-12 w-full mt-8 " ref={workListImgs} >
