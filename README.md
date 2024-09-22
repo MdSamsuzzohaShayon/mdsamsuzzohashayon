@@ -33,6 +33,7 @@ Welcome to my personal portfolio website! This project showcases my work and ski
    - Create all necessary secret keys in GitHub and use them in your workflow configuration.
 
 ## References
+- https://webflow.com/blog/design-portfolio-examples
 
 - [InBio template](https://rainbowit.net/html/inbio/)
 - [Background design inspiration](https://themihub.com/html/morex-demo/morex/index-dark.html)

@@ -9,9 +9,10 @@ import MyWork from '@/components/MyWorks/MyWork';
 import MyResume from '@/components/MyResume/MyResume';
 import Contact from '@/components/Contract/Contact';
 import Testimonial from '@/components/Testimonial/Testimonial';
+import Acheivements from '@/components/Achievement/Achievement';
 
 const HomePage = () => {
-  const { videoResume, social, heroImg, bestSkills, features, works, education, skills, experience, contactImg, contactMessage, email, phone, profession , testimonial } = useStaticData();
+  const { videoResume, social, heroImg, bestSkills, features, works, education, skills, experience, contactImg, contactMessage, email, phone, profession , testimonial, achievements } = useStaticData();
 
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
@@ -19,6 +20,8 @@ const HomePage = () => {
     <React.Fragment>
       {isLoading ? <Loader text='Loading....' /> : (<>
         <Hero videoResume={videoResume} social={social} bestSkills={bestSkills} heroImg={heroImg} />
+        {/* // Acheivements */}
+        <Acheivements acheivements={achievements} />
         <Feature features={features} />
         <MyWork works={works} />
         <MyResume education={education} experience={experience} skills={skills} />

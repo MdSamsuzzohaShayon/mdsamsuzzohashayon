@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { styles } from '@/utils/styles';
@@ -79,7 +80,7 @@ function MyWork({ works }: IWorkProps) {
         }
     }, [workListImgs]);
     return (
-        <section className={`section-3 my-works wrapper-con ${styles.borderLine}`} >
+        <section className={`section-4 my-works wrapper-con ${styles.borderLine}`} >
             <dialog ref={dialogEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >
                 <div className="close-btn rounded-full w-12 h-12 float-right bg-slate-800 flex justify-center items-center" onClick={closeModalHandler} >
                     <XMarkIcon className="h-6 w-6 text-slate-500" />

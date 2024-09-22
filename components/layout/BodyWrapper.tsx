@@ -32,7 +32,7 @@ function BodyWrapper(props: { children: React.ReactNode }) {
 
     return (
         <motion.div className='body-wrapper bg-gray-800 text-gray-300' >
-            <motion.div  style={{ scaleX: scrollYProgress, transformOrigin: '0%' }} className='fixed top-0 left-0 right-0 h-2 bg-rose-600'></motion.div>
+            <motion.div  style={{ scaleX: scrollYProgress, transformOrigin: '0%' }} className='fixed z-50 top-0 left-0 right-0 h-2 bg-rose-600'></motion.div>
             {/* {showBackdrop && (
                 <div className="absolute top-0 left-0 wrapper-overflow h-screen w-screen bg-slate-500 opacity-5" onClick={overflowBackdropHandler}></div>
             )} */}

@@ -73,6 +73,32 @@
             "icon": "devops.svg"
         }
     ],
+    "achievements": [
+        {
+            "id": 1,
+            "achieve": "clients",
+            "num": 45,
+            "text": "On Upwork and Fiverr"
+        },
+        {
+            "id": 2,
+            "achieve": "projects",
+            "num": 62,
+            "text": "Completed successfully"
+        },
+        {
+            "id": 3,
+            "achieve": "youtube",
+            "num": 1610,
+            "text": "Subscribers"
+        },
+        {
+            "id": 4,
+            "achieve": "Freelancing",
+            "num": 4,
+            "text": "Years in Freelancing"
+        }
+    ],
     "features": [
         {
             "id": 1,

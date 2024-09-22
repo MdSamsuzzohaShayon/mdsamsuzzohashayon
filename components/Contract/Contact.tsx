@@ -90,7 +90,7 @@ function Contact({ contactImg, profession, contactMessage, email, phone, setIsLo
 
 
     return (
-        <section className={`section-5 my-works wrapper-con ${styles.borderLine}`} >
+        <section className={`section-6 my-works wrapper-con ${styles.borderLine}`} >
             <motion.h4 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="uppercase text-rose-600 mt-16">Contact</motion.h4>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className='capitalize text-4xl md:text-6xl font-bold mt-4'>Contact With me</motion.h2>
             <dialog ref={dialogModalEl} className='bg-slate-900 w-4/6 p-12 text-gray-300' onClick={dialogElementHandler} >

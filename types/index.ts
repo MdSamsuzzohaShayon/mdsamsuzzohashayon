@@ -84,6 +84,13 @@ export interface ITestimonial {
     clientImg: string;
 }
 
+export interface IAchievement {
+    id: number
+    achieve: string;
+    num: number;
+    text: string;
+}
+
 export interface IPortfolioData {
     logo: string;
     heroImg: string;
@@ -102,6 +109,7 @@ export interface IPortfolioData {
     skills: ISkill[];
     experience: IExperience[];
     testimonial: ITestimonial[];
+    achievements: IAchievement[];
 }
 
 

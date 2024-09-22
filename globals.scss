@@ -109,6 +109,16 @@ $slate-color: blue;
     min-height: 16rem;
   }
 
+  // .achievements-area{
+  //   height: 27rem;
+  // }
+
+  @media (min-width: 678px){
+    .achievements-area{
+      height: 27rem;
+    }
+  }
+
   .my-works{
   //   .img-wrap::before{
   //     content: "";
