@@ -6,9 +6,19 @@ import Loader from '../Loader/Loader';
 import SocialMedia from '../SocialMedia/SocialMedia';
 import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
-import { MessageDataInt, CommonPropsInt } from '@/utils/ComponentTypes';
+import { IMessageData, ISocial } from '@/types';
 
-const Contact = (props: CommonPropsInt) => {
+interface IContactProps {
+    contactImg: string;
+    profession: string;
+    contactMessage: string;
+    email: string;
+    phone: string;
+    social: ISocial[];
+    setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Contact({ contactImg, profession, contactMessage, email, phone, setIsLoading, social }: IContactProps) {
     const initialMsgData = {
         name: '',
         phone: '',
@@ -16,14 +26,14 @@ const Contact = (props: CommonPropsInt) => {
         subject: '',
         message: '',
     }
-    const [msgData, setMsgData] = useState<MessageDataInt>(initialMsgData);
+    const [msgData, setMsgData] = useState<IMessageData>(initialMsgData);
     const [successMessage, setSuccessMessage] = useState<string>('');
     const dialogModalEl = useRef<null | HTMLDialogElement>(null);
 
     const sendMessageHandler = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            props.setIsLoading(true);
+            setIsLoading(true);
             const response = await fetch('https://shayon-flask-demo-app.azurewebsites.net/api/sendemail', {
                 method: 'POST',
                 headers: {
@@ -39,7 +49,7 @@ const Contact = (props: CommonPropsInt) => {
         } catch (error) {
             console.log(error);
         } finally {
-            props.setIsLoading(false);
+            setIsLoading(false);
         }
 
         // At the end
@@ -94,14 +104,14 @@ const Contact = (props: CommonPropsInt) => {
                     <div className="p-4">
                         <motion.img initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={portfolio.contactImg}
+                            transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} exit={{ opacity: 0 }} src={contactImg}
                             className='p-4 w-full h-60 object-cover object-top bg-slate-900' alt="Md Shayon Contact Image" />
                         <h2 className='text-xl font-medium mt-4 capitalize'>Feel Free To Message Me</h2>
-                        <p >{portfolio.profession}</p>
-                        <p className='my-4'>{portfolio.contactMessage}</p>
-                        <p>Email: {portfolio.email}</p>
-                        <p>Phone: {portfolio.phone}</p>
-                        <SocialMedia social={portfolio.social} />
+                        <p >{profession}</p>
+                        <p className='my-4'>{contactMessage}</p>
+                        <p>Email: {email}</p>
+                        <p>Phone: {phone}</p>
+                        <SocialMedia social={social} />
                     </div>
                 </div>
                 <form className="form w-full md:w-7/12" onSubmit={sendMessageHandler}>

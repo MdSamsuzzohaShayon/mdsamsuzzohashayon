@@ -3,9 +3,15 @@
 import React, { useState, useRef } from 'react';
 import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
-import { CommonPropsInt } from '@/utils/ComponentTypes';
+import { IEducation, IExperience, ISkill } from '@/types';
 
-const MyResume = (props: CommonPropsInt) => {
+interface IMyResumeProps{
+    education: IEducation[];
+    skills: ISkill[];
+    experience: IExperience[];
+}
+
+function MyResume ({education, skills, experience}: IMyResumeProps) {
     const [selectedItem, setSelectedItem] = useState<number>(1);
 
     return (
@@ -24,7 +30,7 @@ const MyResume = (props: CommonPropsInt) => {
                             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-8">2004 - 2020</motion.h4>
                             <motion.h3 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='mt-2 text-2xl font-bold'>Education Qualifications</motion.h3>
                             <div className="educational-item-list flex w-full justify-between flex-wrap mt-4 flex-col md:flex-row">
-                                {portfolio.education.map((edu, i) => (<div key={edu.id} className='educational-item w-full md:w-3/6 flex'>
+                                {education.map((edu, i) => (<div key={edu.id} className='educational-item w-full md:w-3/6 flex'>
                                     <div className="bars w-1/6 relative h-full">
                                         <motion.div initial={{ height: 0 }} whileInView={{ height: '100%'}} transition={{ delay: 0.2 }} exit={{ height: 0 }} className="vertical-bar border-l border-slate-500 h-full absolute top-0 left-3"></motion.div>
                                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity:  1 }} transition={{ delay: 0.3 }} exit={{ opacity: 0 }} className="circle-on-the-bar h-2 w-2 bg-slate-500 rounded-full absolute top-3 left-2"></motion.div>
@@ -50,7 +56,7 @@ const MyResume = (props: CommonPropsInt) => {
                             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-8">Features</motion.h4>
                             <motion.h3 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='mt-2 text-2xl font-bold'>Web Development Skills</motion.h3>
                             <div className="skill-item-list flex w-full justify-between flex-wrap mt-4 flex-col md:flex-row">
-                                {portfolio.skills.map((s) => (<div className='skill-item w-full md:w-5/12 ' key={s.id}>
+                                {skills.map((s) => (<div className='skill-item w-full md:w-5/12 ' key={s.id}>
                                     <p className='mt-3'>{s.title} <span className='float-right'>{s.percent}%</span></p>
                                     <div className="w-full bg-slate-500 h-2">
                                         <motion.div initial={{ width: 0 }} whileInView={{ width: `${s.percent}%` }} transition={{duration: 1}} exit={{width: 0}} className="h-2 bg-rose-600" ></motion.div>
@@ -64,7 +70,7 @@ const MyResume = (props: CommonPropsInt) => {
                             <motion.h4 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2}} className="uppercase text-rose-600 mt-8">2020 - 2024</motion.h4>
                             <motion.h3 initial={{opacity: 0, y:20}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.3}} className='mt-2 text-2xl font-bold'>Job Experience</motion.h3>
                             <div className="experience-item-list flex w-full justify-between flex-wrap mt-4">
-                                {portfolio.experience.map((exp) => (<div key={exp.id} className='experience-item w-full md:w-3/6 flex'>
+                                {experience.map((exp) => (<div key={exp.id} className='experience-item w-full md:w-3/6 flex'>
                                     <div className="bars w-1/6 relative h-full">
                                         <motion.div initial={{ height: 0 }} animate={{ height: '100%'}} transition={{ delay: 0.2 }} exit={{ height: 0 }} className="vertical-bar border-l border-slate-500 h-full absolute top-0 left-3"></motion.div>
                                         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ delay: 0.3 }} exit={{ opacity: 0 }} className="circle-on-the-bar h-2 w-2 bg-slate-500 rounded-full absolute top-3 left-2"></motion.div>
