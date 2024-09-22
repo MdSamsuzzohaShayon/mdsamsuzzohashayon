@@ -3,6 +3,7 @@ import Script from 'next/script';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import BodyWrapper from '@/components/layout/BodyWrapper';
+import StaticDataProvider from '@/context/StaticDataProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -52,7 +53,9 @@ export default function RootLayout({
         </noscript>
 
         {/* Main Body Content */}
-        <BodyWrapper>{children}</BodyWrapper>
+        <StaticDataProvider>
+          <BodyWrapper>{children}</BodyWrapper>
+        </StaticDataProvider>
       </body>
     </html>
   );

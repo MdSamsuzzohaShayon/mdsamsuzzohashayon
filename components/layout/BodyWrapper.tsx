@@ -4,8 +4,10 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { motion, useScroll } from 'framer-motion';
+import { useStaticData } from '@/context/StaticDataProvider';
 
 function BodyWrapper(props: { children: React.ReactNode }) {
+    const {logo, navMenus, social} = useStaticData();
     const { scrollYProgress } = useScroll();
 
     const [showBackdrop, setShowBackdrop] = useState<boolean>(false);
@@ -34,9 +36,9 @@ function BodyWrapper(props: { children: React.ReactNode }) {
             {/* {showBackdrop && (
                 <div className="absolute top-0 left-0 wrapper-overflow h-screen w-screen bg-slate-500 opacity-5" onClick={overflowBackdropHandler}></div>
             )} */}
-            <Navbar />
+            <Navbar logo={logo} navMenus={navMenus} social={social} />
             {props.children}
-            <Footer />
+            <Footer logo={logo} />
         </motion.div>
     )
 }

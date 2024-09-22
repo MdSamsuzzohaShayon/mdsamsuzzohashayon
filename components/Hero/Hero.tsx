@@ -1,24 +1,25 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import portfolio from '../data/portfolio.json';
-import SocialMedia from './SocialMedia';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
 import { CommonPropsInt } from '@/utils/ComponentTypes';
+import { useStaticData } from '@/context/StaticDataProvider';
 
 const Hero = (props: CommonPropsInt) => {
+    const portfolio = useStaticData();
     return (
         <section className={`section-1 hero wrapper-con flex justify-between flex-col-reverse md:flex-row items-center ${styles.borderLine}`}>
             <div className="w-full md:w-7/12 flex flex-col items-start justify-between gap-12 md:gap-32 h-full">
                 <div className="headings w-full">
-                    <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className={`${styles.sectionHeading} mt-8 relative`}>WELCOME TO MY WORLD</motion.p>
+                    <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className={`${styles.sectionHeading} mt-8 relative`}>WELCOME TO MY WEB WORLD</motion.p>
                     <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="relative capitalize text-4xl md:text-6xl font-bold mt-4 italic">I&apos;m <br />Md Samsuzzoha Shayon</motion.h1>
                     <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className={`relative capitalize mt-4 ${styles.h2} font-light`}>
                         A fullstack web developer</motion.h2>
                     <div className="button flex gap-2 mt-8">
                         <a type='button' href={portfolio.videoResume} target='_blink' className="w-40 flex justify-around items-center bg-rose-600 text-slate-50 capitalize h-10">
-                            <img src="/icons/play.svg" className='w-8' alt="video resume" />
+                            <img src="/icons/play.svg" className='w-8' alt="video resume" loading='lazy' />
                             <span>Video Resume</span>
                         </a>
                         {/* <button type='button' className="w-32 bg-rose-600 text-slate-50 capitalize h-10">Get In Touch</button> */}

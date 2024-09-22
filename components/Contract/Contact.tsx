@@ -2,9 +2,8 @@
 
 import React, { useState, useRef } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import Loader from './Loader';
-import SocialMedia from './SocialMedia';
-import portfolio from '../data/portfolio.json';
+import Loader from '../Loader/Loader';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import { styles } from '@/utils/styles';
 import { motion } from 'framer-motion';
 import { MessageDataInt, CommonPropsInt } from '@/utils/ComponentTypes';

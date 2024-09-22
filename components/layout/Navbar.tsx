@@ -2,15 +2,19 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import SocialMedia from '../SocialMedia';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import { motion } from 'framer-motion';
+import { INavMenu, ISocial } from '@/types';
+
+interface INavbarProps{
+  logo: string;
+  navMenus: INavMenu[];
+  social: ISocial[];
+}
 
 const DELAY: number = 0.2;
 
-
-import portfolio from '../../data/portfolio.json';
-
-function Navbar() {
+function Navbar({logo, navMenus, social}: INavbarProps) {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   // Animation properties
@@ -60,11 +64,11 @@ function Navbar() {
 
       <motion.img initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} src={portfolio.logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800 ml-2 md:ml-0 ' />
+        transition={{ delay: 0.05, type: 'spring', stiffness: 100 }} src={logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800 ml-2 md:ml-0 ' />
 
       {/* Desktop menu  */}
       <ul className="hidden md:flex items-center h-full bg-slate-700 md:bg-transparent">
-        {portfolio.navMenus.map((page, index) => (
+        {navMenus.map((page, index) => (
           <motion.li
             initial={{ y: -15, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -100,11 +104,11 @@ function Navbar() {
           animate={{ x: mobileMenuX }}
           className="absolute md:static top-0 left-0 w-5/6 md:w-fit block md:hidden items-center h-screen md:h-full flex-col md:flex-row bg-slate-950 md:bg-transparent z-20">
           <div className="icon-menus px-4 flex justify-between items-center mt-8 pb-8 border-b border-slate-900">
-            <motion.img initial={{ opacity: 0, x: -120 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: DELAY }} src={portfolio.logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800' />
+            <motion.img initial={{ opacity: 0, x: -120 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: DELAY }} src={logo} className='h-16 w-16 object-fit object-cover rounded-full bg-slate-900 border-4 border-slate-800' />
             <XMarkIcon className="block md:hidden h-6 w-6 text-slate-500" onClick={closeMenuHandler} />
           </div>
           <ul className="w-full flex items-start flex-col px-4 mt-8 gap-4">
-            {portfolio.navMenus.map((page) => (
+            {navMenus.map((page) => (
               <motion.li
                 variants={elOfMobileMenu}
                 initial='hidden'
@@ -118,7 +122,7 @@ function Navbar() {
             ))}
           </ul>
           <motion.div initial={{ opacity: 0, x: -120 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: DELAY }} className="social mt-8 border-t border-slate-900 pt-8 px-12">
-            <SocialMedia social={portfolio.social} />
+            <SocialMedia social={social} />
           </motion.div>
         </motion.div>
       )}
