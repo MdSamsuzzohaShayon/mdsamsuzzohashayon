@@ -41,7 +41,7 @@ export default function RootLayout({
         <title>Md Samsuzzoha Shayon</title>
         <link rel="icon" type="image/x-icon" href='/img/favicon.ico' />
       </head>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={`${inter.className} bg-gray-800 text-gray-300`} suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

@@ -31,12 +31,13 @@ $slate-color: blue;
 }
 
 // Use wrapper instead of container
-.wrapper-con{
+.wrapper-con {
   width: 80%;
   margin-left: 10%;
 }
+
 @media(max-width: $br-md) {
-  .wrapper-con{
+  .wrapper-con {
     width: 90%;
     margin-left: 5%;
   }
@@ -48,37 +49,41 @@ $slate-color: blue;
   -moz-appearance: textfield;
 }
 
-.shadow-primary{
+.shadow-primary {
   // box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
 }
-.grediant-1{
-  background: (circle, rgba(34,32,74,1) 0%, rgba(27,26,55,1) 50%, rgba(26,25,48,1) 100%);
+
+.grediant-1 {
+  background: (circle, rgba(34, 32, 74, 1) 0%, rgba(27, 26, 55, 1) 50%, rgba(26, 25, 48, 1) 100%);
 }
 
 
-.img-wrap::before{
+.img-wrap::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(255, 255, 255, 0.3);
   animation: pulse 0.45s infinite;
 }
-.img-wrap{
+
+.img-wrap {
   // bg-no-repeat bg-center bg-cover
   position: relative;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
 
-  img{
+  img {
     opacity: 0;
   }
 }
-.img-loaded::before{
+
+.img-loaded::before {
   content: none;
   animation: none;
 }
-.img-loaded > img{
+
+.img-loaded>img {
   opacity: 1;
   transition: opacity 300ms ease-in-out;
 }
@@ -91,10 +96,11 @@ $slate-color: blue;
 //   background-size: cover;
 // }
 
+
 .body-wrapper {
 
 
-    // Create elements
+  // Create elements
 
   // container-type: inline-size;
   // container-name: body;
@@ -113,26 +119,27 @@ $slate-color: blue;
   //   height: 27rem;
   // }
 
-  @media (min-width: 678px){
-    .achievements-area{
+  @media (min-width: 678px) {
+    .achievements-area {
       height: 27rem;
     }
   }
 
-  .my-works{
-  //   .img-wrap::before{
-  //     content: "";
-  //     position: absolute;
-  //     inset: 0;
-  //     animation: pulse 2.5s infinite;
-  //     background-color: rgba(255, 255, 255, 0.3);
-  // }
-  
+  .my-works {
+    //   .img-wrap::before{
+    //     content: "";
+    //     position: absolute;
+    //     inset: 0;
+    //     animation: pulse 2.5s infinite;
+    //     background-color: rgba(255, 255, 255, 0.3);
+    // }
+
   }
 
-  .Project{
+  .Project {
     height: 70vh;
-    .preview-img{
+
+    .preview-img {
       height: 32rem;
     }
   }
@@ -141,8 +148,8 @@ $slate-color: blue;
     background: rgba(209, 213, 219, 0.678);
   }
 
-  .section-6{
-    .test-preview{
+  .section-6 {
+    .test-preview {
       height: 25rem;
     }
   }
@@ -152,8 +159,9 @@ $slate-color: blue;
       height: 34rem;
       width: 100%;
     }
-    .section-6{
-      .test-preview{
+
+    .section-6 {
+      .test-preview {
         height: fit-content;
       }
     }
@@ -165,14 +173,16 @@ $slate-color: blue;
 
 }
 
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     background: rgba(255, 255, 255, 0);
   }
-  50%{
+
+  50% {
     background: rgba(255, 255, 255, 0.4);
   }
-  100%{
+
+  100% {
     background: rgba(255, 255, 255, 0);
   }
 }
@@ -190,26 +200,35 @@ $slate-color: blue;
 
 /* For WebKit-based browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+  width: 12px;
+  /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Background of the scrollbar track */
-    border-radius: 10px; /* Optional: Add rounded corners */
+  background: #f1f1f1;
+  /* Background of the scrollbar track */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    border: 3px solid #f1f1f1; /* Optional: Add padding inside thumb */
+  background-color: #888;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
+  border: 3px solid #f1f1f1;
+  /* Optional: Add padding inside thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Change color when hovering */
+  background: #555;
+  /* Change color when hovering */
 }
 
 /* Firefox scrollbar styles */
 * {
-    scrollbar-width: thin; /* Make scrollbar thinner */
-    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+  scrollbar-width: thin;
+  /* Make scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1;
+  /* Thumb color and track color */
 }
