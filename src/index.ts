@@ -3,7 +3,7 @@ import './index.scss';
 import classNames from 'classnames';
 
 // Dynamically injecting classnames
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
     const mainContent = document.getElementById('main-content');
 
