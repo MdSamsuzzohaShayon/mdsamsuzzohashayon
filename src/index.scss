@@ -1,0 +1,22 @@
+$primary-color: #ff5733;
+$secondary-color: #33ff57;
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: $primary-color;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.my-button {
+  background-color: $secondary-color;
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
