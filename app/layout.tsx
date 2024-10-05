@@ -54,7 +54,11 @@ export default function RootLayout({
 
         {/* Main Body Content */}
         <StaticDataProvider>
-          <BodyWrapper>{children}</BodyWrapper>
+          <BodyWrapper>
+            {children}
+{/* <img src="https://c.pxhere.com/images/f9/5b/5dca9609162fd51ed992e1485c5d-1691990.jpg!d" alt="This is an image loader" /> */}
+
+          </BodyWrapper>
         </StaticDataProvider>
       </body>
     </html>

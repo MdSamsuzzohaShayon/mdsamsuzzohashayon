@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page with Preloader</title>
+    <style>
+        /* style.css */
+
+        /* Preloader styling */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            /* or any other background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* Make sure it's on top */
+        }
+
+        /* Spinner animation */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 6px solid rgba(0, 0, 0, 0.1);
+            border-top-color: #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Spin animation keyframes */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hide the content until page is fully loaded */
+        #content.hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+        <h1>Welcome to the main content</h1>
+        <p>The page has loaded completely!</p>
+        <img src="https://c.pxhere.com/images/f9/5b/5dca9609162fd51ed992e1485c5d-1691990.jpg!d" width="500" alt="">
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            // Hide the preloader
+            document.getElementById('preloader').style.display = 'none';
+
+            // Show the main content
+            document.getElementById('content').classList.remove('hidden');
+        });
+    </script>
+</body>
+
+</html>

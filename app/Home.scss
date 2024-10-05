@@ -1,55 +1,15 @@
-// For desktop
+// Define reusable variables for spacing and positions
+$g1-right-desktop: 8.5%;
+$g1-right-mobile: 1%;
+
+$g2-right-desktop: 37%;
+$g2-left-mobile: 1%;
+
+// Desktop styles
 .hero-wrapper {
-    // Define the container
-    container-name: hero-con;
-    container-type: inline-size;
 
-    // Line group 1
-    .g-1 {
-        right: 8.5%;
-    }
-
-    .g-1-l-1 {
-        top: 40%;
-    }
-
-    .g-1-l-2 {
-        top: 46%;
-    }
-
-    // Line group 2
-    .g-2 {
-        right: 37%;
-    }
-
-    .g-2-l-1 {
-        top: 76%;
-    }
-
-    .g-2-l-2 {
-        top: 70%;
-    }
-
-    // Circle Group 1
-    .g-3 {
-        top: 80%;
-        overflow: hidden;
-    }
-
-    .g-3-c-1 {
-        left: -2%;
-    }
 }
 
-// For mobile screen
-@container hero-con (max-width: 768px) {
-    .g-1 {
-        position: absolute;
-        right: 2px;
-        background-color: blue;
-    }
-
-    .g-3{
-        top: 5%;
-    }
+.achievement-wrapper{
+  
 }

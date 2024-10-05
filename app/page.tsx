@@ -14,6 +14,13 @@ import Testimonial from '@/components/Testimonial/Testimonial';
 import Acheivements from '@/components/Achievement/Achievement';
 import "./Home.scss";
 
+/**
+  Inspirations
+  Menu, Achievements, Loader -> https://uithemez.com/i/hubfolio_HTML/digital_studio/index.html
+  Paralox, Box style -> https://preview.themeforest.net/item/inbio-personal-portfolio-wordpress-theme/full_screen_preview/39221039?_ga=2.106574662.451309780.1727758397-1871772981.1710479217
+  Hover animation -> https://gerold.themejunction.net/
+ */
+
 const HomePage = () => {
   const { videoResume, social, heroImg, bestSkills, features, works, education, skills, experience, contactImg, contactMessage, email, phone, profession, testimonial, achievements } = useStaticData();
 
@@ -23,22 +30,13 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div className="hero-wrapper relative w-full h-auto">
-        <div className="hero static">
-          <Hero videoResume={videoResume} social={social} bestSkills={bestSkills} heroImg={heroImg} />
-        </div>
-        <img src='/img/bg/reactangle-with-many-dots.svg' className='w-24 absolute end-12 top-12 z-10' loading='lazy' />
-        
-        <img src='/img/bg/rose-line.svg' className='w-12 absolute z-10 g-1 g-1-l-1' loading='lazy' />
-        <img src='/img/bg/white-line.svg' className='w-12 absolute z-10 g-1 g-1-l-2' loading='lazy' />
-
-        <img src='/img/bg/rose-line.svg' className='w-12 absolute z-10 g-2 g-2-l-1'  loading='lazy' />
-        <img src='/img/bg/white-line.svg' className='w-12 absolute z-10 g-2 g-2-l-2' loading='lazy' />
-
-        <img src='/img/bg/rose-circle.svg' className='w-32 absolute z-10 g-3 g-3-c-1' loading='lazy' />
+        <Hero videoResume={videoResume} social={social} bestSkills={bestSkills} heroImg={heroImg} />
         {/* Set background  */}
       </div>
       {/* // Acheivements */}
-      <Acheivements acheivements={achievements} />
+      <div className="achievement-wrapper relative w-full h-auto">
+        <Acheivements acheivements={achievements} />
+      </div>
       <Feature features={features} />
       <MyWork works={works} />
       <MyResume education={education} experience={experience} skills={skills} />
