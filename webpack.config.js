@@ -11,6 +11,7 @@ module.exports = (env, argv) => {
         output: {
             filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',
             path: path.resolve(__dirname, 'dist'),
+            assetModuleFilename: 'assets/img/[name].[hash][ext][query]'
         },
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
@@ -54,11 +55,15 @@ module.exports = (env, argv) => {
                     ],
                 },
                 {
-                    test: /\.(png|jpe?g|gif|svg)$/,
-                    type: 'asset/resource',
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
                     generator: {
-                        filename: 'assets/images/[name].[hash][ext][query]',
+                        filename: 'assets/img/[name].[hash][ext]',
                     },
+                    type: 'asset/resource',
+                },
+                {
+                    test: /\.html$/,
+                    use: 'html-loader',
                 },
                 {
                     test: /\.(woff(2)?|eot|ttf|otf|svg)$/,

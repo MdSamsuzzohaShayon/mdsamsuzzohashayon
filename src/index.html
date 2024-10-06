@@ -7,23 +7,41 @@
     <title>My Static Site</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
     <!-- Inspirations
+     https://codepen.io/FrankieDoodie/pen/dgVGad
   Menu, Achievements, Loader -> https://uithemez.com/i/hubfolio_HTML/digital_studio/index.html
   Paralox, Box style -> https://preview.themeforest.net/item/inbio-personal-portfolio-wordpress-theme/full_screen_preview/39221039?_ga=2.106574662.451309780.1727758397-1871772981.1710479217
   Hover animation -> https://gerold.themejunction.net/ -->
 
-    <div class="text-center" id="preloader">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-      </div>
-      <div id="main-content" class="d-none">
-          <img height="600"
-              src="https://images.pexels.com/photos/28775004/pexels-photo-28775004/free-photo-of-dog-on-urban-sidewalk-in-philadelphia.jpeg"
-              alt="large-image" loading="lazy">
-      </div>
+  <!-- Loading text with Bootstrap and custom styles -->
+  <!-- <div class="d-flex justify-content-center align-items-center vh-100 position-relative overflow-hidden" id="preloader">
+    <h1 class="loading-text text-primary text-uppercase display-1" id="loading">Loading</h1>
+  </div> -->
+  
+  <!-- Container for centering content -->
+    <div id="main-content" >
+        <nav class="w-full">
+          <div class="container navbar">
+            <div class="left-side">
+              <div class="icon-holder">
+                <img src="./assets/img/my-pic-logo.png" width="20" height="20" loading="lazy" class="object-fit" />
+                <h1 class="logo-title">Md Shayon</h1>
+              </div>
+              <ul class="menu">
+                <li class="list-group-item">Home</li>
+                <li class="list-group-item">Works</li>
+                <li class="list-group-item">About</li>
+                <li class="list-group-item">Contract</li>
+              </ul>
+            </div>
+            <div class="right-side">
+              <p>Right</p>
+            </div>
+          </div>
+        </nav>
+    </div>
 </body>
 
 </html>
