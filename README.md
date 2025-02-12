@@ -6,6 +6,15 @@ Welcome to my personal portfolio website! This project showcases my work and ski
 
 - [Visit the live site](https://mdshayon.com)
 
+### Reference
+ - Inspirations
+ - https://codepen.io/FrankieDoodie/pen/dgVGad
+ - Menu, Achievements, Loader -> https://uithemez.com/i/hubfolio_HTML/digital_studio/index.html
+ - Paralox, Box style -> https://preview.themeforest.net/item/inbio-personal-portfolio-wordpress-theme/full_screen_preview/39221039?_ga=2.106574662.451309780.1727758397-1871772981.1710479217
+ - Show work like this -> https://itssharl.ee/fr/work
+ - https://rainbowit.net/themes/inbio/senior-ux-designer/#about
+ - Hover animation -> https://gerold.themejunction.net/
+
 ## Features
 
 - Integration with Google Analytics
@@ -33,6 +42,7 @@ Welcome to my personal portfolio website! This project showcases my work and ski
    - Create all necessary secret keys in GitHub and use them in your workflow configuration.
 
 ## References
+- https://webflow.com/blog/design-portfolio-examples
 
 - [InBio template](https://rainbowit.net/html/inbio/)
 - [Background design inspiration](https://themihub.com/html/morex-demo/morex/index-dark.html)

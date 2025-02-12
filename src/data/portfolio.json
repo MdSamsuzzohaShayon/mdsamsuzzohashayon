@@ -1,0 +1,613 @@
+{
+    "logo": "/img/my-pic-logo.png",
+    "heroImg": "/img/shayon-hero-image.png",
+    "profession": "Web Developer",
+    "contactMessage": "I am available to work any kind of web development projects on hourly or project based. Contact me though WhatsApp or Email.",
+    "email": "mdsamsuzzoha5222@gmail.com",
+    "videoResume": "https://www.youtube.com/@mdsamsuzzoha1857/videos",
+    "phone": "+8801889171929",
+    "contactImg": "/img/shayon-contact-image.jpg",
+    "navMenus": [
+        {
+            "id": 1,
+            "text": "Home",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "text": "Features",
+            "link": "#"
+        },
+        {
+            "id": 3,
+            "text": "My Works",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "text": "Resume",
+            "link": "#"
+        },
+        {
+            "id": 5,
+            "text": "Contact",
+            "link": "#"
+        },
+        {
+            "id": 6,
+            "text": "Testimonial",
+            "link": "#"
+        }
+    ],
+    "social": [
+        {
+            "id": 1,
+            "link": "https://twitter.com/shayon_md",
+            "icon": "twitter.svg"
+        },
+        {
+            "id": 2,
+            "link": "https://www.linkedin.com/in/md-samsuzzoha-a1032a11b/",
+            "icon": "in.svg"
+        },
+        {
+            "id": 3,
+            "link": "https://github.com/MdSamsuzzohaShayon",
+            "icon": "github.svg"
+        }
+    ],
+    "bestSkills": [
+        {
+            "id": 1,
+            "name": "Node.JS",
+            "icon": "nodejs.svg"
+        },
+        {
+            "id": 2,
+            "name": "Python",
+            "icon": "python.svg"
+        },
+        {
+            "id": 3,
+            "name": "Server",
+            "icon": "devops.svg"
+        }
+    ],
+    "achievements": [
+        {
+            "id": 1,
+            "achieve": "clients",
+            "num": 45,
+            "text": "On Upwork and Fiverr"
+        },
+        {
+            "id": 2,
+            "achieve": "projects",
+            "num": 62,
+            "text": "Completed successfully"
+        },
+        {
+            "id": 3,
+            "achieve": "youtube",
+            "num": 1610,
+            "text": "Subscribers"
+        },
+        {
+            "id": 4,
+            "achieve": "Years",
+            "num": 4,
+            "text": "In freelancing marketplaces"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "icon": "web-design-rose.svg",
+            "title": "Web Design",
+            "desc": "My skills in design website, layout, and user interface principles allow me to transform ideas into captivating web visuals, making a lasting impact on users and brands alike."
+        },
+        {
+            "id": 2,
+            "icon": "frontend-rose.svg",
+            "title": "Front-end development",
+            "desc": "With expertise in HTML, CSS, React.js Next and Vanilla JavaScript, I focus on creating visually appealing and responsive web designs that deliver an exceptional user experience."
+        },
+        {
+            "id": 3,
+            "icon": "backend-rose.svg",
+            "title": "Back-end Development",
+            "desc": "I excel in backend development, where I build the server-side components of websites and web applications. My expertise revolves around database management, server logic, and API integration."
+        },
+        {
+            "id": 4,
+            "icon": "server-rose.svg",
+            "title": "Server Administration",
+            "desc": "My expertise includes setting up, configuring, and maintaining server infrastructure, as well as implementing security measures and troubleshooting issues. Moreover, deploying on serverless."
+        },
+        {
+            "id": 5,
+            "icon": "devops-rose.svg",
+            "title": "DevOps",
+            "desc": "I bridge the gap between development and operations teams, using automation and collaboration to enhance efficiency. My expertise includes continuous integration, continuous delivery (CI/CD), infrastructure as code (IaC), and containerization."
+        },
+        {
+            "id": 6,
+            "icon": "mobile-rose.svg",
+            "title": "Mobile Application",
+            "desc": "I create cross-platform apps that run seamlessly on both iOS and Android devices. My expertise lies in building responsive, native-like experiences while maximizing code reuse, delivering high-performance, and visually engaging."
+        }
+    ],
+    "works": [
+        {
+            "id": 1,
+            "imgSrc": "ASL-Squads-mockup.jpg",
+            "imgTiny": "ASL-Squads-mockup-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "ASL Squads - Tournament",
+            "desc": "Youthspike tournament, tournament design, prototype design, landscape prototype, backend admin panel, action box design, player management, event settings, squad list navigation, ranking updates, match creation, captain login, player images, GraphQL tutorial, Next.js, MERN stack, NestJS, Apache server, real-time data updates, drag and drop functionality, player ranking, team management, event creation, match settings, captain team management, player database, team logo, match scoring, match notifications, dashboard design, event filters, sponsor management, single match public view, random player assignment, anchor player pairing, hierarchy player pairing, LDO management.",
+            "techStack": [
+                "Nest.js",
+                "Next.js",
+                "GraphQL",
+                "Web Socket",
+                "AWS EC2",
+                "AWS S3",
+                "Linux",
+                "VPS Hosting"
+            ],
+            "vidUrl": "https://youtu.be/MjBt5yCFV3U",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/youthspike-event-management",
+            "screenshots": [
+                "asl-squads-1-screenshot.jpg",
+                "asl-squads-2-screenshot.jpg",
+                "asl-squads-3-screenshot.jpg",
+                "asl-squads-4-screenshot.png",
+                "asl-squads-5-screenshot.png",
+                "asl-squads-6-screenshot.png"
+            ],
+            "liveUrl": "https://aslsquads.com"
+        },
+        {
+            "id": 2,
+            "imgSrc": "kinoverse-mockup.jpg",
+            "imgTiny": "kinoverse-mockup-tiny.jpg",
+            "type": "MERN Stack",
+            "title": "Freelance Marketplace",
+            "desc": "Included features are wishlist, contact, admin panel, user dashboard, email notification, file uploads to AWS S3, and many more. First and foremost, I create prototype of the project the provide my client the desire end result they are expecting. afterward I developed this from scratch and deployed on AWS EC2",
+            "techStack": [
+                "Node.js",
+                "React.js",
+                "Sequlize",
+                "AWS EC2",
+                "AWS S3",
+                "Linux",
+                "VPS Hosting"
+            ],
+            "vidUrl": null,
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-marketplace-kinoverse",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "http://kinoverse.net/"
+        },
+        {
+            "id": 3,
+            "imgSrc": "django-nuxt-ecommerce-mockup.jpg",
+            "imgTiny": "django-nuxt-ecommerce-mockup-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "Furniture Ecommerce",
+            "desc": "I developed a custom Ecommerce website for a furniture shop using Django Rest Framework at the backend and Nuxt.js vue.js framework at the frontend.",
+            "techStack": [
+                "Django",
+                "Django-rest-framework",
+                "Nuxt.js",
+                "PostgresSQL",
+                "Digital Ocean",
+                "CloudFlare CDN",
+                "Tailwind CSS",
+                "Docker",
+                "CI/CD Pipeline",
+                "Vue.js",
+                "Pinia"
+            ],
+            "vidUrl": "https://youtu.be/IY_CffKEuOU",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/django-drf-nuxt-ecommerce",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": null
+        },
+        {
+            "id": 4,
+            "imgSrc": "stockvel-mockup.jpg",
+            "imgTiny": "stockvel-mockup-tiny.jpg",
+            "type": "LAMP Stack",
+            "title": "Financial website for saving",
+            "desc": "Included features are user authentication, admin panel, user dashboard, multi-lingual, membership of a pack, create pack, join pack, select leader of the pack, manage pack by leager. ",
+            "techStack": [
+                "PHP",
+                "MySQL",
+                "CPanel"
+            ],
+            "vidUrl": "https://youtu.be/PFPlZueA-OQ",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/php-stockvell",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "http://stockvell.allinone-office.com"
+        },
+        {
+            "id": 5,
+            "imgSrc": "cost-calc-mockup.jpg",
+            "imgTiny": "cost-calc-mockup-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "Cost Calculation",
+            "desc": "This website for an agency, customer comes to this website and calculate their estimated cost of specific services they required.",
+            "techStack": [
+                "Python",
+                "FastAPI",
+                "Vanilla JavaScript",
+                "MongoDB",
+                "Render"
+            ],
+            "vidUrl": "https://youtu.be/k1ao7Prf5Kg",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/fastapi-reactjs-sql-nosql-projects/tree/01_fastapi_cost_calc_mongodb_vanillajs",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "https://costcalc.netlify.app"
+        },
+        {
+            "id": 6,
+            "imgSrc": "discord-bot.jpg",
+            "imgTiny": "discord-bot-tiny.jpg",
+            "type": "Bot Development",
+            "title": "Discord Bot",
+            "desc": "With this Discord Bot Members can intract with Guesty. Start to complete process tasks of Guesty will be done via user's specific channel of Discord",
+            "techStack": [
+                "Discord.py",
+                "Python",
+                "FastAPI",
+                "Linux",
+                "VPS Hosting"
+            ],
+            "vidUrl": null,
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/claimbot-discord-bot",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": null
+        },
+        {
+            "id": 7,
+            "imgSrc": "ist-mockup.jpg",
+            "imgTiny": "ist-mockup-tiny.jpg",
+            "type": "CMS Development",
+            "title": "Sports Blog",
+            "desc": "I developed a custom theme from scratch and using that theme I made my wordpress blogging site.",
+            "techStack": [
+                "Wordpress",
+                "PHP",
+                "Theme",
+                "CPanel"
+            ],
+            "vidUrl": null,
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "https://itssportstime.org/"
+        },
+        {
+            "id": 8,
+            "imgSrc": "ponditi.jpg",
+            "imgTiny": "ponditi-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "Ponditi Learning Platform",
+            "desc": "Features of this website to be mentioned, Role Base JWT User Authentication, Students search teacher, Send tuotian request, create conversation, get tutorian on hourly or monthly basis, User Dashboard, admin panel, and more.",
+            "techStack": [
+                "Node.js",
+                "Next.js",
+                "Redux",
+                "AWS EC2",
+                "Socket.io",
+                "Linux",
+                "TypeScript",
+                "ESLint",
+                "Docker"
+            ],
+            "vidUrl": "https://www.youtube.com/channel/UC4rUEmpCQL-TK_ffD4yt0fw",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-nextjs-ponditi-lms",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "https://ponditi.com/"
+        },
+        {
+            "id": 9,
+            "imgSrc": "email-template-mockup.jpg",
+            "imgTiny": "email-template-mockup-tiny.jpg",
+            "type": "Backend Development",
+            "title": "Email Template Building",
+            "desc": "Features of this website to be mentioned, Create email template, customize template, save template, edit template, preview template, export template, upload template images to AWS S3, and more",
+            "techStack": [
+                "Node.js",
+                "Vanilla JavaScript",
+                "Digital Ocean",
+                "AWS S3",
+                "CentOS",
+                "VPS Hosting"
+            ],
+            "vidUrl": "https://youtu.be/0bWAxfXdrHg?si=vVcb9Y7bhGdkNovb",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/nodejs-email-template",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "https://emailtemplate.onrender.com/"
+        },
+        {
+            "id": 10,
+            "imgSrc": "spikeball-mockup.jpg",
+            "imgTiny": "spikeball-mockup-tiny.jpg",
+            "type": "Full Stack Development",
+            "title": "Tournament Website",
+            "desc": "Features of this website to be mentioned, join in a tournament, 5 rounds in the tournament, random team up in first round, points calculations, adding extra points, rank players after round 1, random team up or team up based on rankings, leave the team and join team in the middle of the tournament, show score, user authentication, admin panel, and more.",
+            "techStack": [
+                "Node.js",
+                "React.js",
+                "Express.js",
+                "MongoDB",
+                "AWS EC2",
+                "AWS Route 53",
+                "AWS S3",
+                "Docker"
+            ],
+            "vidUrl": "https://youtu.be/Xn1H9ftIdRY?si=FN5fw5OjSysC3VIZ",
+            "srcCode": "https://github.com/MdSamsuzzohaShayon/wordpress-theme/tree/7_sport_blog",
+            "screenshots": [
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg",
+                "kinoverse-mockup-tiny.jpg"
+            ],
+            "liveUrl": "https://spikeball.mdshayon.com/"
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "title": "Bachelor of business administration",
+            "institution": "Daffodil International University",
+            "year": "2016-2020",
+            "score": "3.05/4",
+            "desc": "I pursued my Bachelor of Business Administration at Daffodil International University from 2016 to 2020. During this time, I maintained a commendable academic performance, achieving a score of 3.05 out of 4."
+        },
+        {
+            "id": 2,
+            "title": "Higher Secondary School Certificate",
+            "institution": "Singra Damdama Pilot School & College",
+            "year": "2013-2015",
+            "score": "3.33/5",
+            "desc": "I completed my Higher Secondary School Certificate at Singra Damdama Pilot School & College from 2013 to 2015, achieving a score of 3.33 out of 5. This period of my education was instrumental in shaping my academic foundation and facilitating my transition to higher studies."
+        },
+        {
+            "id": 3,
+            "title": "Secondary School Certificate",
+            "institution": "Singra Damdama Pilot School & College",
+            "year": "2008-2013",
+            "score": "3.63/5",
+            "desc": "I successfully completed my Secondary School Certificate at Singra Damdama Pilot School & College from 2008 to 2013, securing a commendable score of 3.63 out of 5. It was during these years that I began to develop a deeper understanding of various subjects and started to chart my path towards higher education and future endeavors."
+        }
+    ],
+    "skills": [
+        {
+            "id": 1,
+            "title": "UI/UX Design- Figma",
+            "percent": 85
+        },
+        {
+            "id": 2,
+            "title": "Vanilla JavaScript",
+            "percent": 95
+        },
+        {
+            "id": 3,
+            "title": "React.js - Frontend Framework",
+            "percent": 90
+        },
+        {
+            "id": 4,
+            "title": "Vue.js - Frontend Framework",
+            "percent": 70
+        },
+        {
+            "id": 5,
+            "title": "Next.js - JavaScript",
+            "percent": 80
+        },
+        {
+            "id": 6,
+            "title": "Nuxt.js - JavaScript",
+            "percent": 70
+        },
+        {
+            "id": 7,
+            "title": "Node.js - Backend Framework",
+            "percent": 95
+        },
+        {
+            "id": 8,
+            "title": "Django - Backend Framework",
+            "percent": 85
+        },
+        {
+            "id": 9,
+            "title": "FastAPI - Backend Framework",
+            "percent": 90
+        },
+        {
+            "id": 10,
+            "title": "GraphQL",
+            "percent": 80
+        },
+        {
+            "id": 11,
+            "title": "Docker Container",
+            "percent": 85
+        },
+        {
+            "id": 12,
+            "title": "Linux Server",
+            "percent": 80
+        },
+        {
+            "id": 13,
+            "title": "Serverless",
+            "percent": 70
+        },
+        {
+            "id": 14,
+            "title": "CI/CD Pipeline",
+            "percent": 65
+        },
+        {
+            "id": 15,
+            "title": "SQL Database",
+            "percent": 90
+        },
+        {
+            "id": 16,
+            "title": "MongoDB Database",
+            "percent": 95
+        },
+        {
+            "id": 17,
+            "title": "Git - Version Control",
+            "percent": 95
+        },
+        {
+            "id": 18,
+            "title": "WebAPI - Socket.io, WebRTC, etc",
+            "percent": 90
+        },
+        {
+            "id": 19,
+            "title": "Wordpress - Theme Development",
+            "percent": 80
+        },
+        {
+            "id": 20,
+            "title": "Deployment",
+            "percent": 90
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "title": "Intern",
+            "institution": "Grameen Bank Limited",
+            "year": "3 months",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 2,
+            "title": "Marketing Executive",
+            "institution": "Grameenphone Limited",
+            "year": "2020-2021",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        },
+        {
+            "id": 3,
+            "title": "Freelancer Web Developer",
+            "institution": "Upwork and Fiverr",
+            "year": "2020-Present",
+            "desc": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+        }
+    ],
+    "testimonial": [
+        {
+            "id": 1,
+            "client": "Simon Pitt",
+            "project": "WebRTC & Socket.io Peer-to-Peer File Sharing",
+            "platform": "Upwork",
+            "duration": "Jan-2021 - Mar-2021",
+            "comments": "This was the best experience I have had with any freelancer. Incredibly skilled and hardworking. Extremely responsive and passionate about your project. Through this experience with him I consider him a friend and a partner more than a freelancer. 10/10 work, effort, everything. So thankful for being able to have worked with him and I plan on working with him again in the future.",
+            "stars": 5,
+            "clientImg": "/img/Simmon-pitt.webp"
+        },
+        {
+            "id": 2,
+            "client": "Ethan Reynolds",
+            "project": "Discord Bot Development",
+            "platform": "Upwork",
+            "duration": "Oct-2022 - Nov-2022",
+            "comments": "Great programmer, excellent at what he does and very respectful!",
+            "stars": 5,
+            "clientImg": "/img/Ethan Reynolds.webp"
+        },
+        {
+            "id": 3,
+            "client": "Shashi PF",
+            "project": "Front-end Development With Adobe AE Animation",
+            "platform": "Upwork",
+            "duration": "Jul-2021 - Jan-2022",
+            "comments": "Shayon is one of the most friendly freelancers I have ever met. He was very forgiving as remained out of touch for a very long time due to personal reasons. In terms of work - he turned it around very quickly and very professionally. I highly recommend Shayon to anybody looking for a web developer and designer. Thank you Shayon !",
+            "stars": 5,
+            "clientImg": null
+        },
+        {
+            "id": 4,
+            "client": "Shan Kara",
+            "project": "FastAPI Statistical Web App",
+            "platform": "Fiverr",
+            "duration": "Jan-2022 - May-2022",
+            "comments": "Great work on the recent project. The developer has shown a strong understanding of the programming language and technologies used, and was able to implement the required features effectively. The code is well-organized and easy to understand, making it easy for others to maintain. The developer also effectively communicated with the team and was able to meet deadlines. Overall, a valuable asset to the team and I look forward to working with him on future projects.",
+            "stars": 5,
+            "clientImg": "/img/Shan-kara.webp"
+        },
+        {
+            "id": 5,
+            "client": "Ross Fledderjohn",
+            "project": "Agency Web APP & CI/CD Hosting setup",
+            "platform": "Fiverr",
+            "duration": "Jan-2022 - Sep-2022",
+            "comments": "The best developer I have worked with. He is always on top of things and was able to resolve any and every issue that may have arose, very quickly. Excellent communication and he writes extremely good code and makes beautiful work. My favorite freelancer I have worked with.",
+            "stars": 5,
+            "clientImg": "/img/Jaden Rodabaugh.webp"
+        },
+        {
+            "id": 6,
+            "client": "Von Mwen ",
+            "project": "Discord Bot Development",
+            "platform": "Upwork",
+            "duration": "Dec-2022 - Mar-2023",
+            "comments": "Very talented web designer, will use again, thanks for dedication.",
+            "stars": 5,
+            "clientImg": null
+        }
+    ]
+}

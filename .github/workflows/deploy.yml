@@ -4,9 +4,6 @@ on:
         types:
             - closed
 
-    # push:
-    #     branches:
-    #         - 3_nextjs_tailwind_portfolio
     
 name: Deploy website on push
 
@@ -40,7 +37,7 @@ jobs:
                 username: ${{secrets.FTP_CPANEL_USERNAME}}
                 password: ${{secrets.FTP_CPANEL_PASSWORD}}
                 protocol: 'ftp'
-                local-dir: './out/'
+                local-dir: './dist/'
 
     deploy-server:
         if: github.event.pull_request.merged == true
@@ -69,4 +66,3 @@ jobs:
                 publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
                 scm-do-build-during-deployment: true
                 enable-oryx-build: true
-
