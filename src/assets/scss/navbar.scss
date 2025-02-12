@@ -1,0 +1,119 @@
+$menu-mt: 0.5rem;
+
+header {
+    .navbar {
+        margin-top: $menu-mt;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-side {
+            display: flex;
+            justify-content: center;
+
+            .icon-holder {
+                border: 1px rgba(255, 255, 255, 0.445) solid;
+                margin-right: 0.5rem;
+                padding: 0.2rem 0.5rem;
+                border-radius: 3rem;
+                @include reset-flex;
+            }
+
+            .menu {
+                border: 1px rgba(255, 255, 255, 0.445) solid;
+                border-radius: 3rem;
+                @include reset-parent-list;
+
+                li {
+                    padding: 0.2rem 0.5rem;
+                    margin-right: 0.5rem;
+                    border-radius: 3rem;
+                    @include reset-list;
+
+                    &:first-child {
+                        margin-left: 0.5rem;
+                        background-color: rgba(255, 255, 255, 0.178);
+                    }
+
+                    a {
+                        @include reset-href;
+                    }
+                }
+
+                @media screen and (max-width: $md) {
+                    display: none;
+                }
+
+            }
+        }
+
+        .right-side {
+            .menu-icon {
+                width: 1.7rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    #mega-menu {
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        background: $dark-color;
+        overflow: hidden;
+        z-index: 10;
+
+
+        .menu-wrapper {
+            height: 100%;
+            @include reset-flex;
+
+            ul {
+                @include reset-parent-list;
+                flex-direction: column;
+                row-gap: 3%;
+
+                li {
+                    a {
+                        @include reset-href;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+
+                    }
+                }
+            }
+
+            .menu {
+                width: 60%;
+            }
+
+            .social {
+                width: 40%;
+                height: 100%;
+                background: $dark-color-1;
+
+                .close-icon {
+                    position: absolute;
+                    right: 10%;
+                    width: 1.7rem;
+                    padding: 0.5rem;
+                    // margin-left: 70%;
+                    margin-top: $menu-mt;
+                }
+
+                .social-context{
+                    height: 100%;
+                    @include reset-flex;
+                    flex-direction: column;
+                }
+
+                .social-icons{
+                    img {
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

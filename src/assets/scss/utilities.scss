@@ -1,0 +1,91 @@
+// ========================= CIRCLE =========================
+.circle-around {
+    background: rgb(34, 29, 107);
+    background: radial-gradient(circle, rgb(37, 37, 37) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 1.5vw 0.8vw rgba(255, 255, 255, 0.12); /* White glow */
+
+}
+
+// ========================= DISPLAY =========================
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+// ========================= FLEX PROPERTIES =========================
+.justify-end {
+    justify-content: end;
+}
+.justify-start {
+    justify-content: start;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.items-start{
+    align-items: start;
+}
+.items-end{
+    align-items: end;
+}
+.items-center{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+
+// ========================= BACKGROUND =========================
+.bg-dark {
+    background: $dark-color;
+}
+
+// ========================= COLOR =========================
+.text-light {
+    color: $light-color;
+}
+
+
+// ========================= WIDTH =========================
+.w-full {
+    width: 100%;
+}
+.w-fit{
+    width: fit-content;
+}
+
+
+// ========================= HEIGHT =========================
+.h-full{
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+// ========================= BORDER =========================
+.border {
+    border-color: rgba(255, 255, 255, 0.404);
+}
+
+.group-list {
+    // bg-transparent border-0 p-0 ps-2 text-light 
+
+}
