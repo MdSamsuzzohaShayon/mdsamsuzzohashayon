@@ -99,8 +99,8 @@ Feel free to reach out or collaborate — I'm always excited about new ideas and
 
 📧 **Email:** [mdsamsuzzoha5222@gmail.com](mailto:mdsamsuzzoha5222@gmail.com)  
 🌐 **Website:** [mdshayon.com](https://mdshayon.com)  
-🐦 **Twitter:** [@mdshayon](https://twitter.com/mdshayon)  
-📷 **Instagram:** [@mdshayon.dev](https://instagram.com/mdshayon.dev)
+🐦 **X:** [@shayon_md](https://x.com/shayon_md)  
+📷 **LinkedIn:** [@md-samsuzzoha](https://www.linkedin.com/in/md-samsuzzoha/)
 
 ---
 
