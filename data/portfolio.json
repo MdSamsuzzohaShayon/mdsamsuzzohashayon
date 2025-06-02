@@ -133,7 +133,7 @@
         {
             "id": 6,
             "icon": "mobile-rose.svg",
-            "title": "Mobile Application",
+            "title": "Blockchain Development",
             "desc": "I create cross-platform apps that run seamlessly on both iOS and Android devices. My expertise lies in building responsive, native-like experiences while maximizing code reuse, delivering high-performance, and visually engaging."
         }
     ],
@@ -423,108 +423,108 @@
             "desc": "I successfully completed my Secondary School Certificate at Singra Damdama Pilot School & College from 2008 to 2013, securing a commendable score of 3.63 out of 5. It was during these years that I began to develop a deeper understanding of various subjects and started to chart my path towards higher education and future endeavors."
         }
     ],
-    "skills": [
-        {
-            "id": 1,
-            "title": "UI/UX Design- Figma",
-            "percent": 85
-        },
-        {
-            "id": 2,
-            "title": "Vanilla JavaScript",
-            "percent": 95
-        },
-        {
-            "id": 3,
-            "title": "React.js - Frontend Framework",
-            "percent": 90
-        },
-        {
-            "id": 4,
-            "title": "Vue.js - Frontend Framework",
-            "percent": 70
-        },
-        {
-            "id": 5,
-            "title": "Next.js - JavaScript",
-            "percent": 80
-        },
-        {
-            "id": 6,
-            "title": "Nuxt.js - JavaScript",
-            "percent": 70
-        },
-        {
-            "id": 7,
-            "title": "Node.js - Backend Framework",
-            "percent": 95
-        },
-        {
-            "id": 8,
-            "title": "Django - Backend Framework",
-            "percent": 85
-        },
-        {
-            "id": 9,
-            "title": "FastAPI - Backend Framework",
-            "percent": 90
-        },
-        {
-            "id": 10,
-            "title": "GraphQL",
-            "percent": 80
-        },
-        {
-            "id": 11,
-            "title": "Docker Container",
-            "percent": 85
-        },
-        {
-            "id": 12,
-            "title": "Linux Server",
-            "percent": 80
-        },
-        {
-            "id": 13,
-            "title": "Serverless",
-            "percent": 70
-        },
-        {
-            "id": 14,
-            "title": "CI/CD Pipeline",
-            "percent": 65
-        },
-        {
-            "id": 15,
-            "title": "SQL Database",
-            "percent": 90
-        },
-        {
-            "id": 16,
-            "title": "MongoDB Database",
-            "percent": 95
-        },
-        {
-            "id": 17,
-            "title": "Git - Version Control",
-            "percent": 95
-        },
-        {
-            "id": 18,
-            "title": "WebAPI - Socket.io, WebRTC, etc",
-            "percent": 90
-        },
-        {
-            "id": 19,
-            "title": "Wordpress - Theme Development",
-            "percent": 80
-        },
-        {
-            "id": 20,
-            "title": "Deployment",
-            "percent": 90
-        }
-    ],
+"skills": [
+    {
+        "id": 1,
+        "title": "UI/UX Design using Figma (Client-Centric Prototyping)",
+        "percent": 85
+    },
+    {
+        "id": 2,
+        "title": "Solidity / Ethereum DApp Development",
+        "percent": 95
+    },
+    {
+        "id": 3,
+        "title": "React.js – Responsive, Fast Frontend UI",
+        "percent": 90
+    },
+    {
+        "id": 4,
+        "title": "Blockchain Smart Contracts (Audit-Ready Logic)",
+        "percent": 70
+    },
+    {
+        "id": 5,
+        "title": "Next.js/React – SEO-Optimized Web Platforms",
+        "percent": 80
+    },
+    {
+        "id": 6,
+        "title": "Vue.js/Nuxt.js – Scalable Frontend Applications",
+        "percent": 70
+    },
+    {
+        "id": 7,
+        "title": "Node.js / Django / Nest.js – Enterprise Backend Systems",
+        "percent": 95
+    },
+    {
+        "id": 8,
+        "title": "Horizontal & Auto Scaling (Handling High-Traffic Apps)",
+        "percent": 85
+    },
+    {
+        "id": 9,
+        "title": "FastAPI – High-Performance Python Backend APIs",
+        "percent": 90
+    },
+    {
+        "id": 10,
+        "title": "GraphQL/RestAPI – Flexible & Client-Friendly API Layer",
+        "percent": 80
+    },
+    {
+        "id": 11,
+        "title": "Docker – Cross-Platform App Containerization",
+        "percent": 85
+    },
+    {
+        "id": 12,
+        "title": "Linux Server Management – Secure & Efficient Hosting",
+        "percent": 80
+    },
+    {
+        "id": 13,
+        "title": "Serverless Architecture (AWS Lambda, API Gateway)",
+        "percent": 70
+    },
+    {
+        "id": 14,
+        "title": "CI/CD Pipelines – Automated Testing & Deployment",
+        "percent": 85
+    },
+    {
+        "id": 15,
+        "title": "SQL Databases – Scalable Relational Data Systems",
+        "percent": 90
+    },
+    {
+        "id": 16,
+        "title": "MongoDB – Flexible, NoSQL Cloud Databases",
+        "percent": 95
+    },
+    {
+        "id": 17,
+        "title": "Git & GitHub – Team-Based Version Control",
+        "percent": 95
+    },
+    {
+        "id": 18,
+        "title": "Web APIs – Real-Time Communication (WebSocket, WebRTC)",
+        "percent": 90
+    },
+    {
+        "id": 19,
+        "title": "Solana Blockchain – Fast, Low-Fee Smart Contracts",
+        "percent": 80
+    },
+    {
+        "id": 20,
+        "title": "Deployment & DevOps – Linux / Windows Environments",
+        "percent": 90
+    }
+],
     "experience": [
         {
             "id": 1,
