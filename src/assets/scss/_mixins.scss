@@ -1,0 +1,25 @@
+@mixin reset-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reset-parent-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+@mixin reset-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+@mixin reset-href {
+    color: $light-color;
+    text-decoration: none;
+    color: $light-color;
+}

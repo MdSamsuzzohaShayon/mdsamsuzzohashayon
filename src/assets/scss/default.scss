@@ -1,0 +1,27 @@
+:root {
+    /* Dark theme variables */
+    --bg-color: $dark-color;
+    --text-color: $light-color;
+}
+
+[data-theme="dark"] {
+    /* Light theme variables */
+    --bg-color: $light-color;
+    --text-color: $dark-color;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // Set font size and more
+    color: $light-color;
+}
