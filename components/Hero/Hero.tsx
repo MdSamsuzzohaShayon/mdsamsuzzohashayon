@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import { IBestSkill, ISocial, IStats, IValueProps } from '@/types';
+import { IBestSkill, IHeroValueProp, ISocial, IStats } from '@/types';
 
 interface IHeroProps {
   videoResume: string;
@@ -9,7 +9,7 @@ interface IHeroProps {
   bestSkills: IBestSkill[];
   heroImg: string;
   roles: string[];
-  valueProps: IValueProps[];
+  valueProps: IHeroValueProp[];
   tags: string[];
   stats: IStats[];
 }
@@ -101,7 +101,7 @@ const Hero = ({ videoResume, social, bestSkills, heroImg, roles, valueProps, tag
             {valueProps.map((v, _i) => (
               <div key={_i} className="value-prop">
                 <span className="value-icon" aria-hidden="true">{v.icon}</span>
-                <span className="value-text">{v.name}</span>
+                <span className="value-text">{v.text}</span>
               </div>
             ))}
           </div>

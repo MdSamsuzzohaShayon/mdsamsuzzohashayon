@@ -21,6 +21,12 @@ export interface IValueProps{
     icon: string;
     name: string;
 }
+
+export interface IHeroValueProp {
+    icon: string;
+    text: string;
+}
+
 export interface ISocial extends ICommon, IValueProps {
 }
 
@@ -123,7 +129,7 @@ export interface IPortfolioData {
     testimonial: ITestimonial[];
     achievements: IAchievement[];
     roles: string[];
-    valueProps: IValueProps[];
+    valueProps: IHeroValueProp[];
     tags: string[];
     stats: IStats[];
 }
