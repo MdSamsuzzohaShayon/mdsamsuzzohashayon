@@ -1,0 +1,53 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                fill: rgb(225, 29, 72);
+            }
+
+            .cls-3 {
+                fill: white;
+            }
+        </style>
+    </defs>
+
+    <title>Projects Success</title>
+
+    <g id="Layer_2">
+        <g id="Icons">
+            <g id="Projects_Success">
+
+                <!-- Reset -->
+                <rect class="cls-1" width="60" height="60" />
+
+                <!-- Soft Glow Background -->
+                <circle class="cls-2" cx="30" cy="30" r="26" opacity="0.08" />
+
+                <!-- Folder Base -->
+                <path class="cls-2" d="M16 24
+             H26
+             L29 20
+             H44
+             A4 4 0 0 1 48 24
+             V40
+             A4 4 0 0 1 44 44
+             H16
+             A4 4 0 0 1 12 40
+             V28
+             A4 4 0 0 1 16 24 Z" />
+
+                <!-- Checkmark Circle -->
+                <circle class="cls-3" cx="38" cy="36" r="7" />
+
+                <!-- Checkmark -->
+                <path d="M35 36 L37.5 38.5 L41 34" stroke="rgb(225, 29, 72)" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" />
+
+            </g>
+        </g>
+    </g>
+</svg>

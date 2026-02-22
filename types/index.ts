@@ -17,9 +17,19 @@ interface ICommon {
     link: string;
 }
 
-export interface ISocial extends ICommon {
+export interface IValueProps{
     icon: string;
+    name: string;
 }
+
+export interface IHeroValueProp {
+    icon: string;
+    text: string;
+}
+
+export interface ISocial extends ICommon, IValueProps {
+}
+
 
 export interface IBestSkill {
     id: number;
@@ -50,6 +60,7 @@ export interface IWork {
     srcCode: string;
     screenshots: string[],
     liveUrl: string;
+    features: string[];
 }
 
 export interface IEECommon {
@@ -66,9 +77,10 @@ export interface IEducation extends IEECommon {
 }
 
 export interface ISkill {
-    id: 1,
+    id: number,
     title: string;
     percent: number;
+    category?: string;
 }
 
 export interface IExperience extends IEECommon { }
@@ -89,6 +101,12 @@ export interface IAchievement {
     achieve: string;
     num: number;
     text: string;
+    icon: string;
+}
+
+export interface IStats{
+    value: string;
+    label: string;
 }
 
 export interface IPortfolioData {
@@ -110,6 +128,10 @@ export interface IPortfolioData {
     experience: IExperience[];
     testimonial: ITestimonial[];
     achievements: IAchievement[];
+    roles: string[];
+    valueProps: IHeroValueProp[];
+    tags: string[];
+    stats: IStats[];
 }
 
 

@@ -7,6 +7,53 @@
     "videoResume": "https://www.youtube.com/@mdsamsuzzoha1857/videos",
     "phone": "+8801889171929",
     "contactImg": "/img/shayon-contact-image.jpg",
+    "roles": [
+        "I Ship Scalable Full-Stack Systems",
+        "I Build APIs That Handle Millions of Requests",
+        "I Turn Complex Problems Into Clean Architecture",
+        "I Deliver Remote, Async, on Time — Every Time"
+    ],
+    "valueProps": [
+        {
+            "icon": "⚡",
+            "text": "Ships fast without cutting corners"
+        },
+        {
+            "icon": "🌍",
+            "text": "Remote-native, async-first mindset"
+        },
+        {
+            "icon": "📐",
+            "text": "System design for scale from day one"
+        }
+    ],
+    "tags": [
+        "Node.js",
+        "Next.js",
+        "PostgreSQL",
+        "System Design",
+        "REST APIs",
+        "TypeScript",
+        "Remote"
+    ],
+    "stats": [
+        {
+            "value": "6+",
+            "label": "Yrs Experience"
+        },
+        {
+            "value": "50+",
+            "label": "Systems Shipped"
+        },
+        {
+            "value": "15+",
+            "label": "Teams Served"
+        },
+        {
+            "value": "∞",
+            "label": "Uptime Focus"
+        }
+    ],
     "navMenus": [
         {
             "id": 1,
@@ -43,17 +90,20 @@
         {
             "id": 1,
             "link": "https://twitter.com/shayon_md",
-            "icon": "twitter.svg"
+            "icon": "twitter.svg",
+            "name": "Md Samsuzzoha"
         },
         {
             "id": 2,
             "link": "https://www.linkedin.com/in/md-samsuzzoha-a1032a11b/",
-            "icon": "in.svg"
+            "icon": "in.svg",
+            "name": "Md Samsuzzoha"
         },
         {
             "id": 3,
             "link": "https://github.com/MdSamsuzzohaShayon",
-            "icon": "github.svg"
+            "icon": "github.svg",
+            "name": "Md Samsuzzoha"
         }
     ],
     "bestSkills": [
@@ -78,63 +128,67 @@
             "id": 1,
             "achieve": "clients",
             "num": 45,
-            "text": "On Upwork and Fiverr"
+            "text": "On Upwork and Fiverr",
+            "icon": "devops.svg"
         },
         {
             "id": 2,
             "achieve": "projects",
             "num": 62,
-            "text": "Completed successfully"
+            "text": "Completed successfully",
+            "icon": "project.svg"
         },
         {
             "id": 3,
             "achieve": "youtube",
             "num": 1610,
-            "text": "Subscribers"
+            "text": "Subscribers",
+            "icon": "youtube-rose.svg"
         },
         {
             "id": 4,
             "achieve": "Years",
             "num": 4,
-            "text": "In freelancing marketplaces"
+            "text": "In freelancing marketplaces",
+            "icon": "time.svg"
         }
     ],
     "features": [
         {
             "id": 1,
-            "icon": "web-design-rose.svg",
-            "title": "Web Design",
-            "desc": "My skills in design website, layout, and user interface principles allow me to transform ideas into captivating web visuals, making a lasting impact on users and brands alike."
+            "icon": "system-design-rose.svg",
+            "title": "System Design & Architecture",
+            "desc": "I design scalable, fault-tolerant system architectures using modern design patterns, distributed system principles, and performance optimization strategies. Experienced in building production-ready systems that scale reliably."
         },
         {
             "id": 2,
-            "icon": "frontend-rose.svg",
-            "title": "Front-end development",
-            "desc": "With expertise in HTML, CSS, React.js Next and Vanilla JavaScript, I focus on creating visually appealing and responsive web designs that deliver an exceptional user experience."
+            "icon": "backend-rose.svg",
+            "title": "Scalable Backend Engineering",
+            "desc": "Specialized in building high-performance REST APIs using Node.js, TypeScript, and PostgreSQL. Focused on clean architecture, modular codebases, caching strategies, and handling high-volume concurrent traffic."
         },
         {
             "id": 3,
-            "icon": "backend-rose.svg",
-            "title": "Back-end Development",
-            "desc": "I excel in backend development, where I build the server-side components of websites and web applications. My expertise revolves around database management, server logic, and API integration."
+            "icon": "frontend-rose.svg",
+            "title": "Modern Frontend with Next.js",
+            "desc": "I build fast, SEO-optimized, and accessible web applications using Next.js and TypeScript. Experienced with server components, static generation, performance optimization, and production-grade UI architecture."
         },
         {
             "id": 4,
-            "icon": "server-rose.svg",
-            "title": "Server Administration",
-            "desc": "My expertise includes setting up, configuring, and maintaining server infrastructure, as well as implementing security measures and troubleshooting issues. Moreover, deploying on serverless."
+            "icon": "database-design-rose.svg",
+            "title": "Database Design & Optimization",
+            "desc": "Strong expertise in relational database design using PostgreSQL, query optimization, indexing strategies, schema planning, and ensuring data consistency and integrity in scalable applications."
         },
         {
             "id": 5,
-            "icon": "devops-rose.svg",
-            "title": "DevOps",
-            "desc": "I bridge the gap between development and operations teams, using automation and collaboration to enhance efficiency. My expertise includes continuous integration, continuous delivery (CI/CD), infrastructure as code (IaC), and containerization."
+            "icon": "ai-rose.svg",
+            "title": "AI Integration & Automation",
+            "desc": "Experience integrating AI-powered solutions including LLM APIs, intelligent automation workflows, and data-driven features into modern applications to enhance user experience and business efficiency."
         },
         {
             "id": 6,
-            "icon": "mobile-rose.svg",
-            "title": "Blockchain Development",
-            "desc": "I create cross-platform apps that run seamlessly on both iOS and Android devices. My expertise lies in building responsive, native-like experiences while maximizing code reuse, delivering high-performance, and visually engaging."
+            "icon": "devops-rose.svg",
+            "title": "Cloud & DevOps Practices",
+            "desc": "Skilled in deploying scalable applications using CI/CD pipelines, containerization, and cloud-based infrastructure. Focused on performance monitoring, reliability, and secure production deployments."
         }
     ],
     "works": [
@@ -144,7 +198,7 @@
             "imgTiny": "ASL-Squads-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "ASL Squads - Tournament",
-            "desc": "Youthspike tournament, tournament design, prototype design, landscape prototype, backend admin panel, action box design, player management, event settings, squad list navigation, ranking updates, match creation, captain login, player images, GraphQL tutorial, Next.js, MERN stack, NestJS, Apache server, real-time data updates, drag and drop functionality, player ranking, team management, event creation, match settings, captain team management, player database, team logo, match scoring, match notifications, dashboard design, event filters, sponsor management, single match public view, random player assignment, anchor player pairing, hierarchy player pairing, LDO management.",
+            "desc": "Developed a full-featured youth tournament management platform using Next.js, Nest.js, and GraphQL. Solved real-time match updates, player management, and team ranking automation, helping organizers save hours of manual work while providing a smooth user experience.",
             "techStack": [
                 "Nest.js",
                 "Next.js",
@@ -165,7 +219,14 @@
                 "asl-squads-5-screenshot.png",
                 "asl-squads-6-screenshot.png"
             ],
-            "liveUrl": "https://aslsquads.com"
+            "liveUrl": "https://aslsquads.com",
+            "features": [
+                "Real-time match updates with WebSocket integration",
+                "Player ranking automation to simplify tournament management",
+                "Captain login system for team-level control",
+                "Admin dashboard for event and sponsor management",
+                "Drag-and-drop squad assignment and hierarchy management"
+            ]
         },
         {
             "id": 2,
@@ -173,11 +234,11 @@
             "imgTiny": "kinoverse-mockup-tiny.jpg",
             "type": "MERN Stack",
             "title": "Freelance Marketplace",
-            "desc": "Included features are wishlist, contact, admin panel, user dashboard, email notification, file uploads to AWS S3, and many more. First and foremost, I create prototype of the project the provide my client the desire end result they are expecting. afterward I developed this from scratch and deployed on AWS EC2",
+            "desc": "Built a full-featured freelance marketplace with React.js, Node.js, and Sequelize, solving user workflow challenges by providing dashboards, admin panels, and AWS-powered file uploads. Simplified project management and improved client satisfaction with a professional marketplace platform.",
             "techStack": [
                 "Node.js",
                 "React.js",
-                "Sequlize",
+                "Sequelize",
                 "AWS EC2",
                 "AWS S3",
                 "Linux",
@@ -191,7 +252,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "http://kinoverse.net/"
+            "liveUrl": "http://kinoverse.net/",
+            "features": [
+                "User dashboards for freelancers and clients",
+                "Wishlist, messaging, and contact features for improved engagement",
+                "Admin panel to manage users and projects efficiently",
+                "File uploads to AWS S3 for seamless document handling",
+                "Email notifications to keep users informed"
+            ]
         },
         {
             "id": 3,
@@ -199,7 +267,7 @@
             "imgTiny": "django-nuxt-ecommerce-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Furniture Ecommerce",
-            "desc": "I developed a custom Ecommerce website for a furniture shop using Django Rest Framework at the backend and Nuxt.js vue.js framework at the frontend.",
+            "desc": "Developed a custom furniture ecommerce platform using Django REST Framework and Nuxt.js. Solved seamless online shopping challenges by integrating secure payments, dynamic product catalog, and inventory management, improving sales efficiency and user satisfaction.",
             "techStack": [
                 "Django",
                 "Django-rest-framework",
@@ -221,7 +289,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": null
+            "liveUrl": null,
+            "features": [
+                "Secure backend with Django REST Framework for scalable API",
+                "Dynamic product catalog with filtering and search",
+                "Nuxt.js frontend for fast and responsive UI",
+                "Inventory and stock management automation",
+                "CI/CD deployment pipeline for continuous updates"
+            ]
         },
         {
             "id": 4,
@@ -229,7 +304,7 @@
             "imgTiny": "stockvel-mockup-tiny.jpg",
             "type": "LAMP Stack",
             "title": "Financial website for saving",
-            "desc": "Included features are user authentication, admin panel, user dashboard, multi-lingual, membership of a pack, create pack, join pack, select leader of the pack, manage pack by leager. ",
+            "desc": "Created a LAMP-based financial savings platform with PHP and MySQL. Solved user management and pack creation challenges, enabling secure membership, leader selection, and pack tracking to help users manage their finances efficiently.",
             "techStack": [
                 "PHP",
                 "MySQL",
@@ -243,7 +318,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "http://stockvell.allinone-office.com"
+            "liveUrl": "http://stockvell.allinone-office.com",
+            "features": [
+                "User authentication and secure login",
+                "Admin panel for pack and membership management",
+                "Multi-lingual support for wider audience reach",
+                "Pack creation and leader selection automation",
+                "User dashboard for easy savings tracking"
+            ]
         },
         {
             "id": 5,
@@ -251,7 +333,7 @@
             "imgTiny": "cost-calc-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Cost Calculation",
-            "desc": "This website for an agency, customer comes to this website and calculate their estimated cost of specific services they required.",
+            "desc": "Built a fast cost estimation tool using FastAPI and Vanilla JavaScript. Solved manual calculation issues for agencies by providing instant, accurate cost calculations, improving decision-making speed for clients and internal teams.",
             "techStack": [
                 "Python",
                 "FastAPI",
@@ -267,7 +349,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "https://costcalc.netlify.app"
+            "liveUrl": "https://costcalc.netlify.app",
+            "features": [
+                "Instant cost calculation for service requests",
+                "User-friendly interface for agencies and clients",
+                "Accurate backend calculations with FastAPI",
+                "MongoDB storage for reusable cost templates",
+                "Real-time estimation updates for efficiency"
+            ]
         },
         {
             "id": 6,
@@ -275,7 +364,7 @@
             "imgTiny": "discord-bot-tiny.jpg",
             "type": "Bot Development",
             "title": "Discord Bot",
-            "desc": "With this Discord Bot Members can intract with Guesty. Start to complete process tasks of Guesty will be done via user's specific channel of Discord",
+            "desc": "Developed a Discord Bot using Python and FastAPI that automates Guesty task interactions. Solved repetitive task issues, enabling members to complete processes efficiently via Discord channels, increasing productivity and engagement.",
             "techStack": [
                 "Discord.py",
                 "Python",
@@ -291,7 +380,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": null
+            "liveUrl": null,
+            "features": [
+                "Automates repetitive tasks in Discord channels",
+                "Integrates with Guesty for task management",
+                "Fast and reliable bot responses",
+                "Linux server deployment for stability",
+                "Enhances team productivity and engagement"
+            ]
         },
         {
             "id": 7,
@@ -299,7 +395,7 @@
             "imgTiny": "ist-mockup-tiny.jpg",
             "type": "CMS Development",
             "title": "Sports Blog",
-            "desc": "I developed a custom theme from scratch and using that theme I made my wordpress blogging site.",
+            "desc": "Developed a custom WordPress theme from scratch. Solved content management and styling challenges, enabling a professional blogging platform with SEO-friendly features, fully responsive design, and easy content publishing.",
             "techStack": [
                 "Wordpress",
                 "PHP",
@@ -314,7 +410,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "https://itssportstime.org/"
+            "liveUrl": "https://itssportstime.org/",
+            "features": [
+                "Custom WordPress theme development",
+                "SEO-friendly blog structure",
+                "Fully responsive design for mobile and desktop",
+                "Easy content publishing and management",
+                "Professional layout and typography"
+            ]
         },
         {
             "id": 8,
@@ -322,7 +425,7 @@
             "imgTiny": "ponditi-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Ponditi Learning Platform",
-            "desc": "Features of this website to be mentioned, Role Base JWT User Authentication, Students search teacher, Send tuotian request, create conversation, get tutorian on hourly or monthly basis, User Dashboard, admin panel, and more.",
+            "desc": "Built a scalable learning platform using Node.js, Next.js, and Socket.io. Solved real-time tutoring and communication challenges, providing user dashboards, admin panel, and role-based access control to enhance learning efficiency.",
             "techStack": [
                 "Node.js",
                 "Next.js",
@@ -342,7 +445,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "https://ponditi.com/"
+            "liveUrl": "https://ponditi.com/",
+            "features": [
+                "Role-based JWT user authentication",
+                "Real-time tutoring with Socket.io",
+                "Student-teacher search and request system",
+                "User and admin dashboards for full control",
+                "Hourly and monthly tutoring session management"
+            ]
         },
         {
             "id": 9,
@@ -350,7 +460,7 @@
             "imgTiny": "email-template-mockup-tiny.jpg",
             "type": "Backend Development",
             "title": "Email Template Building",
-            "desc": "Features of this website to be mentioned, Create email template, customize template, save template, edit template, preview template, export template, upload template images to AWS S3, and more",
+            "desc": "Created a Node.js platform for building, customizing, and exporting email templates. Solved repetitive template creation problems and automated AWS image uploads, enhancing marketing workflow efficiency.",
             "techStack": [
                 "Node.js",
                 "Vanilla JavaScript",
@@ -367,7 +477,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "https://emailtemplate.onrender.com/"
+            "liveUrl": "https://emailtemplate.onrender.com/",
+            "features": [
+                "Email template creation and customization",
+                "Preview, save, and export templates",
+                "Automated image uploads to AWS S3",
+                "Simplifies repetitive marketing tasks",
+                "Efficient backend processing with Node.js"
+            ]
         },
         {
             "id": 10,
@@ -375,7 +492,7 @@
             "imgTiny": "spikeball-mockup-tiny.jpg",
             "type": "Full Stack Development",
             "title": "Tournament Website",
-            "desc": "Features of this website to be mentioned, join in a tournament, 5 rounds in the tournament, random team up in first round, points calculations, adding extra points, rank players after round 1, random team up or team up based on rankings, leave the team and join team in the middle of the tournament, show score, user authentication, admin panel, and more.",
+            "desc": "Developed a tournament management platform using Node.js, React.js, and MongoDB. Solved multi-round tournament challenges with team management, ranking, and score updates, helping organizers run events smoothly while providing participants with real-time feedback.",
             "techStack": [
                 "Node.js",
                 "React.js",
@@ -394,7 +511,14 @@
                 "kinoverse-mockup-tiny.jpg",
                 "kinoverse-mockup-tiny.jpg"
             ],
-            "liveUrl": "https://spikeball.mdshayon.com/"
+            "liveUrl": "https://spikeball.mdshayon.com/",
+            "features": [
+                "Multi-round tournament management",
+                "Random and ranking-based team assignments",
+                "Real-time score updates and leaderboard",
+                "Admin panel for tournament control",
+                "User authentication and secure access"
+            ]
         }
     ],
     "education": [
@@ -423,108 +547,113 @@
             "desc": "I successfully completed my Secondary School Certificate at Singra Damdama Pilot School & College from 2008 to 2013, securing a commendable score of 3.63 out of 5. It was during these years that I began to develop a deeper understanding of various subjects and started to chart my path towards higher education and future endeavors."
         }
     ],
-"skills": [
-    {
-        "id": 1,
-        "title": "UI/UX Design using Figma (Client-Centric Prototyping)",
-        "percent": 85
-    },
-    {
-        "id": 2,
-        "title": "Solidity / Ethereum DApp Development",
-        "percent": 95
-    },
-    {
-        "id": 3,
-        "title": "React.js – Responsive, Fast Frontend UI",
-        "percent": 90
-    },
-    {
-        "id": 4,
-        "title": "Blockchain Smart Contracts (Audit-Ready Logic)",
-        "percent": 70
-    },
-    {
-        "id": 5,
-        "title": "Next.js/React – SEO-Optimized Web Platforms",
-        "percent": 80
-    },
-    {
-        "id": 6,
-        "title": "Vue.js/Nuxt.js – Scalable Frontend Applications",
-        "percent": 70
-    },
-    {
-        "id": 7,
-        "title": "Node.js / Django / Nest.js – Enterprise Backend Systems",
-        "percent": 95
-    },
-    {
-        "id": 8,
-        "title": "Horizontal & Auto Scaling (Handling High-Traffic Apps)",
-        "percent": 85
-    },
-    {
-        "id": 9,
-        "title": "FastAPI – High-Performance Python Backend APIs",
-        "percent": 90
-    },
-    {
-        "id": 10,
-        "title": "GraphQL/RestAPI – Flexible & Client-Friendly API Layer",
-        "percent": 80
-    },
-    {
-        "id": 11,
-        "title": "Docker – Cross-Platform App Containerization",
-        "percent": 85
-    },
-    {
-        "id": 12,
-        "title": "Linux Server Management – Secure & Efficient Hosting",
-        "percent": 80
-    },
-    {
-        "id": 13,
-        "title": "Serverless Architecture (AWS Lambda, API Gateway)",
-        "percent": 70
-    },
-    {
-        "id": 14,
-        "title": "CI/CD Pipelines – Automated Testing & Deployment",
-        "percent": 85
-    },
-    {
-        "id": 15,
-        "title": "SQL Databases – Scalable Relational Data Systems",
-        "percent": 90
-    },
-    {
-        "id": 16,
-        "title": "MongoDB – Flexible, NoSQL Cloud Databases",
-        "percent": 95
-    },
-    {
-        "id": 17,
-        "title": "Git & GitHub – Team-Based Version Control",
-        "percent": 95
-    },
-    {
-        "id": 18,
-        "title": "Web APIs – Real-Time Communication (WebSocket, WebRTC)",
-        "percent": 90
-    },
-    {
-        "id": 19,
-        "title": "Solana Blockchain – Fast, Low-Fee Smart Contracts",
-        "percent": 80
-    },
-    {
-        "id": 20,
-        "title": "Deployment & DevOps – Linux / Windows Environments",
-        "percent": 90
-    }
-],
+    "skills": [
+        {
+            "id": 1,
+            "title": "React.js – Responsive, Fast Frontend UI",
+            "percent": 95
+        },
+        {
+            "id": 2,
+            "title": "Next.js / React – SEO-Optimized Web Platforms",
+            "percent": 90
+        },
+        {
+            "id": 3,
+            "title": "Vue.js / Nuxt.js – Scalable Frontend Applications",
+            "percent": 80
+        },
+        {
+            "id": 4,
+            "title": "Node.js / Django / Nest.js – Enterprise Backend Systems",
+            "percent": 95
+        },
+        {
+            "id": 5,
+            "title": "FastAPI – High-Performance Python Backend APIs",
+            "percent": 90
+        },
+        {
+            "id": 6,
+            "title": "GraphQL / REST API – Flexible & Client-Friendly API Layer",
+            "percent": 85
+        },
+        {
+            "id": 7,
+            "title": "MongoDB – Flexible, NoSQL Cloud Databases",
+            "percent": 95
+        },
+        {
+            "id": 8,
+            "title": "SQL Databases – Scalable Relational Data Systems",
+            "percent": 90
+        },
+        {
+            "id": 9,
+            "title": "Docker – Cross-Platform App Containerization",
+            "percent": 90
+        },
+        {
+            "id": 10,
+            "title": "Linux / Windows Server Management – Secure & Efficient Hosting",
+            "percent": 90
+        },
+        {
+            "id": 11,
+            "title": "CI/CD Pipelines – Automated Testing & Deployment",
+            "percent": 90
+        },
+        {
+            "id": 12,
+            "title": "Web APIs – Real-Time Communication (WebSocket, WebRTC)",
+            "percent": 90
+        },
+        {
+            "id": 13,
+            "title": "UI/UX Design using Figma (Client-Centric Prototyping)",
+            "percent": 85
+        },
+        {
+            "id": 14,
+            "title": "Serverless Architecture (AWS Lambda, API Gateway)",
+            "percent": 80
+        },
+        {
+            "id": 15,
+            "title": "Deployment & DevOps – Linux / Windows Environments",
+            "percent": 90
+        },
+        {
+            "id": 16,
+            "title": "AI & Machine Learning Integration – Python & Node.js Workflows",
+            "percent": 85
+        },
+        {
+            "id": 17,
+            "title": "Automation – Task Scheduling, API Orchestration, Workflow Optimization",
+            "percent": 85
+        },
+        {
+            "id": 18,
+            "title": "Horizontal & Auto Scaling – Handling High-Traffic Apps",
+            "percent": 85
+        },
+        {
+            "id": 19,
+            "title": "Kubernetes / Docker Swarm – Container Orchestration & Scaling",
+            "percent": 80
+        },
+        {
+            "id": 20,
+            "title": "Cloud Automation – AWS CloudFormation / Terraform",
+            "percent": 80
+        },
+        {
+            "id": 21,
+            "title": "Git & GitHub – Team-Based Version Control",
+            "percent": 95
+        }
+    ],
     "experience": [
         {
             "id": 1,

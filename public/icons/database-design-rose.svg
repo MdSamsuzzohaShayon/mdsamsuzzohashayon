@@ -1,0 +1,40 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1{fill:none;}
+      .cls-2{fill:rgb(225, 29, 72);}
+    </style>
+  </defs>
+
+  <title>Database Design</title>
+
+  <g id="Layer_2">
+    <g id="Icons">
+      <g id="Database_Design">
+
+        <!-- Reset -->
+        <rect class="cls-1" width="60" height="60"/>
+
+        <!-- Main Database Cylinder -->
+        <ellipse class="cls-2" cx="30" cy="14" rx="12" ry="5"/>
+        <rect class="cls-2" x="18" y="14" width="24" height="18"/>
+        <ellipse class="cls-2" cx="30" cy="32" rx="12" ry="5"/>
+
+        <!-- Table Nodes -->
+        <rect class="cls-2" x="6" y="40" width="14" height="6" rx="2"/>
+        <rect class="cls-2" x="40" y="40" width="14" height="6" rx="2"/>
+
+        <!-- Relationship Lines -->
+        <rect class="cls-2" x="29" y="32" width="2" height="8"/>
+        <rect class="cls-2" x="13" y="38" width="17" height="2"/>
+        <rect class="cls-2" x="30" y="38" width="17" height="2"/>
+
+        <!-- Relationship Nodes -->
+        <circle class="cls-2" cx="30" cy="39" r="2"/>
+        <circle class="cls-2" cx="13" cy="39" r="2"/>
+        <circle class="cls-2" cx="47" cy="39" r="2"/>
+
+      </g>
+    </g>
+  </g>
+</svg>

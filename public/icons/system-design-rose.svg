@@ -1,0 +1,49 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                fill: rgb(225, 29, 72);
+            }
+        </style>
+    </defs>
+
+    <title>System Design</title>
+
+    <g id="Layer_2">
+        <g id="Icons">
+            <g id="System_Design">
+
+                <!-- Reset -->
+                <rect class="cls-1" width="60" height="60" />
+
+                <!-- Top Server -->
+                <rect class="cls-2" x="22" y="10" width="16" height="6" rx="2" />
+
+                <!-- Middle Layer -->
+                <rect class="cls-2" x="10" y="26" width="14" height="6" rx="2" />
+                <rect class="cls-2" x="36" y="26" width="14" height="6" rx="2" />
+
+                <!-- Bottom Database -->
+                <rect class="cls-2" x="22" y="44" width="16" height="6" rx="2" />
+
+                <!-- Connection Lines -->
+                <rect class="cls-2" x="29" y="16" width="2" height="10" />
+                <rect class="cls-2" x="18" y="32" width="2" height="12" />
+                <rect class="cls-2" x="40" y="32" width="2" height="12" />
+
+                <!-- Horizontal Connectors -->
+                <rect class="cls-2" x="18" y="24" width="24" height="2" />
+
+                <!-- Small Node Circles -->
+                <circle class="cls-2" cx="19" cy="25" r="2" />
+                <circle class="cls-2" cx="41" cy="25" r="2" />
+                <circle class="cls-2" cx="30" cy="43" r="2" />
+
+            </g>
+        </g>
+    </g>
+</svg>

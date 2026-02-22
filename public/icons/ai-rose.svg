@@ -1,0 +1,19 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1{fill:none;stroke:rgb(225,29,72);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+      .cls-2{fill:rgb(225,29,72);}
+      .cls-3{fill:rgb(225,29,72);font-family:sans-serif;font-weight:bold;font-size:20px;}
+    </style>
+  </defs>
+
+  <!-- Rounded square -->
+  <path class="cls-1" d="M10 10 h40 a4 4 0 0 1 4 4 v32 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-32 a4 4 0 0 1 4 -4 z"/>
+
+  <!-- AI text -->
+  <text x="30" y="36" text-anchor="middle" alignment-baseline="middle" class="cls-3">AI</text>
+
+  <!-- Sparkles top right -->
+  <polygon class="cls-2" points="44,12 45.5,14 48,14 46,16 46.5,18 44,17 41.5,18 42,16 40,14 42.5,14"/>
+  <polygon class="cls-2" points="48,8 49,9.5 50.5,9.5 49.5,11 50,12.5 48,11.5 46,12.5 46.5,11 45.5,9.5 47,9.5"/>
+</svg>

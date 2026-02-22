@@ -1,0 +1,52 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+            }
+
+            .cls-2 {
+                fill: rgb(225, 29, 72);
+            }
+
+            .cls-3 {
+                fill: white;
+            }
+        </style>
+    </defs>
+
+    <title>Calendar Time</title>
+
+    <g id="Layer_2">
+        <g id="Icons">
+            <g id="Calendar_Time">
+
+                <!-- Reset -->
+                <rect class="cls-1" width="60" height="60" />
+
+                <!-- Soft Glow Background -->
+                <circle class="cls-2" cx="30" cy="30" r="26" opacity="0.08" />
+
+                <!-- Calendar Body -->
+                <rect class="cls-2" x="14" y="18" width="32" height="26" rx="6" />
+
+                <!-- Calendar Header -->
+                <rect x="14" y="18" width="32" height="7" fill="white" opacity="0.15" />
+
+                <!-- Calendar Rings -->
+                <rect class="cls-2" x="20" y="14" width="4" height="8" rx="2" />
+                <rect class="cls-2" x="36" y="14" width="4" height="8" rx="2" />
+
+                <!-- Clock Circle Inside -->
+                <circle class="cls-3" cx="30" cy="33" r="7" />
+
+                <!-- Clock Hands -->
+                <line x1="30" y1="33" x2="30" y2="29" stroke="rgb(225, 29, 72)" stroke-width="2"
+                    stroke-linecap="round" />
+                <line x1="30" y1="33" x2="34" y2="35" stroke="rgb(225, 29, 72)" stroke-width="2"
+                    stroke-linecap="round" />
+
+            </g>
+        </g>
+    </g>
+</svg>
