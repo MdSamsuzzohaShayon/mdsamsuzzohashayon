@@ -1,23 +1,19 @@
 'use client'
 
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useMemo } from "react";
 import portfolio from "../data/portfolio.json";
 import { IPortfolioData } from "@/types";
 
-// Ensure portfolio.json is typed correctly
 const staticData: IPortfolioData = portfolio as IPortfolioData;
-
-// Create context with the correct type
 const StaticDataContext = createContext<IPortfolioData>(staticData);
 
-export const useStaticData = () => {
-  const context = useContext(StaticDataContext);
-  return context;
-};
+export const useStaticData = () => useContext(StaticDataContext);
 
 function StaticDataProvider({ children }: React.PropsWithChildren) {
+  // useMemo prevents unnecessary re-renders if provider is ever wrapped by state
+  const value = useMemo(() => staticData, []);
   return (
-    <StaticDataContext.Provider value={staticData}>
+    <StaticDataContext.Provider value={value}>
       {children}
     </StaticDataContext.Provider>
   );

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1 { fill: none; }
+      .cls-2 { fill: rgb(225, 29, 72); }
+    </style>
+  </defs>
+  <title>YouTube</title>
+
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Icons">
+      <g id="Social">
+
+        <!-- Background reset -->
+        <rect class="cls-1" width="60" height="60"/>
+
+        <!-- Outer subtle circle (optional decorative like your style) -->
+        <circle class="cls-2" cx="30" cy="30" r="26" opacity="0.08"/>
+
+        <!-- YouTube Rounded Rectangle -->
+        <rect class="cls-2" x="14" y="20" width="32" height="20" rx="6"/>
+
+        <!-- Play Triangle -->
+        <polygon points="26,24 26,36 36,30" fill="white"/>
+
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+.contact-section {
+    background-color: #020617; // Slate-950
+  
+    .input-field {
+      @apply flex flex-col gap-2;
+  
+      label {
+        @apply text-xs font-mono uppercase tracking-wider text-gray-500;
+      }
+  
+      input, textarea {
+        @apply bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-gray-200 
+               focus:border-rose-500 focus:ring-1 focus:ring-rose-500 outline-none transition-all;
+        
+        &::placeholder {
+          @apply text-slate-700;
+        }
+      }
+    }
+  
+    .contact-info-card {
+      @apply relative p-1;
+      
+      .photo-frame {
+        @apply rounded-xl overflow-hidden border border-slate-800 relative;
+      }
+    }
+  
+    .modal-base {
+      @apply bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl backdrop-blur-md text-gray-300;
+      &::backdrop {
+        @apply bg-black/80 backdrop-blur-sm;
+      }
+    }
+  }
+  
+  // Reusing Hero styles for consistency
+  .social-icon-btn {
+    @apply w-10 h-10 flex items-center justify-center rounded-lg bg-slate-900 border border-slate-800 
+           hover:border-rose-500 hover:bg-slate-800 transition-all duration-300;
+  }
