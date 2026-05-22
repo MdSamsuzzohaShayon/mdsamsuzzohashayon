@@ -1,7 +1,9 @@
 <h1 align="center">👋 Hi, I'm Md Samsuzzoha Shayon</h1>
 
+<h3 align="center">Full Stack Developer with 6+ Years of Experience</h3>
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=1000&color=FF6E91&center=true&vCenter=true&multiline=true&width=750&height=90&lines=Full+Stack+Developer+%7C+System+Designer+%7C+DevOps+Engineer;AI+Automation+%7C+Blockchain+Developer+%7C+Freelancer;Building+Scalable+Applications+%26+Real-Time+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=1000&color=FF6E91&center=true&vCenter=true&multiline=true&width=750&height=90&lines=Backend+Engineer+%7C+System+Designer+%7C+DevOps+Focused;Building+Scalable+Distributed+Systems+%26+Realtime+Platforms;Microservices+%7C+Cloud+Infrastructure+%7C+High+Performance+APIs" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -22,31 +24,30 @@
 
 # 🚀 About Me
 
-I'm a **self-taught Full Stack Software Engineer, System Designer, and DevOps-focused Developer** with 5+ years of experience building scalable web applications, microservices, AI automation systems, blockchain applications, and real-time communication platforms.
+I'm a **self-taught Full Stack Developer focused on Backend Engineering, System Design, and DevOps** with 6+ years of experience building scalable web applications, distributed systems, real-time communication platforms, automation systems, and cloud-native infrastructures.
 
 I specialize in designing and developing:
 
 - ⚡ High-performance full stack applications
 - 🧠 Scalable backend architectures & distributed systems
-- 🌐 Real-time communication platforms
+- 🌐 Real-time communication systems
 - ☁️ Cloud-native & serverless infrastructures
-- 🔐 Blockchain & Web3 applications
 - 🤖 AI automation workflows & integrations
-- 📈 Modern DevOps & CI/CD pipelines
+- 📈 DevOps pipelines & deployment automation
+- 🔐 Secure authentication & API systems
 
-I focus on writing clean, maintainable, scalable code while delivering fast, beautiful, and production-ready user experiences.
+I focus on building clean, maintainable, scalable, and production-ready systems with strong emphasis on performance, architecture, and developer experience.
 
 ---
 
 # 🧠 Core Expertise
 
-## 🏗 System Design & Architecture
+## 🏗 System Design & Backend Architecture
 
 - Microservices Architecture
 - Distributed Systems
 - REST API Design
 - GraphQL API Design
-- Webhook Systems
 - Event-Driven Architecture
 - WebSocket Architecture
 - Scalable Backend Systems
@@ -54,16 +55,18 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 - Monolithic → Microservices Migration
 - Authentication & Authorization Systems
 - Multi-Tenant Architectures
-- Real-time Communication Systems
 - Background Jobs & Queue Systems
 - Performance Optimization & Caching
 - Database Scaling Strategies
+- High Availability Systems
+- Realtime Communication Systems
 
 ---
 
 # 👨‍💻 Programming Languages
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
 ![Rust](https://img.shields.io/badge/-Rust-black?style=flat-square&logo=rust)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -82,15 +85,16 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 
 - Query Optimization
 - Database Indexing
-- ORM & Query Builders
 - Data Modeling
+- ORM & Query Builders
 - Redis Caching
-- Realtime Data Synchronization
 - PostgreSQL Performance Tuning
+- Realtime Data Synchronization
+- Database Replication & Scaling
 
 ---
 
-# ⚙️ Frameworks & Libraries
+# ⚙️ Frameworks & Technologies
 
 ## 🌐 Frontend
 
@@ -101,16 +105,12 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 ![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=flat-square&logo=react)
 ![Electron](https://img.shields.io/badge/-Electron-47848F?style=flat-square&logo=electron)
 ![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=three.js)
-![WebGL](https://img.shields.io/badge/-WebGL-990000?style=flat-square)
-![D3.js](https://img.shields.io/badge/-D3.js-F9A03C?style=flat-square&logo=d3.js)
-![p5.js](https://img.shields.io/badge/-p5.js-ED225D?style=flat-square)
-![Qt](https://img.shields.io/badge/-Qt-41CD52?style=flat-square&logo=qt)
 
 ## 🖥 Backend
 
 ![NestJS](https://img.shields.io/badge/-Nest.js-E0234E?style=flat-square&logo=nestjs)
-![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django)
 ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express)
 ![Actix Web](https://img.shields.io/badge/-Actix%20Web-000000?style=flat-square)
 
@@ -152,17 +152,17 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 - WebRTC
 - Socket.IO
 - Real-time Messaging Systems
-- Authentication Systems
 - OAuth & JWT
-- Rate Limiting
+- Authentication Systems
 - API Security
+- Rate Limiting
+- WebSocket Scaling
 
 ---
 
 # 🤖 AI Automation & Integrations
 
 - AI Workflow Automation
-- AI Chatbot Integrations
 - OpenAI API Integrations
 - AI-powered SaaS Features
 - Automation Pipelines
@@ -173,25 +173,6 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 
 ---
 
-# ⛓ Blockchain & Web3
-
-![Ethereum](https://img.shields.io/badge/-Ethereum-3C3C3D?style=flat-square&logo=ethereum)
-![Solana](https://img.shields.io/badge/-Solana-00FFA3?style=flat-square&logo=solana)
-![Rust](https://img.shields.io/badge/-Rust-black?style=flat-square&logo=rust)
-![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat-square&logo=solidity)
-
-### Experience With
-
-- Smart Contract Development
-- Token Systems
-- Wallet Integration
-- DApps
-- Web3 Authentication
-- Blockchain API Integration
-- Solana & Ethereum Ecosystems
-
----
-
 # 🌐 Featured Projects
 
 ## 🔥 [mdsamsuzzoha.webdevlab.org](https://mdsamsuzzoha.webdevlab.org)
@@ -199,25 +180,12 @@ I focus on writing clean, maintainable, scalable code while delivering fast, bea
 Personal portfolio featuring:
 
 - Advanced animations
-- Three.js graphics
 - Interactive UI
 - AI integrations
 - Responsive design
 - Cloudflare CDN optimization
 - Modern UI/UX patterns
-
----
-
-## ⚽ [Its Sports Time](https://itssportstime.com)
-
-Football platform featuring:
-
-- Live scores
-- Historical squads
-- Match statistics
-- Realtime updates
-- SEO-focused architecture
-- Optimized performance
+- High-performance frontend architecture
 
 ---
 
@@ -227,7 +195,7 @@ Football platform featuring:
 
 Sharing content about:
 
-- Web Development
+- Backend Development
 - System Design
 - DevOps
 - AI Tools
@@ -239,20 +207,20 @@ Sharing content about:
 
 # 📈 What I Focus On
 
-✅ Scalable Architectures  
-✅ High Performance Systems  
-✅ Beautiful User Experiences  
-✅ Clean & Maintainable Code  
-✅ Automation & Productivity  
+✅ Scalable Backend Architectures  
+✅ Distributed Systems  
+✅ High Performance APIs  
 ✅ Realtime Applications  
-✅ AI & Web3 Innovation  
+✅ Cloud Infrastructure  
+✅ DevOps Automation  
+✅ Clean & Maintainable Code  
 ✅ Production-ready Deployments
 
 ---
 
 # 💬 Let's Connect
 
-I'm always open to collaborating on innovative projects, freelance opportunities, startups, SaaS products, AI systems, and scalable backend architectures.
+I'm always open to collaborating on innovative projects, scalable SaaS products, backend systems, automation platforms, and cloud-native applications.
 
 📧 **Email:** mdsamsuzzoha5222@gmail.com  
 🌐 **Website:** https://mdsamsuzzoha.webdevlab.org  
@@ -275,4 +243,4 @@ This project is licensed under the MIT License.
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=shayondev&style=flat-square&color=brightgreen" alt="Profile views" />
 </p>
-```
+
