@@ -4,7 +4,7 @@
     "profession": "Web Developer",
     "contactMessage": "I am available to work any kind of web development projects on hourly or project based. Contact me though WhatsApp or Email.",
     "email": "mdsamsuzzoha5222@gmail.com",
-    "videoResume": "https://www.youtube.com/@mdsamsuzzoha1857/videos",
+    "videoResume": "https://www.youtube.com/watch?v=XZsjxYq5wHY",
     "phone": "+8801889171929",
     "contactImg": "/img/shayon-contact-image.jpg",
     "roles": [
@@ -58,32 +58,32 @@
         {
             "id": 1,
             "text": "Home",
-            "link": "#"
+            "link": "home"
         },
         {
             "id": 2,
             "text": "Features",
-            "link": "#"
+            "link": "features"
         },
         {
             "id": 3,
             "text": "My Works",
-            "link": "#"
+            "link": "my-works"
         },
         {
             "id": 4,
             "text": "Resume",
-            "link": "#"
+            "link": "resume"
         },
         {
             "id": 5,
             "text": "Contact",
-            "link": "#"
+            "link": "contact"
         },
         {
             "id": 6,
             "text": "Testimonial",
-            "link": "#"
+            "link": "testimonial"
         }
     ],
     "social": [
